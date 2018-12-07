@@ -2,7 +2,7 @@
 # SL-COMP'19
 ## 3rd International Competition of Solvers on Separation Logic
 ## at TOOLympics 2019
-## http://sl-comp.github.io
+## https://sl-comp.github.io
 
 The Separation Logic Competition (SL-COMP) is an initiative to bring together 
 researchers and practitioners interested on improving the state of the art of 
@@ -59,7 +59,7 @@ Competition first run (expected)     8  March,   2019
 Competition last run (expected)     22  March,   2019
 
 
-## RESSOURCES
+## RESOURCES
 
 The competition web site is https://sl-comp.github.io
 
