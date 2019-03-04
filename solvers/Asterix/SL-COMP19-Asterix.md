@@ -1,5 +1,5 @@
 
-# Asterix #
+# Asterix 
 
 \ASTERIX\ 
 The solver deals with the satisfiability and entailment checking in the
@@ -12,16 +12,15 @@ It has at its core a matching function that checks whether a concrete valuation 
 for both editions.
 
 
-## References ##
-    - J. A. Navarro Perez and A. Rybalchenko. Separation Logic Modulo Theories. In Proc. APLAS’13, 2013.
+* References
+   * J. A. Navarro Perez and A. Rybalchenko. Separation Logic Modulo Theories. In Proc. APLAS’13, 2013.
 
 
-## Contact ##
-
-    - Juan Navarro Perez (at the time at University College London, UK, now at Google) 
+* Contact
+   * Juan Navarro Pérez (at the time at University College London, UK, now at Google) 
     <juannavarroperez@gmail.com>
 
-     - Andrey Rybalchenko (at the time at TU Munich, Germany, now at Microsoft Research Cambridge, UK)
+   * Andrey Rybalchenko (at the time at TU Munich, Germany, now at Microsoft Research Cambridge, UK)
      <rybal@microsoft.com>
 
 
