@@ -1,0 +1,119 @@
+Review: SL-COMP: Competition of Solvers for Separation Logic
+
+
+This report is about the SL-COMP of tools implementing automated deduction
+methods for Separation Logic. The competition is split into several divisions,
+which are defined by the logic fragment, the kind of decision problem
+(satisfiability or entailment) and the presence of quantifiers supported by the
+tools. The TOOLympics 2019 edition is a rerun of the competition at FLoC 2018,
+which was the second iteration after the first event in 2014.
+
+The report includes an overview of the input formalism for benchmarks developed
+for this competition, presents the participants, the running infrastructure and
+highlights the impact and perspectives of this competition in a clearly
+structured manner with enough references to look up further information and
+concrete details such that all information about the whole competition can be
+easily found.
+
+The competition is running in three steps (to fix bugs in tools and benchmarks
+and agree on the selected benchmarks and results) on the StarExec platform. In
+2018 ten solvers participated which ran on 1K problems split over ten newly
+defined divisions. In addition a new input format which was aligned with the
+latest version of SMT-LIB as been introduced. The TOOLympics was a rerun of the
+second edition with 11 participants and two changes: a new solver has been
+included and some benchmarks have been fixed.
+
+All benchmarks and documentations are available and maintained by the
+participants and organizers in a public GitHub repository. 
+DONE: But a link to it as
+well as a link to the competition's website is missing and should be added in
+the final version.
+
+DONE: 
+Our main criticism with the paper is the lack of actual competition results. The
+current discussion of the results is restricted to one sentence at the end of
+each participant subsection. For some of the participants (e.g. ComSPEN), no
+results are given at all. Firstly, we don't find this to be the right place for
+discussion of the experimental results. Moreover, the reported results don't
+give much information about the actual results, e.g., how many problems were
+solved, how close are the different participants, and so on. There are various
+places throughout the paper that could be shortened in favor of a short
+evaluation section. For example the submission procedure is not very
+interesting. The description of the divisions is redundant. The list of
+divisions at the end of Section 3.3 gives basically the same information as the
+list above Table 1. Moreover, the descriptions of some of the participants could
+be shortened.
+
+The report includes suggestions for future competition improvements. While we
+think that this is indeed interesting and important to point out, we found the
+discussion rather distracting, and scattered too much across the paper.
+TODO:
+Instead, we'd suggest to collect all your findings, and move this out of the
+main text into a separate section, e.g., as some sort of conclusion.
+
+DONE:
+One of the suggested changes was limiting the number of proposed benchmarks per
+participant to reach a fair comparison criterion such that in each division the
+number of problems coming from each team is balanced. But in our opinion the
+number of benchmarks handed in per participant does not have to be limited. It
+is worth collecting all benchmarks and making them publicly available. To make
+the competition fair, after collecting all benchmarks, an appropriate subset
+could still be chosen.
+
+DONE:
+The paper was not very precise in how the benchmarks were obtained exactly. The
+history section indicated that the benchmarks were translated from something(?).
+It is however not clear what you need to translate there exactly. Was the
+language of the 2014 competition benchmarks completely different, so that you
+had to translate them into your new language? More details should be provided
+here. Similarly, the authors mention that the original benchmarks handed in by
+the participants have been translated into the competition's input format by the
+organizers. It would be an improvement for the report if you mention how this
+translation has been done, e.g. by giving references to translators or scripts
+used or by describing the translation procedure. Furthermore, why did you allow
+the submission of benchmarks only from participants of the competition? In
+principle, everyone should be allowed to submit interesting problems.
+
+DONE: see reference to 2014 paper
+For the divisions it would be useful to get some more information about what
+effect the different restrictions have in terms of, e.g., decidability,
+complexity. Do all problems used fall into some decidable subclass of the
+divisions?
+
+TODO: remove this
+You mention that you reduced the time limit in order to gain some time in
+running the competition. But if a tool exceeded the limit, larger time-outs have
+been tried. It is not really clear how the overall runtime for the competition
+can be reduced with this approach. You could have set the time limit directly to
+3600 and continued with the next run if a tool finished earlier. Regarding the
+evaluation: 
+DONE: yes, maybe this is a limitation of the system
+Is there any reason for not excluding tools completely that return
+invalid solutions?
+
+All in all, we think the competition has a considerable impact on the community
+and helps to improve the tools and the input formalisms. The benchmark
+collection is a benefit for everyone in this field too.
+
+
+Minor:
+
+In the entire report, there seems to be a confusion between the word
+"benchmark/s" in plural and singular. It would make it easier to sometimes use
+the term "benchmark set" if appropriate.  The same problem occurs when talking
+about "organizer" or "organizers". Please decide if it is only one person or
+a group. 
+
+The descriptions of the participants should all follow the same structure.  For
+example, in Section 4.8 you start writing "we" to refer to the authors of the
+solver. The description in general doesn't seem to fit into
+a competition report outline kind of structure. Especially the first paragraph
+looks more like a copy of an abstract of some related paper, and should
+be rephrased.
+
+In addition to the comments and questions regarding the content from above, we
+have a couple of language related, comments. You really should improve on that. Instead of mentioning all of them
+here, we highlighted the respective parts of the text and placed comments in the
+PDF (will be sent via mail) to make it easier to find the respective sentences in the report.
+
+

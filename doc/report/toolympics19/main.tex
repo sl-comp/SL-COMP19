@@ -1,0 +1,977 @@
+\documentclass[orivec]{llncs}
+
+\frontmatter         % for the preliminaries
+\pagestyle{headings}  % switches on printing of running heads
+
+%% Standard macros
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{stmaryrd}
+\usepackage[T1]{fontenc} %% needed to combine textsc with textbf
+
+% Useful packages
+\usepackage{array,booktabs,amsmath,amssymb,stmaryrd}
+\usepackage[english]{babel}
+\usepackage[breaklinks]{hyperref}
+\usepackage{breakurl}
+\usepackage{xcolor,xspace}
+\usepackage{enumerate,wrapfig}
+\usepackage[misc,geometry]{ifsym}
+\usepackage[obeyDraft]{todonotes} % version without notes
+\usepackage{fancyvrb}
+\fvset{fontsize=\small}
+
+
+%% Local macros
+\newcommand{\sorts}[1]{#1^\mathrm{S}}
+\newcommand{\funs}[1]{#1^\mathrm{F}}
+\newcommand{\ssorts}[1]{#1^\mathrm{s}}
+\newcommand{\sfuns}[1]{#1^\mathrm{f}}
+
+\newcommand{\sep}{.\,}
+\newcommand{\limp}{\Rightarrow}
+\newcommand{\posep}{*}
+\newcommand{\points}{\mapsto}
+\newcommand{\Spatial}{\Sigma}
+\newcommand{\Emp}{\mathbf{emp}}
+\newcommand{\PointsTo}[2]{ {#1 \mapsto #2} }
+\newcommand{\PointsToL}[3]{ {#2 \mapsto^{#1} #3} }
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\locs}{\mathsf{Loc}}
+\newcommand{\data}{\mathsf{Data}}
+\newcommand{\nil}{\mathsf{nil}}
+\newcommand{\heaps}{\mathbf{H}}
+\newcommand{\emp}{\mathsf{emp}}
+\newcommand{\wand}{
+ \mathrel{\mbox{$\hspace*{-0.03em}\mathord{-}\hspace*{-0.66em}
+ \mathord{-}\hspace*{-0.36em}\mathord{*}$\hspace*{-0.005em}}}} % {\multimap}
+\newcommand{\seplog}{\mathsf{SL}}
+\newcommand{\tterm}{\mathsf{t}}
+\newcommand{\uterm}{\mathsf{u}}
+
+\newcommand{\vars}{\mathit{Vars}}
+\newcommand{\lvars}{\mathit{LVars}}
+\newcommand{\rtypes}{\mathcal{R}}
+\newcommand{\pfields}{\mathbb{F}}
+\newcommand{\preds}{\mathbb{P}}
+\newcommand{\loc}{\mathit{Loc}}
+\newcommand{\model}[1]{\left[\!\left[#1\right]\!\right]}
+
+\newcommand{\cdr}{\mathtt{tl}}
+\newcommand{\lemp}{\mathit{lemp}}
+
+\newcommand{\ls}{\mathtt{ls}}
+
+\newcommand{\ASTERIX}{\textsc{Asterix}}
+\newcommand{\CYCLIST}{\textsc{Cyclist-SL}}
+\newcommand{\ComSPEN}{Com\textsc{SPEN}}
+\newcommand{\CVC}{\textsc{CVC4-SL}}
+\newcommand{\HARRSH}{\textsc{Harrsh}}
+\newcommand{\STS}{\textsc{S2S}}
+\newcommand{\SLEEK}{\textsc{Sleek}}
+\newcommand{\SLIDE}{\textsc{Slide}}
+\newcommand{\SLSAT}{\textsc{SlSat}}
+\newcommand{\SG}{\textsc{Songbird}}
+\newcommand{\SPEN}{\textsc{Spen}}
+
+\newcommand{\smtlib}{\textsf{SMT-LIB}}
+\newcommand{\smtcomp}{\textsf{SMT-COMP}}
+\newcommand{\slcomp}{\textsf{SL-COMP}}
+\newcommand{\starexec}{\textsf{StarExec}}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{SL-COMP: Competition of Solvers for Separation Logic}
+\author{%by alphabetical order
+Mihaela Sighireanu\inst{2}\Letter \and % Spen, bench, tools, format, organization
+%
+Juan A. Navarro P\'{e}rez\inst{11} \and  % Asterix, bench (Google)
+Andrey Rybalchenko\inst{3} \and  % Asterix, bench 
+%
+Nikos Gorogiannis\inst{4} \and   % CYCLIST, SLSAT, bench
+% others from CYCLIST?
+%
+Radu Iosif\inst{13},              % CVC4, SLIDE, format
+Andrew Reynolds\inst{12} \and     % CVC4, bench, format
+Cristina Serban\inst{13} \and     % CVC4?, format
+%
+Jens Katelaan\inst{10} \and       % Harrsh, bench
+Christoph Matheja\inst{6} \and    % Harrsh
+Thomas Noll\inst{6} \and          % Harrsh
+Florian Zuleger\inst{10} \and     % Harrsh
+%
+Wei-Ngan Chin\inst{5} \and       % SLEEK, SongBird, bench
+Quang Loc Le\inst{9} \and        % SLEEK, S2S, bench
+Quang-Trung Ta\inst{5} \and      % Songbird
+Ton-Chanh Le\inst{8} \and        % Songbird
+Thanh-Toan Nguyen\inst{5} \and   % Songbird
+Siau-Cheng Khoo\inst{5} \and     % SongBird
+%
+Michal Cyprian\inst{1} \and      % SLIDE, bench
+Adam Rogalewicz\inst{1} \and     % SLIDE, bench
+Tomas Vojnar\inst{1} \and        % SLIDE, SPEN,
+Constantin Enea\inst{2} \and     % SPEN, bench
+Ondrej Lengal\inst{1} \and       % SPEN, bench
+Chong Gao\inst{7} \and           % COMPSPEN, bench
+Zhilin Wu\inst{7}               % COMPSPEN, bench
+%\and David Cok\inst{}
+}
+\institute{% 1
+    FIT, Brno University of Technology, %IT4Innovations Centre of Excellence, 
+    Czechia
+\and % 2
+    IRIF, University Paris Diderot and CNRS, France \\
+\and % 3
+    Microsoft Research, Cambridge, United Kingdom \\
+\and % 4
+	Middlesex University London, United Kingdom \\ 
+\and % 5
+	National University of Singapore, Singapore \\
+\and % 6
+    RWTH Aachen University, Germany \\
+\and % 7
+    State Key Laboratory of Computer Science, %Institute of Software, 
+    Chinese Academy of Sciences, China \\
+\and % 8
+    Stevens Institute of Technology, USA \\
+\and % 9
+	Teesside University, Middlesbrough, United Kingdom \\
+\and %10
+    TU Wien, Austria \\
+\and % 11
+    University College London now at Google, United Kingdom \\
+\and % 12
+    University of Iowa, USA \\
+\and % 13
+    VERIMAG, University Grenoble Alpes and CNRS, France 
+}
+\authorrunning{M. Sighireanu et al.}
+
+\date{\today}
+\maketitle
+\sloppy
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+SL-COMP aims at bringing together researchers interested on improving
+the state of the art of the automated deduction methods for Separation Logic (SL).
+The event took place twice until now and collected more than 1K
+ problems for different fragments of SL.
+The input format of problems is based on the SMT-LIB format
+and therefore fully typed; only one new command is added to SMT-LIB's
+list, the command for the declaration of the heap's type.
+The SMT-LIB theory of SL comes with ten logics, some of them
+being combinations of SL with linear arithmetics. The
+competition's divisions are defined by the logic fragment,
+the kind of decision problem (satisfiability or entailment) and
+the presence of quantifiers.
+%The competition provides tools for parsing, typing, and deciding the
+%division of an input.
+Until now, SL-COMP has been run on the StarExec platform,
+where the benchmark set and the binaries of participant solvers
+are freely available. The benchmark set is also available
+with the competition's documentation on a public repository in GitHub. 
+\end{abstract}
+
+
+%\keywords{Separation Logic, \smtlib, SAT Modulo Theory}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+%% BEGIN OLD
+\todo{Review}
+Separation Logic (SL) is an established and fairly popular Hoare logic 
+for imperative, heap-manipulating programs, 
+introduced nearly fifteen years ago by Reynolds~\cite{Reynolds99,OHearnRY01,Reynolds02}. 
+%
+Its high expressivity, its ability to generate compact proofs, and 
+its support for local reasoning 
+have motivated the development of tools for automatic reasoning about programs using SL.
+A rather exhaustive list of the past and present tools using SL may be found at~\cite{OHearn-SLsite}.
+
+These tools seek to establish memory safety properties and/or infer shape properties of the heap at a scale of millions of lines of code.
+They intensively use (semi-)decision procedures for checking satisfiability and entailment problems in SL.
+% in order to check Hoare's triples or to help the termination of a static analysis.
+%% END OLD
+%% BEGIN NEW
+Therefore, the development of effective solvers for such problems became a challenge 
+which led to both theoretical results on decidability and complexity of these problems 
+for different fragments of SL and to publicly available tools. 
+To understand the capabilities of these solvers and to motivate their improvement by 
+comparison on a common benchmark, we initiated in 2014 the \slcomp\ competition,
+inspired by the success of \smtcomp\ for solvers on first order theories.
+%% END NEW
+
+This paper presents the history of this competition and its organization for
+the round at TOOLympics 2019.
+Section~\ref{sec:org} describes the main stages of the competition. 
+Each stage is detailed in a separate section as follows:
+benchmark's definition in Section~\ref{sec:bench},
+the participants in Section~\ref{sec:solvers} and 
+the running infrastructure in Section~\ref{sec:run}. %, and
+%results computation and reporting in Section~\ref{sec:results}.
+We conclude the paper in Section~\ref{sec:impact} by a discussion on the impact of the competition and its perspectives.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Competition's Stages}
+\label{sec:org}
+
+%%%%%%%%%%
+\subsection{A short history}
+
+The first edition of \slcomp\ took place at FLoC 2014 Olympic Games, 
+as an unofficial event associated with the \smtcomp\ 2014 
+competition~\cite{SMTCOMPsite}. The organization details and the achievements 
+of this edition are presented in details in~\cite{SighireanuC14}.
+This was an opportunity 
+to collect from participants about 600 problems on different fragments of SL, 
+to involve six solvers, to lay the foundations of a common input format and
+to set up a discussion list involving teams developing solvers or
+verification tools based on SL. 
+Being attached to \smtcomp\ allowed to benefit from the experience of
+\smtcomp's organizer, David Cok, in setting competition's rules and 
+the execution platform \starexec, as well as in running the competition and 
+publishing the results.
+
+The results of the first edition led to interesting discussions on the
+mailing list, mainly on the input format chosen, the layout of divisions 
+and the frequency of running the competition. These discussions have 
+converged in defining a working group on the input format and 
+fixed a sparse rhythm of the competition, mainly aligned with  FLoC venues.
+
+Therefore, the second edition took place at FLoC 2018 and was associated
+with the first workshop on Automated Deduction for Separation Logics (ADSL).
+The organization of the competition followed the stages described in the next section
+and was disconnected from \smtcomp. The organizer, Mihaela Sighireanu,
+exploited the experience acquired with the first edition in running the
+competition on \starexec.
+The competition involved ten solvers which ran on 1K problems split over ten 
+newly defined divisions.
+More precisely, the benchmark set included the set of problems of the 2014 edition 
+and new problems provided by the participants.
+The problems were specified in the new input format which is aligned with
+the latest version of \smtlib, as detailed in~\cite{IosifSRS18} and 
+summarized in Section~\ref{ssec:bench-format}. 
+The competition's results have been presented during a session of ADSL,
+which gave the opportunity of a live discussion on the different aspects of
+organization. The results are available on the
+competition web site \cite{SLCOMP18site}.
+
+The TOOLympics edition is a rerun of the
+second edition with two major changes:
+a new solver has been included and
+some benchmark instances have been fixed.
+The remainder of this paper will present the organization
+of this edition and the participants involved.  
+
+%%%%%%%%%%
+\subsection{Organization process}
+
+The competition has a short organization period,
+three months on average. This is possible due to the fact that 
+material used in the competition (the benchmark set, the definition of
+the input format, the parsers for input and the pre-processing tools)
+are publicly available on \starexec\ and on a shared development repository~\cite{SLCOMPgit} maintained by the participants 
+and by the organizer.
+
+The competition is launched by a call for benchmarks and participants
+which also fixes the competition timeline. The call is sent
+on the competition mailing list \url{sl-comp@googlegroups.com}.
+
+New solvers are invited to send a short presentation (up to two pages) 
+including the team, the sub-fragment of SL dealt, the main bibliography and the website.
+In addition, each solver has a corresponding person in the team,
+which is responsible of preparing the solver for running the
+competition. This preparation ensures that the input format
+is supported and that the solver is registered in the execution
+platform in the divisions of the competition it asked to compete.
+The organizer creates a subspace on the execution platform for
+each participant and assigns the permission to the solver's correspondent  
+for this space. She may help the incomer to prepare the solver by providing
+insights on the use of the execution platform,
+the input format and the pre-processors from the competition's input 
+format to the solver's format.
+
+The benchmark problems are collected from the community and participants.
+%Each registered participant is allowed to propose new benchmarks.
+Until now, we did not limit the number of benchmark instances proposed by 
+participants in each category in order to improve our benchmark set.
+However, this may change in the future, as discussed on Section~\ref{sec:bench}.
+The benchmark set may change during the competition due to reaction
+of competitors, but it is fixed starting with the pre-final run.
+
+The competition is run in three steps. The first step is
+a training period where the solver's correspondent 
+runs the solver on the execution platform and the existing benchmark set.
+During this step, the benchmark set may be changed as well as the solver's
+binary.
+The second step is a pre-final run, launched by the organizer
+using the binaries of solvers published on the execution platform.
+The results of this pre-final run are available for all solvers'
+representatives, which may allow to compare results and have a first view
+on competitors' achievements. The organizer contacts each correspondent 
+to be sure that the results of this run are accepted.
+The last step is the final run, which determines the final result.
+The binaries of solvers submitted to the final run may be different 
+from the ones used in the pre-final run.
+
+The final run of the competition takes place one week before the
+event at which the competition's results are presented.
+However, the results are available as soon as possible
+on the competition's web site. 
+
+
+%Establish a calendar of the competition such that the last round is 
+%one week before the results presentation, if possible, to accept reactions
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Benchmark Set}
+\label{sec:bench}
+
+The current competition's benchmark set contains more than 1K problems,
+(precisely 1286 problems), which cover several fragments of Separation Logic.
+25\% of these problems are satisfiability checking problems.
+This section outlines the main features of this benchmark set, 
+including the fragments covered, the input format, and the
+divisions established for this edition.
+A detailed description of the input theory and format is~\cite{IosifSRS18}.
+
+%%%%%%%%%%
+\subsection{Separation logic theory}
+
+The input theory is a multi-sorted second order logic over a 
+signature $\Sigma=(\ssorts{\Sigma},\sfuns{\Sigma})$,
+where the set of sorts $\ssorts{\Sigma}$ includes two (non necessarily disjoint)
+subsets of sorts representing locations of the heap, $\ssorts{\Sigma}_\locs$,
+respectively heap's data, $\ssorts{\Sigma}_\data$. For each sort $\locs$ in
+$\ssorts{\Sigma}_\locs$, the set of operations includes a constant symbol
+$\nil^\locs$ modeling the null location. The heap's type $\tau$ is an injection 
+from location sorts in $\ssorts{\Sigma}_\locs$ 
+to data sorts in $\ssorts{\Sigma}_\data$.
+We also assume that the signature $\Sigma$ includes the Boolean signature
+and an equality function for each sort.
+
+Let $\vars$ be a countable set of first-order variables, each
+$x^\sigma \in \vars$ having an associated sort $\sigma$.
+The \emph{Ground Separation Logic} $\seplog^g$ is 
+the set of formulae generated by the following syntax:
+\begin{eqnarray}
+\varphi & := & \phi \mid \emp \mid \tterm \mapsto \uterm \mid
+\varphi_1 * \varphi_2 \mid \varphi_1 \wand \varphi_2 \mid \neg
+\varphi_1 \mid \varphi_1 \wedge \varphi_2 \mid \exists x^\sigma ~.~
+\varphi_1(x)
+\label{eqn:SLg}
+\end{eqnarray}
+where $\phi$ is a $\Sigma$-formula, and $\tterm$, $\uterm$ are
+$\Sigma$-terms of sorts in $\ssorts{\Sigma}_\locs$ and $\ssorts{\Sigma}_\data$
+respectively, such that they are related by the heap's type $\tau$ .
+As usual,
+we write $\forall x^\sigma ~.~ \varphi(x)$ for $\neg\exists x^\sigma
+~.~ \neg\varphi(x)$. We omit specifying the sorts of variables and
+functions when they are clear from the context.
+
+The special atomic formulas of $\seplog^g$ are the so-called \emph{spatial atoms}:
+$\emp$ specifies an empty heap, 
+$\tterm \mapsto \uterm$ specifies a heap consisting of one allocated cell
+whose address is $\tterm$ and whose value is $\uterm$.
+The operator ``$*$'' is the separating conjunction denoting
+that the sub-heaps specified by its operands have disjoint locations.
+The operator ``$\wand$'' is the separating implication operator, 
+also called magic wand. %% TODO
+A formula containing only spatial atoms combined using 
+separating conjunction and implication is called \emph{spatial}. 
+Formulas without spatial atoms and separating operators are called \emph{pure}.
+
+The full separation logic $\seplog$ contains formulas with 
+spatial predicate atoms of the form 
+$P^{\sigma_1 \ldots \sigma_n}(\tterm_1, \ldots, \tterm_n)$, 
+where each $\tterm_i$ is a first-order term of sort $\sigma_i$, for
+$i=1,\ldots,n$.
+The predicates $P^{\sigma_1 \ldots \sigma_n}$ belong to 
+a finite set $\preds$ of second-order variables 
+and have associated a tuple of parameter sorts 
+$\sigma_1, \ldots, \sigma_n \in \ssorts{\Sigma}$. 
+Second-order variables $P^{\sigma_1 \ldots \sigma_n} \in \preds$ 
+are defined using a set of rules of the form: 
+\begin{eqnarray}
+P(x_1,\ldots,x_n) & \leftarrow & \phi_P(x_1,\ldots,x_n),
+\label{eqn:rule}
+\end{eqnarray}
+where $\phi_P$ is a formula possibly containing predicate atoms 
+and having free variables in $x_1,\ldots,x_n$.
+The semantics of predicate atoms is defined by the least fixed point of
+the function defined by these rules.
+
+An example of a formula specifying a heap with at least two singly linked
+list cells at locations $x$ and $y$ is:
+\begin{eqnarray}
+x \mapsto \texttt{node}(1,y) \ * \ y \mapsto \texttt{node}(1,z)  \ * \ \ls(z,\nil)
+\ \wedge \ z \neq x
+\label{eqn:two-list}
+\end{eqnarray}
+where $\ssorts{\Sigma} = \{\texttt{Int},\locs,\data\}$ and
+the function \texttt{node} has parameters of sort \texttt{Int} and $\locs$ and its type is $\data$. 
+The predicate $\ls$ is defined by the following rules:
+\begin{eqnarray}
+\ls(h,f) & \leftarrow & h = f \land \emp 
+\label{eqn:ls-emp}
+\\
+\ls(h,f) & \leftarrow & 
+		\exists x,i~.~ h \neq f \ \wedge\ 
+			x \mapsto \texttt{node}(i,x) \ * \ \ls(x,f)\label{eqn:ls-cons}
+\end{eqnarray}
+and specifies a possible empty heap storing a singly linked list of $\data$ 
+starting at the location denoted by $h$ and 
+whose last cell contains the location denoted by $f$.
+More complex examples of formulas and predicate definitions are provided in~\cite{SighireanuC14,IosifSRS18}.
+
+
+%%%%%%%%%%
+\subsection{Input format}
+\label{ssec:bench-format}
+
+The input format of the competition has been changed between the first and the second edition, but it was always based on the \smtlib\ format~\cite{BarST-SMTLIB}.
+The syntax and semantics of this format were discussed and agreed 
+in the public mailing group. 
+
+\paragraph{Signature encoding:}
+Following this format, the new functions of $\seplog$ theory are declared in
+a ``theory'' file \texttt{SepLogicTyped.smt2} as follows:
+\begin{Verbatim}
+(theory SepLogicTyped
+
+ :funs ((emp Bool)
+        (sep Bool Bool Bool :left-assoc)
+        (wand Bool Bool Bool :right-assoc)
+        (par (L D) (pto L D Bool))
+        (par (L) (nil L))
+        )
+)
+\end{Verbatim}
+Observe that {\tt pto} and {\tt nil} are polymorphic functions, with
+sort parameters {\tt L} (for location sort) and {\tt D} (for data sort). 
+There is no restriction on the choice of location and data sorts.
+However, each problem shall fix them using a special command,
+not included in \smtlib, {\tt declare-heap}.
+For example, to encode the example given in Equation~\ref{eqn:two-list},
+we declare an uninterpreted sort \texttt{Loc} and 
+a sort \texttt{Data} as a datatype as follows:
+\begin{Verbatim}
+(declare-sort Loc 0)
+
+(declare-datatype Data ((node (d Int) (next  U))))
+
+(declare-heap (Loc Data))
+\end{Verbatim}
+The last declaration fixes the type of the heap model.
+
+The predicate definitions are written into \smtlib\ format using the recursive
+function definition introduced in version 2.6. For instance, the definition 
+of the list segment from Equations~\ref{eqn:ls-emp} and \ref{eqn:ls-cons} is
+written into \smtlib\ as follows (based on the above declarations of 
+\texttt{Loc} and \texttt{Data}):
+\begin{Verbatim}
+(define-fun-rec ls ((h Loc) (f Loc)) Bool
+    (or (and emp (= h f))
+        (exists ((x Loc) (d Int)) 
+                (and (distinct h f) (sep (pto h (node d x)) (ls x f))))
+    )
+)
+\end{Verbatim}
+
+
+\paragraph{Problem format:} Each benchmark file is organized as follows:
+\begin{itemize}
+\item Preamble information required by the \smtlib\ format: the sub-logic
+of $\seplog$ theory (see Section~\ref{ssec:div}), 
+the team which proposed the problem, the kind (crafted, application, etc.) and 
+the status (sat or unsat) of the problem.  
+
+\item A list of declarations for the sorts for locations and data, for
+the type of the heap (the \texttt{declare-heap} command), for
+the second order predicates, and for the free variables used in the problem's formulae.
+Notice that the input format is strongly typed. 
+At the end of the declarations, a checking command \texttt{check-unsat} may appear to
+trigger for some solvers the checking for models of predicate declarations.
+
+\item One or two assertions (command \texttt{assert}) introducing the formulas
+used in the satisfiability respectively entailment problem. 
+
+\item The file ends with a checking satisfiability command \texttt{check-unsat}.
+Notice that checking the validity of the entailment $A\limp B$ is encoded 
+by satisfiability checking of its negation $A \land \lnot B$.
+\end{itemize}
+
+
+%%%%%%%%%%
+\subsection{Divisions}
+\label{ssec:div}
+
+The main difficulty that faces automatic reasoning using $\seplog$
+is that the logic, due to its expressiveness, does not have very nice decidability properties~\cite{AntonopoulosGHKO14}.
+For this reason, most program verification tools use incomplete heuristics to solve the satisfiability and entailment problems in $\seplog$ or restrict the logic employed to decidable fragments.
+Overviews of decidable results for $\seplog$ are available in~\cite{SighireanuC14,DBLP:journals/jancl/DemriD15}.
+
+Each benchmark instance of \slcomp\ refers to one of the sub-logics of the
+multi-sorted Separation Logic. These sub-logics identify fragments 
+which are handled by at least two participants or have been identified
+to be of interest during the discussion for the organization of the round.
+
+The sub-logics are named using groups of letters, in a way similar to \smtlib\ format. 
+These letters have been chosen to evoke the restrictions
+used by the sub-logics:
+\begin{itemize}
+\item {\tt QF} for the restriction to quantifier free formulas;
+\item {\tt SH} for the so-called ``symbolic heap fragment''  where formulas are restricted to (Boolean and separating) conjunctions of atoms and do not contain magic wand; moreover, pure atoms are only equality or dis-equality atoms;
+\item {\tt LS} where the only predicate allowed is the acyclic list segment, $\ls$, defined in Equations~\ref{eqn:ls-emp} and \ref{eqn:ls-cons};
+\item {\tt ID} for the fragment with user defined predicates;
+\item {\tt LID} for the fragment of linear user defined predicates, i.e., only one recursive call for all rules of a predicate is allowed;
+\item {\tt B} for the ground fragment allowing any Boolean combination of atoms.
+\end{itemize}
+Moreover, the existing fragments defined in \smtlib\ are used 
+to further restrict the theory signature. 
+For example, {\tt LIA} denotes the signature for linear integer arithmetics.
+
+%% TODO Reviewer 2: summarize for each tool which division won in each competition edition
+\begin{table}
+\caption{Divisions at \slcomp\ and the participants enrolled}
+\label{tab:div}
+%\begin{center}
+\begin{tabular}{l@{\quad}r@{\quad}l}\hline
+Division & size & Solvers enrolled \\
+\hline\hline
+\texttt{qf\_bsl\_sat} & 46 & \CVC \\
+\texttt{qf\_bsllia\_sat} & 24 & \CVC \\
+\texttt{qf\_shid\_entl} & 312 & \CYCLIST, \HARRSH, \STS, \SLEEK, \SLIDE, \SG, \SPEN \\
+\texttt{qf\_shid\_sat} & 99 & \HARRSH, \STS, \SLEEK, \SLSAT \\
+\texttt{qf\_shidlia\_entl} & 75 & \ComSPEN, \STS\\
+\texttt{qf\_shidlia\_sat} & 33 & \ComSPEN, \STS\\
+\texttt{qf\_shlid\_entl} & 60 & \ComSPEN, \CYCLIST, \HARRSH, \STS, \SPEN\\
+\texttt{qf\_shls\_entl} & 296 & \ASTERIX, \ComSPEN, \CYCLIST, \HARRSH, \STS, \SPEN\\
+\texttt{qf\_shls\_sat} & 110 & \ASTERIX, \ComSPEN, \CYCLIST, \HARRSH, \STS, \SPEN \\
+\texttt{shid\_entl} & 73 & \CYCLIST, \STS, \SLEEK, \SG \\
+\texttt{shidlia\_entl} & 181 & \STS, \SG \\
+\hline
+\end{tabular}
+%\end{center}
+\end{table}
+
+The current round of the competition has eleven divisions, named 
+by concatenation of the name of the logic and the kind of problem solved
+(\texttt{sat} or \texttt{entl}).
+Table~\ref{tab:div} provides the names of these divisions and the number of problems
+in each division:
+\begin{itemize}
+\item \texttt{qf\_bsl\_sat} and \texttt{qf\_bsllia\_sat} divisions 
+	include satisfiability problems for quantifier free formulas in the ground logic
+	using respectively none or LIA logic for pure formulas.
+
+\item \texttt{qf\_shid\_entl} and \texttt{qf\_shid\_sat} divisions
+   include entailment respectively satisfiability problems for the 
+   symbolic heap fragment with user defined predicates.
+
+\item \texttt{qf\_shidlia\_entl} and \texttt{qf\_shidlia\_sat} divisions
+   include entailment respectively satisfiability problems for the 
+   quantifier free, symbolic heap fragment with 
+   user defined predicates and linear arithmetics
+   included in pure formulas even in the predicate definitions.
+
+\item \texttt{qf\_shlid\_entl} division
+   includes a subset of problems of division \texttt{qf\_shid\_entl}
+   where the predicates are ``linear'' and compositional~\cite{DBLP:conf/atva/EneaSW15}.
+   This fragment is of interest because the entailment problem has
+   an efficient decision procedure.
+
+\item \texttt{qf\_shls\_entl} and \texttt{qf\_shls\_sat} divisions
+   include entailment respectively satisfiability problems for the 
+   quantifier free symbolic heap fragment with only $\ls$ predicate atoms.
+
+\item \texttt{shid\_entl} division contains entailment problems
+   for quantified formulas in the symbolic heap fragment with general 
+   predicate definitions and no other logic theories than Boolean.
+   
+\item \texttt{shidlia\_entl} divisions extends the problems in
+   \texttt{shid\_entl} with constraints from linear integer arithmetics.
+   
+\end{itemize}
+
+
+%%%%%%%%%%
+\subsection{Selection process}
+
+The benchmark set was built mainly from the contributions of participants. 
+Some of these problems come from academic software analysis or verification tools based on SL 
+(e.g., \textsc{SmallFoot}~\cite{SmallFootsite}, \textsf{Hip}~\cite{ChinDNQ12}).
+We did not received any problem issued from industrial tools.
+The problems were collected in the input format submitted by the participants and
+then translated into the input format of the competition.
+With the objective of increasing the size of the benchmark set, we did not limit the
+number of problems submitted by a participant. In this way, the edition 2018
+has seen an increase of 100\% in the size of the benchmark set. However in the future 
+we could consider a change in the regulations to find a fair balance between
+teams. By using the meta-information in the preamble of each file, we
+are able to track the team which proposed the problem.
+
+Notice that each problem has been examined by the organizer to ensure that
+the input format is respected and that it passed the parsing and
+type checking. However, the organizer accepts the status of the problem proposed
+until it is signaled incorrect by another team.
+In this case, a round of discussion is initiated to find an agreement on the
+status included in the file. Notice that the status (sat or unsat) 
+shall be known because it is important for the computation of the final result.
+%\slcomp\ benchmark instances are only crafted (i.e., demonstrates a particular aspect of a solver or problem domain) or
+%random (instance of a problem template parameterized on some dimension, e.g., a size).
+The status of each problem was checked before the competition using at least two solvers 
+and it did not change during the competition. 
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Participants}
+\label{sec:solvers}
+
+Eleven solvers are enrolled for this edition of the competition
+after its public announcement. Table~\ref{tab:div} summarizes the enrollment
+of each solver in the divisions presented in the previous section.
+
+%Note that although one person is listed as ``submitter'' for a solver on the web site,
+%there is generally a team of contributors behind each tool; the identified person is simply the communication contact.
+
+%%%%%%%%%%
+\subsection{\ASTERIX}
+
+\ASTERIX\ is presented in details in~\cite{PerezR13}. It 
+was submitted by 
+Juan Navarro Perez (at the time at University College London, UK, now at Google) and 
+Andrey Rybalchenko (at the time at TU Munich, Germany, now at Microsoft Research Cambridge, UK).
+The solver deals with the satisfiability and entailment checking in the 
+\verb|QF_SHLS| fragment.
+For this, it implements a model-based approach.
+The procedure relies on SMT solving technology (Z3 solver is used) to untangle potential aliasing between program variables. 
+It has at its core a matching function that checks whether a concrete valuation is a model of the input formula and, if so, generalizes it to a larger class of models where the formula is also valid.  
+
+\ASTERIX\ was the winner of divisions \verb|qf_shls_sat| and \verb|qf_shls_entl|
+for both editions.
+
+
+%%%%%%%%%%
+\subsection{\ComSPEN}
+
+The theoretical bases of \ComSPEN\ have been presented in~\cite{DBLP:conf/cade/GuCW16}.
+The development team is composed of 
+Taolue Chen (University of London, UK), 
+Chong Gao and Zhilin Wu (State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences).
+
+The solver deals with both satisfiability and entailment problems in
+a fragment included in logic \verb|QF_SHIDLIA| and which extends \verb|QF_SHLID| with integer linear arithmetics in predicate definitions.
+The underlaying technique for satisfiability checking of a formula $\varphi$ is to define an
+abstraction, $Abs(\varphi)$, where Boolean variables are introduced to encode the spatial part of $\varphi$, together with quantifier-free formulae to represent the transitive closure of the data constraints in the predicate atoms. 
+Checking satisfiability of $\varphi$ is then reduced to checking satisfiability of $Abs(\varphi)$, which can be solved by the state-of-the-art SMT solvers (e.g., Z3), 
+with an NP upper-bound.
+%
+For the entailment problem $\varphi\vdash\psi$,  if $\varphi$ and $\psi$ are satisfiable, the procedure builds graphs for each formula and tries to build a graph isomorphism between them.
+
+\ComSPEN\ is implemented in C++. It uses the libraries Z3 and \verb|boost|. The input format is the \SPEN's format, which requires a pre-processor for the competition's input format.
+Results are not available for \ComSPEN\ because the 2019 edition is the first one for it.
+
+
+%%%%%%%%%%
+\subsection{\CYCLIST}
+
+\CYCLIST~\cite{BrotherstonGP12,CYCLISTsite} 
+was submitted by 
+Nikos Gorogiannis (Middlesex University London, UK) in 2014.
+%J. Brotherston, N. Gorogiannis, and R. L. Petersen 
+The solver deals with the entailment checking for the \verb|QF_SLID| fragment.
+It is an instantiation of the theorem prover \CYCLIST\ for the case of Separation Logic with inductive definitions. 
+The solver builds derivation trees and uses induction to cut infinite paths in these trees
+% with ``back-links'' from leaves to nodes of the tree 
+that satisfy some soundness condition. 
+For the Separation Logic, \CYCLIST\ replaces the rule of weakening used in first-order theorem provers with the frame rule of SL.
+
+\CYCLIST\ won the division \verb|qf_slid_entl| in 2014 and was at the second place in the same division in 2018.
+
+
+%%%%%%%%%%
+\subsection{\CVC}
+
+CVC4 has a decision procedure described in~\cite{DBLP:conf/atva/ReynoldsIS016}
+for the fragment \verb|QF_BSL|. The solver \CVC\ has been submitted by Andrew Reynolds (The University of Iowa, USA).
+Although this fragment is not supported by other solvers, two divisions were created
+for it because this fragment is the only one including the separating wand operator.
+\CVC~\cite{CVC4SLsite} participated in the 2018 edition and trivially won the two divisions.
+
+
+%%%%%%%%%%
+\subsection{\HARRSH}
+
+\HARRSH~\cite{LPAR-IWIL2018:Harrsh_Tool_for_Unied} 
+was submitted by Jens Katelaan (TU Wien, Austria), the development team
+including Florian Zuleger from the same institute and 
+Christoph Matheja and Thomas Noll (RWTH Aachen University, Germany).
+\HARRSH\ deals with the fragment \verb|QF_SHID| for both satisfiability and entailment checking.  
+The decision procedures use a novel automaton model, so-called heap automata~\cite{DBLP:conf/esop/JansenKMNZ17}, which works directly on the structure of symbolic heaps. A heap automaton examines a SID bottom-up, starting from the non-recursive base case. At each stage of this analysis, a heap automaton remembers a fixed amount of information. Heap automata enjoy a variety of closure properties (intersection, union and complementation).
+
+\HARRSH\ is licensed under the MIT license and available on GitHub~\cite{HARRSHsite}.
+\HARRSH\ was implemented in Scala and runs on the JVM.
+\HARRSH\ has its own input format, but also supports both \CYCLIST\
+input format and the \slcomp\ input format.
+Many \slcomp\ entailment problems violate the syntactic restrictions of 
+predicate definitions required by \HARRSH. For this reason, the solver
+comes with a preprocessor that is able to transform many (but not all) benchmark's problems
+in the division \verb|qf_shid_entl| into equivalent, \HARRSH\ compatible specifications.
+
+\HARRSH\ entered \slcomp\ in 2018 and competed in divisions \verb|qf_shls_sat| and \verb|qf_shid_sat| with encouraging results.
+Compared to all other participants, \HARRSH\ has the disadvantage that it runs on the JVM: On simple problems, more than 99\% of the runtime of \HARRSH\ is spent starting and shutting down the JVM. 
+
+
+%%%%%%%%%%
+\subsection{\STS}
+
+\STS\ is a solver submitted by Quang Loc Le (Teesside University, Middlesbrough, UK).
+It supports separation logic extended with string and arithmetic constraints, which
+correspond to all divisions of \slcomp\ except ones based on \verb|QF_BSL|.
+The solver is built around a generic framework to construct a forest of disjoint cyclic reduction trees for an input, either an entailment or a satisfiability problem.
+The implementation is done in Ocaml, from scratch. It contains three main components: front end with parsers, the proof systems and backend with SMT solvers (Z3). 
+For the front end, the solver supports several formats, including the one of \slcomp.
+The solver implements three concrete cyclic proof systems. 
+The first system is a satisfiability solver in separation logic with general inductive predicates and arithmetic (fragment \verb|SLIDLIA|). 
+The second one is an entailment solver in the same fragment of separation logic above. Its implementation is the extension of a cyclic proof system with lemma synthesis~\cite{DBLP:conf/tacas/Le0Q18}. 
+The last system is a satisfiability solver for string logics. 
+In all these three systems, any input of the leaf node evaluation method could be transformed into Presburger arithmetic and discharged efficiently by Z3.
+
+In \slcomp'2018, \STS\ won division \verb|qf_shlid_entl| and \verb|qf_shidlia_sat|.
+
+
+%%%%%%%%%%
+\subsection{\SLEEK}
+
+\SLEEK~\cite{ChinDNQ12,SLEEKsite} participated in all editions of \slcomp,
+the submitters at edition 2018 being Benjamin Lee and Wei-Ngan Chin (NUS, Singapore).
+The solver deals with the satisfiability and entailment checking for the \verb|QF_SHID| fragment.
+It is an (incomplete but) automatic prover, that builds a proof tree for the input problem by using the classical inference rules and the frame rule of SL. It also uses a database of lemmas for the inductive definitions in order to discharge the proof obligations on the spatial formulas.
+%
+The proof obligations on pure formulas are discharged by external provers like CVC4, Mona, or Z3.
+
+\SLEEK\ was the winner of the division \verb|qf_shid_entl| in edition 2014,
+and was in the third position in the same division in edition 2018.
+
+
+%%%%%%%%%%
+\subsection{\SLIDE}
+
+\SLIDE~\cite{IosifRV14,SLIDEsite}  
+was submitted by 
+Adam Rogalewicz (FIT, Brno University of Technology, Czechia), 
+the development team including
+Michal Cyprian and Tomas Vojnar from the same institute and
+Radu Iosif (Verimag, University Grenoble Alpes \& CNRS, France).
+The solver deals with the entailment problem in the decidable sub-fragment of \verb|QF_SLID|  defined in~\cite{IosifRS13}.
+The main principle of SLIDE is a reduction of entailment problems in SL into inclusion problems of tree automata. For the problems in the fragment identified in \cite{IosifRS13},
+the decision procedure implemented in \SLIDE\ is EXPTIME-hard.
+More precisely, the proof method for checking $\varphi\limp\psi$ relies on converting $\varphi$ and $\psi$ into two tree automata $A_\varphi$ resp. $A_\psi$, and checking
+the tree language inclusion of the automaton $A_\varphi$ in the automaton $A_\psi$.
+
+\SLIDE\ takes an input in its own input format, which can be generated by the dedicated \slcomp\ preprocessor. The reduction from the system of predicates into tree automata and the join operator is implemented in Python3. The result of the reduction are input files for the VATA tree automata library, which is used as a backend for the inclusion tests.
+
+\SLIDE\ participated in both past editions of \slcomp. In 2018 edition,
+\SLIDE\ solved 61 of 312 problems in division \verb|qf_shid_entl|,
+7 of 60 problems in division \verb|qf_shlid_entl|,
+and 15 of 73 problems in division \verb|shid_entl|.
+The number of solved problems is related to the fact that \SLIDE\ is a prototype implementation, where our primary goal was to show the advantages of automata techniques. In order to cover more problems, one have to implement a new top-level parser, which would split the input entailment query into a set of subsequent queries, for which the automata-based technique can be used.
+
+%%%%%%%%%%
+\subsection{\SLSAT}
+
+\SLSAT~\cite{BrotherstonFPG14} was submitted at \slcomp'2014 by 
+Nikos Gorogiannis (Middlesex University London, UK) 
+and  Juan Navarro Perez (at the time at UCL, UK, now at Google).
+%J. Brotherston, C. Fuhs, N. Gorogiannis, and J. Navarro Perez
+The solver deals with the satisfiability problem for the \verb|QF_SLID| fragment.
+The decision procedure is based on a fixed point computation of a constraint, called the ``base'' of an inductive predicate definition. This constraint is a conjunction of equalities and dis-equalities between a set of free variables built also by the fixed point computation from the set of inductive definitions.
+
+\SLSAT\ was at the second position in division \verb|qf_slid_sat| in edition 2014,
+and won this division at edition 2018.
+
+
+%%%%%%%%%%
+\subsection{\SG}
+
+\SG~\cite{SBsite} was submitted by Quang-Trung Ta (National University of Singapore)
+and the development team includes 
+Ton-Chanh Le (Stevens Institute of Technology, USA),
+Thanh-Toan Nguyen, Siau-Cheng Khoo, and 
+Wei-Ngan Chin (National University of Singapore, Singapore).
+\SG\ targets \verb|SHIDLIA| fragment. It employs mathematical induction 
+to prove entailments involving user-defined predicates. In addition, 
+\SG\ is also equipped with powerful proof techniques,
+which include a mutual induction proof system~\cite{DBLP:conf/fm/TaLKC16} and 
+a lemma synthesis framework~\cite{Ta:2017:ALS:3177123.3158097}.
+
+\SG\ is implemented in OCaml and uses Z3 as the underlying SMT solver for the first-order logic formula which contains equality and linear arithmetic constraints. 
+The input syntax of \SG\ is described in~\cite{SBsite}.
+
+\SG\ integrated \slcomp\ at the 2018 edition, and was the first in four divisions:
+\verb|qf_shid_entl|, \verb|qf_shidlia_entl|, \verb|shid_entl|, \verb|shidlia_entl|.
+It can also solve 100\%
+of the problems in other two divisions \verb|qf_shls_entl| and \verb|qf_shls_sat|, but the runtime is slower than the best provers of these divisions.
+
+%%%%%%%%%%
+\subsection{\SPEN}
+
+\SPEN~\cite{EneaLSV14,SPENsite} 
+was submitted by Mihaela Sighireanu (IRIF, University Paris Diderot \& CNRS, France)
+and the development team includes 
+Constantin Enea from the same institute,
+Ondrej Lengal and Tomas Vojnar (FIT, Brno University of Technology, Czechia).
+The solver deals with satisfiability and entailment problems for the fragments 
+\verb|QF_SHLID| and \verb|QF_SHLS|.
+%\SLRD+ where 
+%(i) the inductive definitions correspond to some class of (nested) lists
+%and (ii) the right-hand side of the entailment problem does not have existential quantifiers.
+%The class of inductive definitions allowed is included in the decidable fragment defined by~\cite{IosifRS13}, but is restricted to list segments in order to obtain an efficient decision procedure.
+The decision procedures call the MiniSAT solver on a Boolean abstraction of the SL formulas to check their satisfiability and to ``normalize'' the formulas by inferring its implicit (dis)equalities. % implicit from the semantics of SL.
+The core of the algorithm checking if $\varphi\limp\psi$ is valid searches a mapping from the atoms of $\psi$ to sub-formulas of $\varphi$.
+This search uses the membership test in tree automata to recognize in sub-formulas of $\varphi$ some unfolding of the inductive definitions used in $\psi$.
+
+\SPEN\ is written in C and C++ and is open source~\cite{SPENsite}.
+It is based on the VATA library for tree automata.
+\SPEN\ won the division \verb|qf_shlid_entl| at edition 2014 and was in the second
+position in divisions \verb|qf_shls_entl| and \verb|qf_shls_sat| in both editions.
+
+%
+%\medskip
+%A notable fact about this set of participants is the diversity of techniques used by each solver.
+%%
+%Moreover, some of the above solvers deal with additional problems to the ones considered for this competition, e.g., the computation of an unsatisfiability core or abduction.
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Running the Competition}
+\label{sec:run}
+
+%% TODO Reviewer 2: What are the characteristics of the machines used?
+\slcomp\ uses the \starexec\ platform~\cite{StarExecsite} 
+%% more on the benefits of this platform
+and requires several features provided by this platform.
+%
+The pre-processing phase allows to translate each problem into the input
+format of the solver without time penalties. It is used by most
+of the solvers and some pre-processors are
+provided by \slcomp's organizer, 
+freely available on the competition GitHub repository~\cite{SLCOMPgit}.
+%
+The competition did not use the scrambling of benchmark's problems because the names used for inductive definitions defined in the files of some divisions are important for the solvers.
+%
+Each benchmark file includes only one problem. 
+The incremental feature was not used and is not supported by most of the competing solvers.
+
+\starexec\ imposes a time and space limit on each attempt of a solver to solve a given problem. For the 2014 edition, the CPU time was limited to 2400 seconds and
+the memory (RAM) limit was 100 GB. 
+To gain some time in running the competition, the 2018 edition used by default a timeout of 600 sec and 4 GB of memory; if the time was exceeded, timeouts of 2400 then 3600 were tried.
+Even with these bigger timeouts, some jobs did have CPU timeout or reached the memory limit.
+To simplify the running, the new edition will use a memory limit of 100 GB and a timeout of 3600 sec.
+
+The participants trained their solvers on the platform and provided feedback where the expected result of a problem did not match their result. 
+Several benchmark's problems and solvers were fixed during this period.
+One training run was executed before the official run to provide insights about the global results and to do a final check of the benchmark set.
+
+%% Reviewer 2: what are the numbers and the formula used to calculate the final score
+%% TODO MS: not a formula but a total lexicographic order    
+%The computation of the scores obtained for each division followed the rules fixed for \smtcomp'14\ and followed in all \slcomp\ editions.
+%The best score is the one with, in order:
+The participants at each divisions are ordered according to the rules 
+fixed for \smtcomp'14 edition. 
+The best solver is the one with, in order:
+(a) the least number of incorrect answers, 
+(b) the largest number of correctly solved problems, and 
+(c) the smallest time taken in solving the correctly solved problems.
+%
+Note that solvers are allowed to respond ``unknown'' or to time-out on a given benchmark's problem without penalty (other than not being able to count that problem as a success).
+%Note also that a single wrong answer, even accompanied by many correct answers, places a competitor behind one that has just one right answer. This choice is intended to emphasize the need for sound, bug-free solvers that can be relied upon by an application-focused user community. 
+%%
+%Giving the number of correctly
+%solved problems priority over the time taken to solve them is a more debatable choice. To date the emphasis in these competitions has been on raw logical capability of a solver; however, many applications are more concerned with fast solutions of most problems rather than eventual solution of more problems. Thus the scoring metric may be reconsidered for future competitions.
+
+
+\starexec\ requires that a public version of a solver be made available on \starexec\ as a condition of participating in a competition. This allows users of \starexec\ to rerun a competition if so desired. More importantly, it allows users to upload a new set of problems of interest in their application domain and to try the various solvers against those problems.
+This feature was very useful for \slcomp\ at edition 2018, because some
+solvers reused the binaries submitted in 2014. 
+%
+The results of the competition are provided on the competition web page with a 
+link to the CSV files generated by \starexec. We are also archiving the results of
+previous editions in the GitHub.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Impact and Perspectives}
+\label{sec:impact}
+
+The \slcomp\ initiative fulfilled its goals:
+an interesting suite of SL problems is publicly available in a common format and
+the maturity of solvers submitted for this competition has been proven.
+
+Moreover, we achieved to propose a common format for SL which 
+is based on a mature and maintained format for first-order theories, \smtlib. 
+This format reveals the features required by the existing solvers, e.g., the strong typing of formulas, the kind of inductive definitions handled, etc.
+
+The participation at \slcomp\ allowed to measure solvers against competitors and
+therefore to improve solvers during the competition and in meantime.
+Moreover, the existing benchmark set includes challenging problems for the
+competitors because about half (6 over 11) of the divisions are completely solved.
+Five divisions include problems not yet dealt:  
+\verb|qf_bsl_sat| has 2 problems (5\%),
+\verb|qf_shid_entl| has 11 problems (4\%),
+\verb|qf_shid_sat| has 26 problems (27\%),
+\verb|shid_entl| has 3 problems (5\%) and
+\verb|shid_sat| has 29 problems (17\%). 
+
+A community interested in such tools has been identified and informed about the status of the existing solvers.
+This community could benefit from improving the tools built on the top of decision procedures for SL.
+
+The \smtcomp\ community discovered the status of the solvers for SL and became interested in this theory, as is demonstrated by the participation of CVC4, one of the most complete solver of \smtcomp.
+
+
+We expect that the 2019 edition of \slcomp\ will enforce these results.
+
+The perspectives mainly concern improvement of the organization process as the size of the competition (number of solvers and benchmark set) increases.
+
+First of all, we are trying to reach a consensus for a good cadence of this competition. Yearly competitions could be very exciting for the first years, but may focus on engineering improvements rather than fundamental work. 
+We feel that a good cadence is alternating a competition year with a year of benchmark set evaluation and improvement.
+
+With the experience of the current competition, the benchmark set has to be improved also. 
+As mentioned above, we have to balance the number of problems coming from the same team in each division in order to reach a fair comparison criterium.
+For each problem, it would be interesting to attach a coefficient which is taken into
+account in the scoring system and thus obtain a better evaluation of each solver.
+A classic way to assign a difficulty level is to take into account the size of the formulas and of the inductive definitions used in the problem. 
+
+Finally, we should intensify the exchanges with related competitions in software verification and automated proving. Such competitions may benefit from \slcomp\ results in terms of automation, and may provide interesting benchmark sets.
+For this, the results of \slcomp\ should be made available in forms that allows to understood  the state of the art of SL solvers and the contribution of each participating solver to this state of the art.
+We should also provide, in addition to the \starexec\ platform, other means to reproduce the results of each edition. For example, virtual machines may be archived with the sources and binaries of participants for each edition of the competition.
+
+
+%\section*{Acknowledgments}
+%
+%We thank the  participants to the discussion list, especially 
+%Josh Berdine, John Brotherston, Christoph Hasse, and Thomas Wies, 
+%for their interesting comments on the input theory and format used in the competition.
+%We also thank reviewers of the paper for their interesting suggestions for improving its presentation.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain}
+\bibliography{biblio}
+
+\end{document}
