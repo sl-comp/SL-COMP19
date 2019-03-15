@@ -56,9 +56,10 @@ http://www.liafa.univ-paris-diderot.fr/spen
 (check-sat) 
 ;; variables
 (declare-const x_emp RefDll_t)
-(declare-const w_emp RefDll_t)
 (declare-const y_emp RefDll_t)
+(declare-const z_emp RefDll_t)
 (declare-const u_emp RefDll_t)
+(declare-const w_emp RefDll_t)
 
 (assert 
 		(and 
