@@ -5,7 +5,7 @@
 |)
 (set-info :smt-lib-version 2.6)
 (set-info :category "crafted")
-(set-info :status unsat)
+(set-info :status sat)
 (set-info :version "2019-02-20")
 
 (declare-sort Refnode3 0)
