@@ -33,7 +33,7 @@
 
 (check-sat)
 
-;; entailment: sls(x,y,1,100) * sls(y,z,200,300) |- (exists t,r,l,u. t->node{y,u} * sls(x,t,l,r) & r<=u)
+;; entailment: sls(x,y,1,100) * sls(y,z,200,300) |- (exists t,r,l,u. t->node{z,u} * sls(x,t,l,r) & r<=u)
 
 (declare-const x Refnode)
 (declare-const y Refnode)
@@ -56,7 +56,7 @@
    ((t Refnode) (r Int) (l Int) (u Int))
    (and
     (sep
-     (pto t (c_node y u))
+     (pto t (c_node z u))
      (sls x t l r))
     (<= r u)))))
 
