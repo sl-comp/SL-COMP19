@@ -1,0 +1,333 @@
+* Options                :noexport:
+#+OPTIONS:   H:2 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+# OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+TITLE:     SL-COMP
+#+AUTHOR:    Presented by Mihaela Sighireanu \\
+#+AUTHOR:    and J.A. Navarro Perez, A. Rybalchenko, N. Gorogiannis, R. Iosif, \\
+#+AUTHOR:    A. Reynolds, C. Serban, J. Katelaan, Ch. Matheja, Th. Noll, \\
+#+AUTHOR:    F. Zuleger, W.N. Chin, B. Lee, Q.L. Le, Q.T. Ta, T.C. Le, T.T. Nguyen, \\
+#+AUTHOR:    S.C. Khoo, M. Cyprian, A. Rogalewicz, T. Vojnar, C. Enea, O. Lengal, \\
+#+AUTHOR:    C. Gao, Z. Wu
+#+EMAIL:     sl-comp.github.io
+#+DATE:      TOOLympics 2019, April 7th
+#+KEYWORDS:  Sat Modulo Theories, Separation Logic, StarExec
+#+LANGUAGE:  en
+
+
+** Beamer
+#+STARTUP: beamer
+#+BEAMER_COLOR_THEME: rose
+#+BEAMER_FONT_THEME: professionalfonts
+#+latex_header: \mode<beamer>{\usetheme{CambridgeUS}}
+#+LaTeX_CLASS: beamer
+# LaTeX_CLASS_OPTIONS: [bigger]
+#+LaTeX_Header: \usepackage{marvosym}
+
+** Code Listing
+#+LaTeX_Header: \usepackage{listings}
+#+LaTeX_Header: \usepackage{color}
+#+LaTeX_Header: \lstset{basicstyle={\ttfamily\small},keywordstyle={\color{blue}}}
+
+
+# 11:00 – 12:30 
+# use no more than 10 minutes to present your competition
+# in a way that is interesting for non-participants. 
+# Typical things that would be interesting to discuss are:
+# - focus of your competition, i.e. what are you measuring:  tool, process, etc.
+# - how do you arrange your evaluation: automated, manual
+# - typical input models
+# - type of output
+# - impact of the competition on the targeted community
+
+* Introduction
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+** SL-COMP: Competition of Solvers for Separation Logic
+
+#+ATTR_LATEX: :width 12cm
+[[./solver.png]]
+
+- Goals:
+  + share state of the art and a set of challenging probl
+  + improve solvers for SL used in verification tools
+  + compare solving (semi-)decision procedures and related techniques
+
+- History:
+  + 2014: at FLOC, 6 solvers, 600 problems, 5 divisions
+  + 2018: at FLOC, 11 solvers /registered/, *1268 problems, 11 divisions*
+  + 2019: 11 solvers *participated*
+
+# Oral : Follows SMT-COMP process
+
+* Benchmark Set
+
+** Input
+
+Entailment or satisfiability problem for formulas in
+
+- many sorted Separation Logic theory
+# Specifying the heap
+#+BEGIN_EXPORT latex
+\newcommand{\emp}{\mathsf{emp}}
+\newcommand{\wand}{
+ \mathrel{\mbox{$\hspace*{-0.03em}\mathord{-}\hspace*{-0.66em}
+ \mathord{-}\hspace*{-0.36em}\mathord{*}$\hspace*{-0.005em}}}} % {\multimap}
+\newcommand{\seplog}{\mathsf{SL}}
+\newcommand{\tterm}{\mathsf{t}}
+\newcommand{\uterm}{\mathsf{u}}
+\begin{eqnarray*}
+\varphi & ::= & \emp \mid \tterm \mapsto \uterm \mid \varphi_1 * \varphi_2 \mid \varphi_1 \wedge \varphi_2 \mid \exists x^\sigma ~.~
+\varphi_1(x) \mid P(x_1,\ldots,x_n) \\
+& & \tterm \# \uterm \mid \varphi_1 \wand \varphi_2 \mid \neg \varphi_1
+\end{eqnarray*}
+#+END_EXPORT
+# Novelty last year : extension of the theory of data from equality to linear integer arithmetics
+# the pre-condition specification operator also called magic wand
+# and the boolean combination of atoms
+
+- with predicates defined by sets of rules
+#
+#+BEGIN_EXPORT latex
+\begin{eqnarray*}
+P(x_1,\ldots,x_n) & \leftarrow & \varphi(x_1,\ldots,x_n),
+\label{eqn:rule}
+\end{eqnarray*}
+#+END_EXPORT
+
+
+** Example of Input Problem
+
+Sorts: =Loc=, =Data= and =Int=
+
+#+BEGIN_EXPORT latex
+\newcommand{\ls}{\mathtt{ls}}
+\newcommand{\nil}{\mathsf{nil}}
+\newcommand{\emp}{\mathsf{emp}}
+\begin{eqnarray*}
+x \mapsto \texttt{node}(1,y) \ * \ y \mapsto \texttt{node}(1,z)  \ * \ \ls(z,\nil)
+\ \wedge \ z \neq x   \quad\vdash\quad \ls(x,\nil)
+\end{eqnarray*}
+#+END_EXPORT
+
+where
+
+#+BEGIN_EXPORT latex
+\begin{eqnarray*}
+\ls(h,f) & \leftarrow & h = f \land \emp 
+\\
+\ls(h,f) & \leftarrow & 
+                \exists x,i~.~ h \neq f \ \wedge\ 
+                        h \mapsto \texttt{node}(i,x) \ * \ \ls(x,f)
+\end{eqnarray*}
+#+END_EXPORT
+
+
+** Input Format
+
+Based on SMT-LIB 2.6:
+
+#+BEGIN_EXPORT latex
+\begin{small}
+\begin{verbatim}
+(theory SepLogicTyped
+
+ :funs ((emp Bool)
+        (sep Bool Bool Bool :left-assoc)
+        (wand Bool Bool Bool :right-assoc)
+        (par (L D) (pto L D Bool))
+        (par (L) (nil L))
+        )
+)
+\end{verbatim}
+\end{small}
+#+END_EXPORT
+
+extended with command =declare-heap= to fix type of heap (i.e., =L= and =D=).
+
+
+** Example of Input (Excerpt)
+   :PROPERTIES:
+   :BEAMER_opt: fragile
+   :END:
+
+
+#+BEGIN_EXPORT latex
+\begin{small}
+\begin{verbatim}
+(set-logic QF_SHIDLIA)
+(set-info :status unsat)
+
+(declare-sort Loc 0)
+(declare-datatype Data ((node (d Int) (next Loc))))
+
+(declare-heap (Loc Data))
+
+(define-fun-rec ls ((h Loc) (f Loc)) Bool
+    (or (and emp (= h f))
+        (exists ((x Loc) (d Int))
+                (and (distinct h f) (sep (pto h (node d x))
+                                         (ls x f))))
+    )
+)
+\end{verbatim}
+\end{small}
+#+END_EXPORT
+
+
+** Fragments and Divisions
+
+Division @@latex:$\triangleq$@@ Fragment @@latex:$\times$@@ Query
+
+#+ATTR_LATEX: :border 2 :rules all :frame border
+| Division          | #problems | Fragment, Query                |
+|-------------------+-----------+--------------------------------|
+| =qf_shid_entl=    |       312 | /=qf=/ quantifier free         |
+| =qf_shid_sat=     |        99 | /=sh=/ /symbolic heaps/        |
+| =qf_shidlia_entl= |        61 | /=id=/ user defined predicates |
+| =qf_shidlia_sat=  |        33 | /=lid=/ linear ID              |
+| =qf_shlid_entl=   |        60 | /=ls=/ list segment ID         |
+| =qf_shls_entl=    |       296 | /=entl=/ entailment            |
+| =qf_shls_sat=     |       110 | /=sat=/ satisfiability         |
+|-------------------+-----------+--------------------------------|
+| =shid_entl=       |        73 | /=lia=/ SMT LIA                |
+| =shidlia_entl=    |       181 |                                |
+|-------------------+-----------+--------------------------------|
+| =qf_bsl_sat=      |        46 | /=bsl=/ boolean combination    |
+| =qf_bsllia_sat=   |        24 |                                |
+
+
+* Organisation
+
+** Process and Places
+
+- On =sl-comp@googlegroups.com=
+  + Call for solvers (and its /contact person/)
+  + Call for problems
+
+- On =github.com/sl-comp/=
+  + Publication of the benchmark set
+  + Tools for parsing input format and StarExec output
+
+- Execution on StarExec
+  + SL community
+  + Space SL-COMP-YY
+  + *Several* training runs before the final run
+  + Configuration: memory 10 GB and timeout 600 or 2400 seconds
+
+- On =sl-comp.github.io=: results on readable format
+
+** Participants
+
+#+ATTR_LATEX: :border 2 :rules all :frame border :font \tiny
+| Solver          | Affiliation                                 | Team                                 |
+|-----------------+---------------------------------------------+--------------------------------------|
+| Asterix         | TU Munich, Germany                          | A. Rybalchenko (MSR),                |
+|                 |                                             | J.A. Navarro Pérez (Google)          |
+|                 |                                             |                                      |
+| ComSPEN         | ISCAS, China                                | C. Gao, Z. Wu                        |
+|                 |                                             |                                      |
+| CVC4-SL         | University of Iowa, USA                     | A. J. Reynolds                       |
+|                 |                                             |                                      |
+| Cyclist & SLSAT | Middlesex University London, UK             | N. Gorogiannis                       |
+|                 |                                             |                                      |
+| Harrsh          | TU Wien, Austria                            | J. Katelaan, F. Zuleger              |
+|                 | RWTH Aachen University, Germany             | Ch. Matheja, T. Noll                 |
+|                 |                                             |                                      |
+| S2S             | Teesside University, Middlesbrough, UK      | Quang Loc Le                         |
+|                 |                                             |                                      |
+| SLEEK           | NUS, Singapore                              | Wei-Ngan Chin, Benjamin Lee          |
+|                 |                                             |                                      |
+| SLIDE           | FIT, Brno University of Technology, Czechia | M. Cyprian, A. Rogalewicz, T. Vojnar |
+|                 | VERIMAG, Univ. of Grenoble & CNRS, France   | R. Iosif                             |
+|                 |                                             |                                      |
+| Songbird        | NUS, Singapore                              | Wei-Ngan Chin, Quang-Trung Ta,       |
+|                 |                                             | Thanh-Toan Nguyen, Siau-Cheng Khoo   |
+|                 | Stevens Institute of Technology, USA        | Ton-Chanh Le                         |
+|                 |                                             |                                      |
+| SPEN            | IRIF, University of Paris & CNRS, France    | C. Enea, M. Sighireanu               |
+|                 | FIT, Brno University of Technology, Czechia | O. Lengal, T. Vojnar                 |
+
+
+
+** Contribution to Benchmark Set
+
+#+ATTR_LATEX: :width 8cm
+[[./bench-by-solver.png]]
+
+
+** Scoring
+
+- Schemes:
+  + 2014, 2018: SMT-COMP scheme based on lexicographical ordering on
+    - disqualification for an /unexpected/ result @@latex:\textcolor{red!50}{\large\bf \Frowny}@@
+    - number of solved problems
+    - CPU time
+
+  + 2019: *Differential penalty* scheme ordering on score
+    @@latex: $1\times \textit{solved}  + (-1)\times \textit{false-positives} + (-10)\times \textit{false-negatives}$@@
+    - /false-positives/ sound for verification
+    - points for contribution to *VBS (Virtually Best Solver)*
+    - CPU time is the tiebreaker
+
+* Results
+
+** Division =qf_shls_entl=
+
+- 9 solvers, 296 problems
+- Configuration: timeout 600 seconds, memory 10GB
+- Podium:
+  + @@latex:\textcolor{orange}{*****}@@: Asterix
+  + @@latex:\textcolor{orange}{****}@@:  S2S
+  + @@latex:\textcolor{orange}{***}@@:  SPEN
+  + @@latex:\textcolor{orange}{**}@@:  Songbird
+  + @@latex:\textcolor{orange}{*}@@:  ComSPEN
+  + @@latex:\Coffeecup@@:  Cyclist-SL, Harrsh, SLEEK, SLIDE
+
+** Division =qf_shid_sat=
+
+- 5 solvers, 99 problems
+- Configuration: timeout 2400 seconds, memory 10GB
+- Podium:
+  + @@latex:\textcolor{orange}{*****}@@: S2S
+  + @@latex:\textcolor{orange}{****}@@:  SLEEK, SLSAT
+  + @@latex:\textcolor{orange}{***}@@:  Harrsh
+  + @@latex:\textcolor{orange}{**}@@:  Songbird
+
+*Points to SLSAT for contribution to VBS.*
+
+** Division =shid_entl=
+
+- 5 solvers, 73 problems
+- Configuration: timeout 2400 seconds, memory 10GB
+- Podium:
+  + @@latex:\textcolor{orange}{*****}@@: S2S
+  + @@latex:\textcolor{orange}{****}@@:  Songbird
+  + @@latex:\textcolor{orange}{***}@@:  Cyclist-SL
+  + @@latex:\textcolor{orange}{**}@@:  SLIDE
+  + @@latex:\textcolor{orange}{*}@@:
+  + @@latex:\Coffeecup@@: SLEEK (negative score)
+
+
+** Overview of Results
+
+#+ATTR_LATEX: :width 8cm
+[[./overview-chart.png]]
+
+
+* Conclusion and Future
+
+** Conclusion and Future
+
+Successful edition: many thanks to participants and StarExec
+   + consolidate newcomers
+   + old fellows still competitive on new problems
+   + compliance with the common input format based on SMT-LIB 2.6
+   + refinement of the scoring scheme
+   + visibility gain due to competition report at TACAS 2019
+
+Future:
+   + improve the process: communication, selection of problems, scoring
+   + enrich the benchmark set with relevant verification problems
+   + next edition: at ADSL 2020 or FLOC 2022
+

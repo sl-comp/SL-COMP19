@@ -1,0 +1,147 @@
+* Options                :noexport:
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+TITLE:     Benchmarks and applications
+#+AUTHOR:    Advancing Verification Competitions as a Scientific Method
+#+DATE:      Lorentz Center, February 19th, 2019
+#+LANGUAGE:  en
+
+
+** Beamer
+#+STARTUP: beamer
+#+BEAMER_COLOR_THEME: rose
+#+BEAMER_FONT_THEME: professionalfonts
+#+latex_header: \mode<beamer>{\usetheme{Singapore}}
+#+LaTeX_CLASS: beamer
+# LaTeX_CLASS_OPTIONS: [bigger]
+
+** Code Listing
+#+LaTeX_Header: \usepackage{listings}
+#+LaTeX_Header: \usepackage{color}
+#+LaTeX_Header: \lstset{basicstyle={\ttfamily\small},keywordstyle={\color{blue}}}
+
+
+
+* Collect
+
+** Collect: Sources
+*** Sources
+    - participants inputs: mandatory/limited
+    - organizing committee: limits?
+    - front-end applications: limits, scramble
+    - generation based on problem specification
+    - publications
+      + case studies
+      + theoretical results
+
+** Collect: Input format
+*** Problem/property input
+    - fixed: standards?
+      + processing: user vs tool
+      + stability
+      + clear semantics
+      + compactness
+    - various: pre-processors
+*** Problem/property meta-information
+    - origin: license?
+    - expected result
+
+
+* Validate
+
+** Validate
+*** Method
+    - complience check: syntax, typing
+    - analyzing statically: class/difficulty/size
+    - analyzing dynamically: cross checking tools
+    - ``instance carrying proof''
+    - use github to moderate discussion
+
+*** Meta-information given and synthesized
+    - kind/class/etc
+    - difficulty
+    - expected result
+
+
+* Classify
+
+** Classify
+
+*** Classification Criteria
+    - by property checked
+    - by problem's complexity
+    - by technique required
+    - per origin (e.g., SMT-COMP family)
+
+*** Method
+    - directories
+    - specifications (e.g., regular expressions)
+
+
+* Select
+
+** Select
+
+*** At running time
+    - fixed size versus full set
+    - avoid biases: overfitting, ...
+    - detect fraud
+
+*** To store
+    - current set
+    - older versions
+
+
+* Communicate
+
+** Communicate
+
+*** Archiving
+    - current set
+    - older versions
+
+*** Licensing
+    - of origin
+    - of competition
+
+*** Publishing
+    - external: fact checking
+    - with competition
+
+
+* Maintain
+
+** Maintain
+   - clean
+   - ???
+
+
+* Questions
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+** Questions
+
+*** What benchmarks are interesting to collect
+   - beyond triviality
+   - realistic i.e. based on credible applications
+   - forward looking
+   - backward looking: keep track of history
+   - configurable to be scalable
+   - discriminate tools
+   - useful for community
+
+** Questions
+
+*** What do you want to avoid to collect
+    - overfitted
+    - unrelevant
+
+*** What benchmarks should be selected for competition
+   - Highlights best
+     + tool (engineering and technique)
+     + technique
+     + combination of techniques
+   - Satisfies participants and encourage them to continue
+   - Detects bias and fraud
+   - Decision made by the jury?

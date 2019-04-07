@@ -1,0 +1,13 @@
+Division        , problems , Asterix , ComSPEN , CVC4 , Cyclist , Harrsh ,  S2S , Sleek , Slide , Songbird , SPEN 
+qf_bsl_sat      ,   46 ,    0 ,    0 ,   46 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 
+qf_bsllia_sat   ,   24 ,    0 ,    0 ,   24 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 
+qf_shid_entl    ,  312 ,    1 ,    0 ,    0 ,   22 ,    0 ,   59 ,   81 ,   17 ,  132 ,   46 
+qf_shid_sat     ,   99 ,    0 ,    0 ,    0 ,   61 ,   29 ,    9 ,    0 ,    0 ,    0 ,    0 
+qf_shidlia_entl ,   61 ,    0 ,   22 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 ,   39 ,    0 
+qf_shidlia_sat  ,   33 ,    0 ,   20 ,    0 ,    0 ,    0 ,   13 ,    0 ,    0 ,    0 ,    0 
+qf_shlid_entl   ,   60 ,    0 ,    0 ,    0 ,    0 ,    0 ,   14 ,    0 ,    0 ,    0 ,   46 
+qf_shls_entl    ,  296 ,  287 ,    0 ,    0 ,    0 ,    0 ,    9 ,    0 ,    0 ,    0 ,    5 
+qf_shls_sat     ,  110 ,  110 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 
+shid_entl       ,   73 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 ,    9 ,   64 ,    0 
+shidlia_entl    ,  181 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 ,    0 ,  181 ,    0 
+
