@@ -1,0 +1,62 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result,expected
+430511363,qf_shidlia_entl/dll-entl-01.smt2,8318769,SLEEK,20564,default,304221,timeout (cpu),2400.01,2399.11,948780.0,starexec-unknown,unsat
+430511338,qf_shidlia_entl/dll-entl-02.smt2,8318744,SLEEK,20564,default,304221,timeout (cpu),2400.08,2399.32,523460.0,starexec-unknown,sat
+430511318,qf_shidlia_entl/dll-entl-03.smt2,8318724,SLEEK,20564,default,304221,complete,1070.78,1069.2,423500.0,sat,unsat
+430511353,qf_shidlia_entl/dll-entl-04.smt2,8318759,SLEEK,20564,default,304221,complete,424.506,423.996,300940.0,sat,unsat
+430511361,qf_shidlia_entl/dll-entl-05.smt2,8318767,SLEEK,20564,default,304221,complete,309.951,309.357,316500.0,unsat,sat
+430511335,qf_shidlia_entl/dll-entl-06.smt2,8318741,SLEEK,20564,default,304221,complete,172.226,172.131,265132.0,unsat,sat
+430511315,qf_shidlia_entl/dll-entl-07.smt2,8318721,SLEEK,20564,default,304221,complete,0.135319,0.128206,113176.0,unsat,unsat
+430511349,qf_shidlia_entl/dll-entl-08.smt2,8318755,SLEEK,20564,default,304221,complete,0.175415,0.168222,113176.0,unsat,sat
+430511372,qf_shidlia_entl/dll-entl-09.smt2,8318778,SLEEK,20564,default,304221,complete,0.072554,0.0677419,113176.0,unsat,unsat
+430511348,qf_shidlia_entl/dll-entl-10.smt2,8318754,SLEEK,20564,default,304221,complete,0.247926,0.238353,113176.0,unsat,unsat
+430511368,qf_shidlia_entl/dll-entl-11.smt2,8318774,SLEEK,20564,default,304221,complete,0.217789,0.209242,113176.0,sat,sat
+430511332,qf_shidlia_entl/dll-entl-12.smt2,8318738,SLEEK,20564,default,304221,complete,0.238457,0.229515,113176.0,unsat,unsat
+430511324,qf_shidlia_entl/dll-entl-13.smt2,8318730,SLEEK,20564,default,304221,timeout (cpu),2400.02,2399.43,363440.0,starexec-unknown,sat
+430511344,qf_shidlia_entl/dll-entl-14.smt2,8318750,SLEEK,20564,default,304221,timeout (cpu),2400.06,2399.71,353068.0,starexec-unknown,sat
+430511365,qf_shidlia_entl/dll-entl-15.smt2,8318771,SLEEK,20564,default,304221,timeout (cpu),2400.02,2399.63,334548.0,starexec-unknown,sat
+430511343,qf_shidlia_entl/dll_len_append_dllnull_len_entails_dllnull_len.sb.smt2,8318749,SLEEK,20564,default,304221,complete,0.131032,0.124453,113176.0,sat,unsat
+430511330,qf_shidlia_entl/dll_len_append_dllnull_len_entails_dllnull_len_num-1.sb.smt2,8318736,SLEEK,20564,default,304221,complete,0.119589,0.113823,113176.0,sat,unsat
+430511367,qf_shidlia_entl/dll_len_append_dllnull_len_entails_dllnull_len_num-2.sb.smt2,8318773,SLEEK,20564,default,304221,complete,0.114394,0.108655,113176.0,sat,unsat
+430511345,qf_shidlia_entl/dll_len_append_dllnull_len_entails_dllnull_len_num-3.sb.smt2,8318751,SLEEK,20564,default,304221,complete,0.125401,0.119356,113176.0,sat,unsat
+430511325,qf_shidlia_entl/dll_len_append_tail_entails_dllnull.sb.smt2,8318731,SLEEK,20564,default,304221,complete,0.121269,0.115793,113176.0,sat,unsat
+430511322,qf_shidlia_entl/dll_len_append_tail_entails_dllnull_num-1.sb.smt2,8318728,SLEEK,20564,default,304221,complete,0.11087,0.10578,113176.0,sat,unsat
+430511342,qf_shidlia_entl/dll_len_append_tail_entails_dllnull_num-2.sb.smt2,8318748,SLEEK,20564,default,304221,complete,0.101118,0.095703,113176.0,sat,unsat
+430511346,qf_shidlia_entl/dll_len_entails_lspre_len.sb.smt2,8318752,SLEEK,20564,default,304221,complete,0.096726,0.091284,113176.0,sat,unsat
+430511355,qf_shidlia_entl/dll_len_entails_lspre_len_num-1.sb.smt2,8318761,SLEEK,20564,default,304221,complete,0.094018,0.0890949,113176.0,sat,unsat
+430511312,qf_shidlia_entl/dll_len_entails_lspre_len_num-2.sb.smt2,8318718,SLEEK,20564,default,304221,complete,0.091683,0.0870259,113176.0,sat,unsat
+430511323,qf_shidlia_entl/dll_len_entails_lsrev_len.sb.smt2,8318729,SLEEK,20564,default,304221,complete,0.101824,0.096917,113176.0,sat,unsat
+430511326,qf_shidlia_entl/dll_len_entails_lsrev_len_num-1.sb.smt2,8318732,SLEEK,20564,default,304221,complete,0.10273,0.0972599,113176.0,sat,unsat
+430511350,qf_shidlia_entl/dll_len_entails_lsrev_len_num-2.sb.smt2,8318756,SLEEK,20564,default,304221,complete,0.099493,0.0942239,113176.0,sat,unsat
+430511340,qf_shidlia_entl/dll_len_entails_ls_len.sb.smt2,8318746,SLEEK,20564,default,304221,complete,0.166967,0.159089,113176.0,unsat,unsat
+430511321,qf_shidlia_entl/dll_len_entails_ls_len_num-1.sb.smt2,8318727,SLEEK,20564,default,304221,complete,0.101179,0.0956759,113176.0,sat,unsat
+430511357,qf_shidlia_entl/dll_len_entails_ls_len_num-2.sb.smt2,8318763,SLEEK,20564,default,304221,complete,0.101131,0.095702,113176.0,sat,unsat
+430511336,qf_shidlia_entl/dll_len_nil_tl_entails_dllnull_len.sb.smt2,8318742,SLEEK,20564,default,304221,complete,0.117788,0.111644,113176.0,unsat,unsat
+430511359,qf_shidlia_entl/dll_len_nil_tl_entails_dllnull_len_num-1.sb.smt2,8318765,SLEEK,20564,default,304221,complete,0.102473,0.0975201,113176.0,sat,unsat
+430511317,qf_shidlia_entl/dll_len_nil_tl_entails_dllnull_len_num-2.sb.smt2,8318723,SLEEK,20564,default,304221,complete,0.096348,0.091172,113176.0,sat,unsat
+430511356,qf_shidlia_entl/ls-entl-01.smt2,8318762,SLEEK,20564,default,304221,complete,0.146453,0.13961,113176.0,sat,unsat
+430511316,qf_shidlia_entl/ls-entl-02.smt2,8318722,SLEEK,20564,default,304221,complete,0.193106,0.184437,113176.0,sat,sat
+430511337,qf_shidlia_entl/ls-entl-03.smt2,8318743,SLEEK,20564,default,304221,complete,0.190216,0.181685,113176.0,sat,unsat
+430511362,qf_shidlia_entl/ls-entl-04.smt2,8318768,SLEEK,20564,default,304221,complete,0.265372,0.254867,113176.0,sat,sat
+430511354,qf_shidlia_entl/ls-entl-05.smt2,8318760,SLEEK,20564,default,304221,complete,0.198676,0.189992,113176.0,unsat,unsat
+430511314,qf_shidlia_entl/ls-entl-06.smt2,8318720,SLEEK,20564,default,304221,complete,0.169373,0.161507,113176.0,sat,sat
+430511334,qf_shidlia_entl/ls-entl-07.smt2,8318740,SLEEK,20564,default,304221,complete,0.400017,0.386622,113176.0,sat,unsat
+430511319,qf_shidlia_entl/ls_append_node.sb.smt2,8318725,SLEEK,20564,default,304221,complete,0.100235,0.0943361,113176.0,sat,unsat
+430511371,qf_shidlia_entl/ls_combine_ls.sb.smt2,8318777,SLEEK,20564,default,304221,complete,0.142384,0.1356,113176.0,sat,unsat
+430511333,qf_shidlia_entl/sls_join_2.sb.smt2,8318739,SLEEK,20564,default,304221,complete,0.181355,0.172812,113176.0,sat,unsat
+430511329,qf_shidlia_entl/sls_join_2_known_bnd.sb.smt2,8318735,SLEEK,20564,default,304221,complete,0.165374,0.157714,113176.0,sat,unsat
+430511369,qf_shidlia_entl/sls_join_2_no_cond.sb.smt2,8318775,SLEEK,20564,default,304221,complete,0.164297,0.156256,113176.0,sat,unsat
+430511327,qf_shidlia_entl/sls_join_2_unk_lower_bnd.sb.smt2,8318733,SLEEK,20564,default,304221,complete,0.186265,0.177599,113176.0,sat,unsat
+430511313,qf_shidlia_entl/sls_join_2_unk_upper_bnd.sb.smt2,8318719,SLEEK,20564,default,304221,complete,0.202861,0.193651,113176.0,sat,unsat
+430511328,qf_shidlia_entl/sls_join_3.sb.smt2,8318734,SLEEK,20564,default,304221,complete,0.555138,0.539238,113176.0,sat,unsat
+430511351,qf_shidlia_entl/sls_join_3_2_cond.sb.smt2,8318757,SLEEK,20564,default,304221,complete,0.551269,0.535558,113176.0,sat,unsat
+430511364,qf_shidlia_entl/sls_join_3_no_cond.sb.smt2,8318770,SLEEK,20564,default,304221,complete,0.424316,0.411395,113176.0,sat,unsat
+430511339,qf_shidlia_entl/sls_join_3_unk_lower_bnd.sb.smt2,8318745,SLEEK,20564,default,304221,complete,0.437332,0.424056,113176.0,sat,unsat
+430511331,qf_shidlia_entl/sls_join_3_unk_upper_bnd.sb.smt2,8318737,SLEEK,20564,default,304221,complete,0.416063,0.403409,113176.0,sat,unsat
+430511341,qf_shidlia_entl/sls_join_4_1_cond_unk_both.sb.smt2,8318747,SLEEK,20564,default,304221,complete,1.24426,1.22158,256560.0,sat,unsat
+430511352,qf_shidlia_entl/sls_join_4_1_cond_unk_lower_bnd.sb.smt2,8318758,SLEEK,20564,default,304221,complete,1.29096,1.26769,256528.0,sat,unsat
+430511347,qf_shidlia_entl/sls_join_4_1_cond_unk_upper_bnd.sb.smt2,8318753,SLEEK,20564,default,304221,complete,1.2877,1.26463,257876.0,sat,unsat
+430511370,qf_shidlia_entl/sls_join_4_2_cond_unk_lower_bnd.sb.smt2,8318776,SLEEK,20564,default,304221,complete,1.2498,1.22718,256520.0,sat,unsat
+430511360,qf_shidlia_entl/sls_join_4_2_cond_unk_upper_bnd.sb.smt2,8318766,SLEEK,20564,default,304221,complete,1.24011,1.21646,256556.0,sat,unsat
+430511358,qf_shidlia_entl/sls_join_4_3_cond.sb.smt2,8318764,SLEEK,20564,default,304221,complete,1.98012,1.95004,256540.0,sat,unsat
+430511320,qf_shidlia_entl/sls_join_4_no_cond.sb.smt2,8318726,SLEEK,20564,default,304221,complete,1.30589,1.28331,256656.0,sat,unsat
+430511366,qf_shidlia_entl/tseg_size_join_tree_size_entail_tree.sb.smt2,8318772,SLEEK,20564,default,304221,complete,0.14481,0.137641,113176.0,sat,unsat

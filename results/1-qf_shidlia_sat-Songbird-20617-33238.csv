@@ -1,0 +1,34 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result,expected
+430511485,qf_shidlia_sat/btree-01.smt2,8318797,Songbird v2,20617,songbird.sh,304292,complete,227.35,227.343,559972.0,starexec-unknown,sat
+430511470,qf_shidlia_sat/btree-02.smt2,8318782,Songbird v2,20617,songbird.sh,304292,complete,0.012401,0.0346601,113176.0,unsat,unsat
+430511475,qf_shidlia_sat/btree-03.smt2,8318787,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2400.0,2400.03,560176.0,starexec-unknown,sat
+430511498,qf_shidlia_sat/dll-sat-01.smt2,8318810,Songbird v2,20617,songbird.sh,304292,complete,0.014651,0.039152,113176.0,sat,sat
+430511478,qf_shidlia_sat/dll-sat-02.smt2,8318790,Songbird v2,20617,songbird.sh,304292,complete,10.59,10.6315,224984.0,unsat,unsat
+430511473,qf_shidlia_sat/dll-sat-03.smt2,8318785,Songbird v2,20617,songbird.sh,304292,complete,264.19,264.283,253848.0,starexec-unknown,unsat
+430511486,qf_shidlia_sat/dll-sat-04.smt2,8318798,Songbird v2,20617,songbird.sh,304292,complete,0.015607,0.041466,113176.0,sat,sat
+430511497,qf_shidlia_sat/dll-sat-05.smt2,8318809,Songbird v2,20617,songbird.sh,304292,complete,193.78,193.806,233976.0,starexec-unknown,unsat
+430511477,qf_shidlia_sat/dll-sat-06.smt2,8318789,Songbird v2,20617,songbird.sh,304292,complete,0.033735,0.066349,113176.0,sat,sat
+430511472,qf_shidlia_sat/dll-sat-07.smt2,8318784,Songbird v2,20617,songbird.sh,304292,complete,221.48,221.602,316872.0,starexec-unknown,unsat
+430511490,qf_shidlia_sat/dll-sat-08.smt2,8318802,Songbird v2,20617,songbird.sh,304292,complete,220.33,220.438,316872.0,starexec-unknown,unsat
+430511493,qf_shidlia_sat/dll-sat-09.smt2,8318805,Songbird v2,20617,songbird.sh,304292,complete,0.187594,0.222076,113176.0,sat,sat
+430511491,qf_shidlia_sat/dll-sat-10.smt2,8318803,Songbird v2,20617,songbird.sh,304292,complete,182.04,182.067,623096.0,starexec-unknown,unsat
+430511494,qf_shidlia_sat/dll-sat-11.smt2,8318806,Songbird v2,20617,songbird.sh,304292,complete,0.272024,0.31101,113176.0,sat,sat
+430511482,qf_shidlia_sat/dll-sat-12.smt2,8318794,Songbird v2,20617,songbird.sh,304292,complete,0.146339,0.176888,113176.0,sat,sat
+430511469,qf_shidlia_sat/dll-sat-13.smt2,8318781,Songbird v2,20617,songbird.sh,304292,complete,0.155095,0.186061,113176.0,sat,sat
+430511476,qf_shidlia_sat/els-01.smt2,8318788,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.85,2400.03,206224.0,starexec-unknown,sat
+430511496,qf_shidlia_sat/els-02.smt2,8318808,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.9,2400.03,206228.0,starexec-unknown,unsat
+430511484,qf_shidlia_sat/els-03.smt2,8318796,Songbird v2,20617,songbird.sh,304292,complete,180.89,180.904,687216.0,starexec-unknown,unsat
+430511474,qf_shidlia_sat/els-04.smt2,8318786,Songbird v2,20617,songbird.sh,304292,complete,193.98,193.997,397880.0,starexec-unknown,unsat
+430511495,qf_shidlia_sat/ls-08.smt2,8318807,Songbird v2,20617,songbird.sh,304292,complete,190.92,190.959,217788.0,starexec-unknown,sat
+430511483,qf_shidlia_sat/ls-09.smt2,8318795,Songbird v2,20617,songbird.sh,304292,complete,0.012293,0.0341601,113176.0,unsat,unsat
+430511488,qf_shidlia_sat/ls-sat-01.smt2,8318800,Songbird v2,20617,songbird.sh,304292,complete,0.012562,0.035805,113176.0,sat,sat
+430511467,qf_shidlia_sat/ls-sat-02.smt2,8318779,Songbird v2,20617,songbird.sh,304292,complete,0.013742,0.037534,113176.0,unsat,unsat
+430511480,qf_shidlia_sat/ls-sat-03.smt2,8318792,Songbird v2,20617,songbird.sh,304292,complete,0.023761,0.0510731,113176.0,sat,sat
+430511492,qf_shidlia_sat/ls-sat-04.smt2,8318804,Songbird v2,20617,songbird.sh,304292,complete,0.012149,0.0348429,113176.0,unsat,unsat
+430511489,qf_shidlia_sat/ls-sat-05.smt2,8318801,Songbird v2,20617,songbird.sh,304292,complete,0.015041,0.041876,113176.0,unsat,unsat
+430511468,qf_shidlia_sat/ls-sat-06.smt2,8318780,Songbird v2,20617,songbird.sh,304292,complete,0.030642,0.0624131,113176.0,sat,sat
+430511481,qf_shidlia_sat/ls-sat-07.smt2,8318793,Songbird v2,20617,songbird.sh,304292,complete,0.01248,0.036576,113176.0,unsat,unsat
+430511479,qf_shidlia_sat/lss-01.smt2,8318791,Songbird v2,20617,songbird.sh,304292,complete,555.77,555.825,201236.0,starexec-unknown,sat
+430511499,qf_shidlia_sat/lss-02.smt2,8318811,Songbird v2,20617,songbird.sh,304292,complete,0.013537,0.39285,113176.0,unsat,unsat
+430511487,qf_shidlia_sat/lss-03.smt2,8318799,Songbird v2,20617,songbird.sh,304292,complete,189.14,189.178,512492.0,starexec-unknown,unsat
+430511471,qf_shidlia_sat/lss-04.smt2,8318783,Songbird v2,20617,songbird.sh,304292,complete,597.26,597.366,234860.0,starexec-unknown,unsat

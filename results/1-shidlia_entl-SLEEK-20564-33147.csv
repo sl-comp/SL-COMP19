@@ -1,0 +1,182 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result,expected
+430232124,shidlia_entl/dllnull_len_entails_dllrev_len.sb.smt2,8318964,SLEEK,20564,default,304221,complete,0.101111,0.0958161,113176.0,sat,unsat
+430232091,shidlia_entl/dllnull_len_entails_dllrev_len_num-1.sb.smt2,8318931,SLEEK,20564,default,304221,complete,0.10346,0.0976781,113176.0,sat,unsat
+430232206,shidlia_entl/dllnull_len_entails_dllrev_len_num-2.sb.smt2,8319046,SLEEK,20564,default,304221,complete,0.093982,0.0890749,113176.0,sat,unsat
+430232169,shidlia_entl/dllnull_len_entails_dll_len.sb.smt2,8319009,SLEEK,20564,default,304221,complete,0.114869,0.10901,113176.0,unsat,unsat
+430232068,shidlia_entl/dllnull_len_entails_dll_len_num-1.sb.smt2,8318908,SLEEK,20564,default,304221,complete,0.099711,0.0943619,113176.0,sat,unsat
+430232140,shidlia_entl/dllnull_len_entails_dll_len_num-2.sb.smt2,8318980,SLEEK,20564,default,304221,complete,0.095534,0.0907401,113176.0,sat,unsat
+430232151,shidlia_entl/dllnull_len_split_dllrevs.sb.smt2,8318991,SLEEK,20564,default,304221,complete,0.090457,0.0852511,113176.0,sat,unsat
+430232076,shidlia_entl/dllnull_len_split_dllrevs_num-1.sb.smt2,8318916,SLEEK,20564,default,304221,complete,0.090678,0.0858841,113176.0,sat,unsat
+430232156,shidlia_entl/dllnull_len_split_dllrevs_num-2.sb.smt2,8318996,SLEEK,20564,default,304221,complete,0.090347,0.0851351,113176.0,sat,unsat
+430232223,shidlia_entl/dllnull_len_split_dllrevs_num-3.sb.smt2,8319063,SLEEK,20564,default,304221,complete,0.092847,0.08762,113176.0,sat,unsat
+430232100,shidlia_entl/dllnull_len_split_dllrevs_num-4.sb.smt2,8318940,SLEEK,20564,default,304221,complete,0.092034,0.086877,113176.0,sat,unsat
+430232073,shidlia_entl/dllnull_len_split_dllrevs_num-5.sb.smt2,8318913,SLEEK,20564,default,304221,complete,0.094758,0.0898241,113176.0,sat,unsat
+430232160,shidlia_entl/dllnull_len_split_dllrev_dll.sb.smt2,8319000,SLEEK,20564,default,304221,complete,0.109991,0.104377,113176.0,sat,unsat
+430232049,shidlia_entl/dllnull_len_split_dllrev_dll_node.sb.smt2,8318889,SLEEK,20564,default,304221,complete,0.11224,0.107566,113176.0,sat,unsat
+430232136,shidlia_entl/dllnull_len_split_dllrev_dll_node_num-1.sb.smt2,8318976,SLEEK,20564,default,304221,complete,0.110069,0.104878,113176.0,sat,unsat
+430232070,shidlia_entl/dllnull_len_split_dllrev_dll_node_num-2.sb.smt2,8318910,SLEEK,20564,default,304221,complete,0.113704,0.108013,113176.0,sat,unsat
+430232092,shidlia_entl/dllnull_len_split_dllrev_dll_node_num-3.sb.smt2,8318932,SLEEK,20564,default,304221,complete,0.112055,0.106888,113176.0,sat,unsat
+430232207,shidlia_entl/dllnull_len_split_dllrev_dll_node_num-4.sb.smt2,8319047,SLEEK,20564,default,304221,complete,0.111388,0.106335,113176.0,sat,unsat
+430232133,shidlia_entl/dllnull_len_split_dllrev_dll_node_num-5.sb.smt2,8318973,SLEEK,20564,default,304221,complete,0.111401,0.105815,113176.0,sat,unsat
+430232200,shidlia_entl/dllnull_len_split_dllrev_dll_num-1.sb.smt2,8319040,SLEEK,20564,default,304221,complete,0.109114,0.104101,113176.0,sat,unsat
+430232122,shidlia_entl/dllnull_len_split_dllrev_dll_num-2.sb.smt2,8318962,SLEEK,20564,default,304221,complete,0.111056,0.105193,113176.0,sat,unsat
+430232056,shidlia_entl/dllnull_len_split_dllrev_dll_num-3.sb.smt2,8318896,SLEEK,20564,default,304221,complete,0.109573,0.104554,113176.0,sat,unsat
+430232170,shidlia_entl/dllnull_len_split_dllrev_dll_num-4.sb.smt2,8319010,SLEEK,20564,default,304221,complete,0.10831,0.103256,113176.0,sat,unsat
+430232198,shidlia_entl/dllnull_len_split_dllrev_dll_num-5.sb.smt2,8319038,SLEEK,20564,default,304221,complete,0.109637,0.104528,113176.0,sat,unsat
+430232165,shidlia_entl/dllnull_len_split_dllrev_len_last-1.sb.smt2,8319005,SLEEK,20564,default,304221,complete,0.094036,0.0889441,113176.0,sat,unsat
+430232062,shidlia_entl/dllnull_len_split_dllrev_len_last-2.sb.smt2,8318902,SLEEK,20564,default,304221,complete,0.09603,0.0912499,113176.0,sat,unsat
+430232213,shidlia_entl/dllnull_len_split_dlls.sb.smt2,8319053,SLEEK,20564,default,304221,complete,0.09135,0.086069,113176.0,sat,unsat
+430232150,shidlia_entl/dllnull_len_split_dlls_num-1.sb.smt2,8318990,SLEEK,20564,default,304221,complete,0.093637,0.088386,113176.0,sat,unsat
+430232079,shidlia_entl/dllnull_len_split_dlls_num-2.sb.smt2,8318919,SLEEK,20564,default,304221,complete,0.096238,0.097881,113176.0,sat,unsat
+430232097,shidlia_entl/dllnull_len_split_dlls_num-3.sb.smt2,8318937,SLEEK,20564,default,304221,complete,0.096002,0.091249,113176.0,sat,unsat
+430232224,shidlia_entl/dllnull_len_split_dlls_num-4.sb.smt2,8319064,SLEEK,20564,default,304221,complete,0.093331,0.0880889,113176.0,sat,unsat
+430232153,shidlia_entl/dllnull_len_split_dlls_num-5.sb.smt2,8318993,SLEEK,20564,default,304221,complete,0.092982,0.0879571,113176.0,sat,unsat
+430232087,shidlia_entl/dllnull_len_split_dll_dllrev.sb.smt2,8318927,SLEEK,20564,default,304221,complete,0.113458,0.108294,113176.0,sat,unsat
+430232209,shidlia_entl/dllnull_len_split_dll_dllrev_num-1.sb.smt2,8319049,SLEEK,20564,default,304221,complete,0.107455,0.102474,113176.0,sat,unsat
+430232088,shidlia_entl/dllnull_len_split_dll_dllrev_num-2.sb.smt2,8318928,SLEEK,20564,default,304221,complete,0.112197,0.108361,113176.0,sat,unsat
+430232065,shidlia_entl/dllnull_len_split_dll_dllrev_num-3.sb.smt2,8318905,SLEEK,20564,default,304221,complete,0.108383,0.103374,113176.0,sat,unsat
+430232146,shidlia_entl/dllnull_len_split_dll_dllrev_num-4.sb.smt2,8318986,SLEEK,20564,default,304221,complete,0.11069,0.10561,113176.0,sat,unsat
+430232211,shidlia_entl/dllnull_len_split_dll_dllrev_num-5.sb.smt2,8319051,SLEEK,20564,default,304221,complete,0.108259,0.103173,113176.0,sat,unsat
+430232132,shidlia_entl/dllnull_len_split_dll_len_last-1.sb.smt2,8318972,SLEEK,20564,default,304221,complete,0.096316,0.0915421,113176.0,sat,unsat
+430232193,shidlia_entl/dllnull_len_split_dll_len_last-2.sb.smt2,8319033,SLEEK,20564,default,304221,complete,0.097619,0.092913,113176.0,sat,unsat
+430232123,shidlia_entl/dllnull_len_split_dll_node_dllrev.sb.smt2,8318963,SLEEK,20564,default,304221,complete,0.114461,0.109379,113176.0,sat,unsat
+430232118,shidlia_entl/dllnull_len_split_dll_node_dllrev_num-1.sb.smt2,8318958,SLEEK,20564,default,304221,complete,0.112551,0.107367,113176.0,sat,unsat
+430232180,shidlia_entl/dllnull_len_split_dll_node_dllrev_num-2.sb.smt2,8319020,SLEEK,20564,default,304221,complete,0.109184,0.10361,113176.0,sat,unsat
+430232159,shidlia_entl/dllnull_len_split_dll_node_dllrev_num-3.sb.smt2,8318999,SLEEK,20564,default,304221,complete,0.115839,0.110628,113176.0,sat,unsat
+430232047,shidlia_entl/dllnull_len_split_dll_node_dllrev_num-4.sb.smt2,8318887,SLEEK,20564,default,304221,complete,0.109199,0.103816,113176.0,sat,unsat
+430232116,shidlia_entl/dllnull_len_split_dll_node_dllrev_num-5.sb.smt2,8318956,SLEEK,20564,default,304221,complete,0.11265,0.107558,113176.0,sat,unsat
+430232126,shidlia_entl/dllnull_len_split_hd_dllrev_len-1.sb.smt2,8318966,SLEEK,20564,default,304221,complete,0.103135,0.0976319,113176.0,sat,unsat
+430232194,shidlia_entl/dllnull_len_split_hd_dllrev_len-2.sb.smt2,8319034,SLEEK,20564,default,304221,complete,0.099289,0.0938919,113176.0,sat,unsat
+430232066,shidlia_entl/dllnull_len_split_hd_dll_len-1.sb.smt2,8318906,SLEEK,20564,default,304221,complete,0.113573,0.107753,113176.0,sat,unsat
+430232139,shidlia_entl/dllnull_len_split_hd_dll_len-2.sb.smt2,8318979,SLEEK,20564,default,304221,complete,0.123977,0.117765,113176.0,sat,unsat
+430232099,shidlia_entl/dllrev_len_concat_dll_len_get_first.sb.smt2,8318939,SLEEK,20564,default,304221,complete,0.949365,0.924692,252656.0,sat,unsat
+430232063,shidlia_entl/dllrev_len_concat_dll_len_get_first_last.sb.smt2,8318903,SLEEK,20564,default,304221,timeout (wallclock),2399.87,2400.05,9941336.0,starexec-unknown,unsat
+430232157,shidlia_entl/dllrev_len_concat_dll_len_get_first_num-1.sb.smt2,8318997,SLEEK,20564,default,304221,complete,0.171431,0.164224,113176.0,sat,unsat
+430232050,shidlia_entl/dllrev_len_concat_dll_len_get_first_num-2.sb.smt2,8318890,SLEEK,20564,default,304221,complete,0.103927,0.0992291,113176.0,sat,unsat
+430232125,shidlia_entl/dllrev_len_concat_dll_len_get_last-1.sb.smt2,8318965,SLEEK,20564,default,304221,timeout (wallclock),2399.85,2400.11,9941328.0,starexec-unknown,unsat
+430232197,shidlia_entl/dllrev_len_concat_dll_len_get_last-2.sb.smt2,8319037,SLEEK,20564,default,304221,timeout (cpu),2400.01,2400.09,9941328.0,starexec-unknown,unsat
+430232195,shidlia_entl/dll_len_append_tail_entails_dllnull_num-3.sb.smt2,8319035,SLEEK,20564,default,304221,complete,0.143981,0.13698,113176.0,sat,unsat
+430232174,shidlia_entl/dll_len_concat_dllrev_len_get_last-1.sb.smt2,8319014,SLEEK,20564,default,304221,complete,0.105851,0.100836,113176.0,starexec-unknown,unsat
+430232057,shidlia_entl/dll_len_concat_dllrev_len_get_last-2.sb.smt2,8318897,SLEEK,20564,default,304221,complete,0.107473,0.1025,113176.0,starexec-unknown,unsat
+430232199,shidlia_entl/dll_len_concat_dllrev_len_get_last.sb.smt2,8319039,SLEEK,20564,default,304221,complete,0.117385,0.111987,113176.0,starexec-unknown,unsat
+430232177,shidlia_entl/dll_len_concat_dllrev_len_get_last_num-1.sb.smt2,8319017,SLEEK,20564,default,304221,complete,0.11268,0.107517,113176.0,starexec-unknown,unsat
+430232117,shidlia_entl/dll_len_concat_dllrev_len_get_last_num-2.sb.smt2,8318957,SLEEK,20564,default,304221,complete,0.118702,0.112889,113176.0,starexec-unknown,unsat
+430232183,shidlia_entl/dll_len_entails_ls_len_node.sb.smt2,8319023,SLEEK,20564,default,304221,complete,1833.9,1834.09,9941496.0,starexec-unknown,unsat
+430232112,shidlia_entl/dll_len_entails_ls_len_node_num-1.sb.smt2,8318952,SLEEK,20564,default,304221,timeout (wallclock),2399.83,2400.02,9941496.0,starexec-unknown,unsat
+430232190,shidlia_entl/dll_len_entails_ls_len_node_num-2.sb.smt2,8319030,SLEEK,20564,default,304221,timeout (wallclock),2399.9,2400.03,9941516.0,starexec-unknown,unsat
+430232081,shidlia_entl/dll_len_entails_node_lsrev_len.sb.smt2,8318921,SLEEK,20564,default,304221,complete,0.11687,0.111214,113176.0,sat,unsat
+430232187,shidlia_entl/dll_len_entails_node_lsrev_len_num-1.sb.smt2,8319027,SLEEK,20564,default,304221,complete,0.109005,0.1037,113176.0,sat,unsat
+430232111,shidlia_entl/dll_len_entails_node_lsrev_len_num-2.sb.smt2,8318951,SLEEK,20564,default,304221,complete,0.109672,0.104362,113176.0,sat,unsat
+430232141,shidlia_entl/dll_len_get_1_hd_4_lasts.sb.smt2,8318981,SLEEK,20564,default,304221,timeout (wallclock),2399.85,2400.02,9941508.0,starexec-unknown,unsat
+430232179,shidlia_entl/dll_len_get_1_last.sb.smt2,8319019,SLEEK,20564,default,304221,timeout (wallclock),2399.84,2400.07,9941492.0,starexec-unknown,unsat
+430232094,shidlia_entl/dll_len_get_2_hd_3_lasts.sb.smt2,8318934,SLEEK,20564,default,304221,timeout (cpu),2400.05,2400.06,9941516.0,starexec-unknown,unsat
+430232104,shidlia_entl/dll_len_get_2_lasts.sb.smt2,8318944,SLEEK,20564,default,304221,complete,1832.52,1832.62,9941488.0,starexec-unknown,unsat
+430232098,shidlia_entl/dll_len_get_3_hd_2_lasts.sb.smt2,8318938,SLEEK,20564,default,304221,timeout (wallclock),2399.91,2400.07,9941704.0,starexec-unknown,unsat
+430232161,shidlia_entl/dll_len_get_3_lasts.sb.smt2,8319001,SLEEK,20564,default,304221,complete,1833.97,1834.06,9941488.0,starexec-unknown,unsat
+430232186,shidlia_entl/dll_len_get_4_hd_1_last.sb.smt2,8319026,SLEEK,20564,default,304221,complete,1835.13,1835.25,9941676.0,starexec-unknown,unsat
+430232191,shidlia_entl/dll_len_get_4_lasts.sb.smt2,8319031,SLEEK,20564,default,304221,timeout (wallclock),2399.9,2400.03,9941516.0,starexec-unknown,unsat
+430232083,shidlia_entl/dll_len_get_5_lasts.sb.smt2,8318923,SLEEK,20564,default,304221,timeout (wallclock),2399.97,2400.03,9941492.0,starexec-unknown,unsat
+430232128,shidlia_entl/dll_len_split.sb.smt2,8318968,SLEEK,20564,default,304221,complete,0.101527,0.0962229,113176.0,sat,unsat
+430232203,shidlia_entl/dll_len_split_dll_dllrev.sb.smt2,8319043,SLEEK,20564,default,304221,complete,0.104782,0.127071,113176.0,sat,unsat
+430232059,shidlia_entl/dll_len_split_num-1.sb.smt2,8318899,SLEEK,20564,default,304221,complete,0.104895,0.0994599,113176.0,sat,unsat
+430232167,shidlia_entl/dll_len_split_num-2.sb.smt2,8319007,SLEEK,20564,default,304221,complete,0.105915,0.101,113176.0,sat,unsat
+430232176,shidlia_entl/dll_ubnd_len_get_1_hd_4_lasts.sb.smt2,8319016,SLEEK,20564,default,304221,timeout (wallclock),2399.93,2400.07,9941504.0,starexec-unknown,unsat
+430232164,shidlia_entl/dll_ubnd_len_get_1_last.sb.smt2,8319004,SLEEK,20564,default,304221,timeout (cpu),2400.01,2399.98,9941492.0,starexec-unknown,unsat
+430232048,shidlia_entl/dll_ubnd_len_get_2_hd_3_lasts.sb.smt2,8318888,SLEEK,20564,default,304221,timeout (wallclock),2399.89,2400.11,9941540.0,starexec-unknown,unsat
+430232107,shidlia_entl/dll_ubnd_len_get_2_lasts.sb.smt2,8318947,SLEEK,20564,default,304221,complete,1834.34,1834.46,9941492.0,starexec-unknown,unsat
+430232053,shidlia_entl/dll_ubnd_len_get_3_hd_2_lasts.sb.smt2,8318893,SLEEK,20564,default,304221,timeout (cpu),2400.07,2400.09,9941660.0,starexec-unknown,unsat
+430232163,shidlia_entl/dll_ubnd_len_get_3_lasts.sb.smt2,8319003,SLEEK,20564,default,304221,complete,1832.45,1832.52,9941496.0,starexec-unknown,unsat
+430232155,shidlia_entl/dll_ubnd_len_get_4_hd_1_last.sb.smt2,8318995,SLEEK,20564,default,304221,timeout (wallclock),2399.81,2400.02,9941680.0,starexec-unknown,unsat
+430232188,shidlia_entl/dll_ubnd_len_get_4_lasts.sb.smt2,8319028,SLEEK,20564,default,304221,timeout (wallclock),2399.9,2400.09,9941484.0,starexec-unknown,unsat
+430232080,shidlia_entl/dll_ubnd_len_get_5_lasts.sb.smt2,8318920,SLEEK,20564,default,304221,timeout (wallclock),2399.87,2400.05,9941496.0,starexec-unknown,unsat
+430232196,shidlia_entl/ls_dlen_get_last.sb.smt2,8319036,SLEEK,20564,default,304221,complete,0.094502,0.089018,113176.0,sat,unsat
+430232185,shidlia_entl/ls_dlen_get_last_unk_rem.sb.smt2,8319025,SLEEK,20564,default,304221,complete,0.087116,0.082011,113176.0,unsat,unsat
+430232148,shidlia_entl/ls_dlen_get_two_lasts.sb.smt2,8318988,SLEEK,20564,default,304221,complete,0.097676,0.0921031,113176.0,sat,unsat
+430232045,shidlia_entl/ls_dlen_get_two_lasts_unk_rem.sb.smt2,8318885,SLEEK,20564,default,304221,complete,0.094221,0.0889229,113176.0,sat,unsat
+430232072,shidlia_entl/ls_dlen_split.sb.smt2,8318912,SLEEK,20564,default,304221,complete,0.13524,0.128304,113176.0,sat,unsat
+430232181,shidlia_entl/ls_dlen_split_mid_node.sb.smt2,8319021,SLEEK,20564,default,304221,complete,0.13925,0.132131,113176.0,sat,unsat
+430232189,shidlia_entl/ls_dlen_split_mid_node_unk_hd.sb.smt2,8319029,SLEEK,20564,default,304221,complete,0.145294,0.137879,113176.0,sat,unsat
+430232166,shidlia_entl/ls_dlen_split_mid_node_unk_hd_tl.sb.smt2,8319006,SLEEK,20564,default,304221,complete,0.130373,0.12311,113176.0,unsat,unsat
+430232114,shidlia_entl/ls_dlen_split_mid_node_unk_tl.sb.smt2,8318954,SLEEK,20564,default,304221,complete,0.12934,0.122252,113176.0,sat,unsat
+430232210,shidlia_entl/ls_dlen_split_unk_hd.sb.smt2,8319050,SLEEK,20564,default,304221,complete,0.138059,0.13084,113176.0,sat,unsat
+430232144,shidlia_entl/ls_dlen_split_unk_hd_tl.sb.smt2,8318984,SLEEK,20564,default,304221,complete,0.109866,0.103983,113176.0,unsat,unsat
+430232093,shidlia_entl/ls_dlen_split_unk_tl.sb.smt2,8318933,SLEEK,20564,default,304221,complete,0.121345,0.115251,113176.0,sat,unsat
+430232052,shidlia_entl/ls_dlen_triple_split.sb.smt2,8318892,SLEEK,20564,default,304221,complete,0.231696,0.223331,113176.0,sat,unsat
+430232064,shidlia_entl/ls_dlen_triple_split_unk_hd.sb.smt2,8318904,SLEEK,20564,default,304221,complete,0.249118,0.240422,113176.0,sat,unsat
+430232215,shidlia_entl/ls_dlen_triple_split_unk_hd_tl.sb.smt2,8319055,SLEEK,20564,default,304221,complete,0.252938,0.243395,113176.0,sat,unsat
+430232075,shidlia_entl/ls_dlen_triple_split_unk_mid.sb.smt2,8318915,SLEEK,20564,default,304221,complete,0.200276,0.192459,113176.0,sat,unsat
+430232175,shidlia_entl/ls_dlen_triple_split_unk_tl.sb.smt2,8319015,SLEEK,20564,default,304221,complete,0.200148,0.191508,113176.0,sat,unsat
+430232178,shidlia_entl/ls_len_get_1_hd_4_lasts.sb.smt2,8319018,SLEEK,20564,default,304221,complete,0.150039,0.143044,113176.0,sat,unsat
+430232051,shidlia_entl/ls_len_get_2_hd_3_lasts.sb.smt2,8318891,SLEEK,20564,default,304221,complete,0.147453,0.140628,113176.0,sat,unsat
+430232109,shidlia_entl/ls_len_get_2_lasts.sb.smt2,8318949,SLEEK,20564,default,304221,complete,0.100689,0.0950441,113176.0,sat,unsat
+430232058,shidlia_entl/ls_len_get_3_hd_2_lasts.sb.smt2,8318898,SLEEK,20564,default,304221,complete,0.141319,0.134825,113176.0,sat,unsat
+430232147,shidlia_entl/ls_len_get_3_lasts.sb.smt2,8318987,SLEEK,20564,default,304221,complete,0.110228,0.104223,113176.0,sat,unsat
+430232171,shidlia_entl/ls_len_get_4_hd_1_lasts.sb.smt2,8319011,SLEEK,20564,default,304221,complete,0.141483,0.135232,113176.0,unsat,unsat
+430232218,shidlia_entl/ls_len_get_4_lasts.sb.smt2,8319058,SLEEK,20564,default,304221,complete,0.128469,0.121497,113176.0,sat,unsat
+430232108,shidlia_entl/ls_len_get_5_hd.sb.smt2,8318948,SLEEK,20564,default,304221,complete,0.194166,0.186224,113176.0,unsat,unsat
+430232046,shidlia_entl/ls_len_get_5_lasts.sb.smt2,8318886,SLEEK,20564,default,304221,complete,0.156219,0.148881,113176.0,sat,unsat
+430232138,shidlia_entl/ls_len_get_6_lasts.sb.smt2,8318978,SLEEK,20564,default,304221,complete,0.180008,0.17133,113176.0,sat,unsat
+430232135,shidlia_entl/ls_len_get_last.sb.smt2,8318975,SLEEK,20564,default,304221,complete,0.089722,0.084527,113176.0,unsat,unsat
+430232219,shidlia_entl/ls_len_get_last_unk_rem.sb.smt2,8319059,SLEEK,20564,default,304221,complete,0.08744,0.0818069,113176.0,unsat,unsat
+430232129,shidlia_entl/ls_len_get_two_lasts_unk_rem.sb.smt2,8318969,SLEEK,20564,default,304221,complete,0.093358,0.0880289,113176.0,sat,unsat
+430232103,shidlia_entl/ls_len_split.sb.smt2,8318943,SLEEK,20564,default,304221,complete,0.134359,0.127329,113176.0,sat,unsat
+430232106,shidlia_entl/ls_len_split_mid_node.sb.smt2,8318946,SLEEK,20564,default,304221,complete,0.138002,0.130389,113176.0,sat,unsat
+430232168,shidlia_entl/ls_len_split_mid_node_unk_hd.sb.smt2,8319008,SLEEK,20564,default,304221,complete,0.146069,0.138702,113176.0,sat,unsat
+430232102,shidlia_entl/ls_len_split_mid_node_unk_hd_tl.sb.smt2,8318942,SLEEK,20564,default,304221,complete,0.135149,0.128136,113176.0,unsat,unsat
+430232055,shidlia_entl/ls_len_split_mid_node_unk_tl.sb.smt2,8318895,SLEEK,20564,default,304221,complete,0.128913,0.122172,113176.0,sat,unsat
+430232172,shidlia_entl/ls_len_split_unk_hd.sb.smt2,8319012,SLEEK,20564,default,304221,complete,0.133263,0.126856,113176.0,sat,unsat
+430232090,shidlia_entl/ls_len_split_unk_hd_tl.sb.smt2,8318930,SLEEK,20564,default,304221,complete,0.11385,0.107984,113176.0,unsat,unsat
+430232061,shidlia_entl/ls_len_split_unk_tl.sb.smt2,8318901,SLEEK,20564,default,304221,complete,0.120628,0.114017,113176.0,sat,unsat
+430232085,shidlia_entl/ls_len_triple_split.sb.smt2,8318925,SLEEK,20564,default,304221,complete,0.22443,0.216024,113176.0,sat,unsat
+430232121,shidlia_entl/ls_len_triple_split_unk_hd.sb.smt2,8318961,SLEEK,20564,default,304221,complete,0.248554,0.239937,113176.0,sat,unsat
+430232154,shidlia_entl/ls_len_triple_split_unk_hd_tl.sb.smt2,8318994,SLEEK,20564,default,304221,complete,0.256675,0.247072,113176.0,sat,unsat
+430232143,shidlia_entl/ls_len_triple_split_unk_mid.sb.smt2,8318983,SLEEK,20564,default,304221,complete,0.198786,0.190694,113176.0,sat,unsat
+430232192,shidlia_entl/ls_len_triple_split_unk_tl.sb.smt2,8319032,SLEEK,20564,default,304221,complete,0.200725,0.192803,113176.0,sat,unsat
+430232101,shidlia_entl/ls_plen_get_last.sb.smt2,8318941,SLEEK,20564,default,304221,complete,0.098624,0.0931331,113176.0,sat,unsat
+430232204,shidlia_entl/ls_plen_get_last_unk_rem.sb.smt2,8319044,SLEEK,20564,default,304221,complete,0.094116,0.0888529,113176.0,unsat,unsat
+430232110,shidlia_entl/ls_plen_get_two_lasts.sb.smt2,8318950,SLEEK,20564,default,304221,complete,0.098482,0.092218,113176.0,sat,unsat
+430232222,shidlia_entl/ls_plen_get_two_lasts_unk_rem.sb.smt2,8319062,SLEEK,20564,default,304221,complete,0.09728,0.091391,113176.0,sat,unsat
+430232162,shidlia_entl/ls_plen_split.sb.smt2,8319002,SLEEK,20564,default,304221,complete,0.131144,0.124577,113176.0,sat,unsat
+430232078,shidlia_entl/ls_plen_split_mid_node.sb.smt2,8318918,SLEEK,20564,default,304221,complete,0.139613,0.131772,113176.0,sat,unsat
+430232074,shidlia_entl/ls_plen_split_mid_node_unk_hd.sb.smt2,8318914,SLEEK,20564,default,304221,complete,0.14945,0.141519,113176.0,sat,unsat
+430232152,shidlia_entl/ls_plen_split_mid_node_unk_hd_tl.sb.smt2,8318992,SLEEK,20564,default,304221,complete,0.135247,0.12832,113176.0,unsat,unsat
+430232149,shidlia_entl/ls_plen_split_mid_node_unk_tl.sb.smt2,8318989,SLEEK,20564,default,304221,complete,0.12717,0.120468,113176.0,sat,unsat
+430232142,shidlia_entl/ls_plen_split_unk_hd.sb.smt2,8318982,SLEEK,20564,default,304221,complete,0.13468,0.128052,113176.0,sat,unsat
+430232120,shidlia_entl/ls_plen_split_unk_hd_tl.sb.smt2,8318960,SLEEK,20564,default,304221,complete,0.110332,0.104594,113176.0,unsat,unsat
+430232067,shidlia_entl/ls_plen_split_unk_tl.sb.smt2,8318907,SLEEK,20564,default,304221,complete,0.124519,0.118152,113176.0,sat,unsat
+430232119,shidlia_entl/ls_plen_triple_split.sb.smt2,8318959,SLEEK,20564,default,304221,complete,0.225384,0.217136,113176.0,sat,unsat
+430232089,shidlia_entl/ls_plen_triple_split_unk_hd.sb.smt2,8318929,SLEEK,20564,default,304221,complete,0.250212,0.241399,113176.0,sat,unsat
+430232137,shidlia_entl/ls_plen_triple_split_unk_hd_tl.sb.smt2,8318977,SLEEK,20564,default,304221,complete,0.253607,0.244076,113176.0,sat,unsat
+430232069,shidlia_entl/ls_plen_triple_split_unk_mid.sb.smt2,8318909,SLEEK,20564,default,304221,complete,0.200338,0.192227,113176.0,sat,unsat
+430232205,shidlia_entl/ls_plen_triple_split_unk_tl.sb.smt2,8319045,SLEEK,20564,default,304221,complete,0.199238,0.191259,113176.0,sat,unsat
+430232217,shidlia_entl/ls_ubnd_dlen_get_last.sb.smt2,8319057,SLEEK,20564,default,304221,complete,0.09312,0.0871389,113176.0,sat,unsat
+430232077,shidlia_entl/ls_ubnd_len_get_1_hd_4_lasts.sb.smt2,8318917,SLEEK,20564,default,304221,complete,0.146197,0.138532,113176.0,sat,unsat
+430232221,shidlia_entl/ls_ubnd_len_get_2_hd_3_lasts.sb.smt2,8319061,SLEEK,20564,default,304221,complete,0.14079,0.133727,113176.0,sat,unsat
+430232060,shidlia_entl/ls_ubnd_len_get_2_lasts.sb.smt2,8318900,SLEEK,20564,default,304221,complete,0.092413,0.0872839,113176.0,sat,unsat
+430232202,shidlia_entl/ls_ubnd_len_get_3_hd_2_lasts.sb.smt2,8319042,SLEEK,20564,default,304221,complete,0.137087,0.130364,113176.0,sat,unsat
+430232212,shidlia_entl/ls_ubnd_len_get_3_lasts.sb.smt2,8319052,SLEEK,20564,default,304221,complete,0.106435,0.100282,113176.0,sat,unsat
+430232096,shidlia_entl/ls_ubnd_len_get_4_hd_1_lasts.sb.smt2,8318936,SLEEK,20564,default,304221,complete,0.140433,0.134069,113176.0,unsat,unsat
+430232145,shidlia_entl/ls_ubnd_len_get_4_lasts.sb.smt2,8318985,SLEEK,20564,default,304221,complete,0.125419,0.118531,113176.0,sat,unsat
+430232158,shidlia_entl/ls_ubnd_len_get_5_hd.sb.smt2,8318998,SLEEK,20564,default,304221,complete,0.188779,0.181342,113176.0,unsat,unsat
+430232130,shidlia_entl/ls_ubnd_len_get_5_lasts.sb.smt2,8318970,SLEEK,20564,default,304221,complete,0.141158,0.133571,113176.0,sat,unsat
+430232225,shidlia_entl/ls_ubnd_len_get_6_lasts.sb.smt2,8319065,SLEEK,20564,default,304221,complete,0.167468,0.159551,113176.0,sat,unsat
+430232131,shidlia_entl/ls_ubnd_len_get_last.sb.smt2,8318971,SLEEK,20564,default,304221,complete,0.090925,0.0856119,113176.0,unsat,unsat
+430232216,shidlia_entl/sls_get_last_node.sb.smt2,8319056,SLEEK,20564,default,304221,complete,0.172294,0.163826,113176.0,unsat,unsat
+430232127,shidlia_entl/sls_get_last_node_ls.sb.smt2,8318967,SLEEK,20564,default,304221,complete,0.157636,0.149709,113176.0,unsat,unsat
+430232173,shidlia_entl/sls_get_last_node_sls-1.sb.smt2,8319013,SLEEK,20564,default,304221,complete,0.110562,0.103955,113176.0,sat,unsat
+430232054,shidlia_entl/sls_get_last_node_sls-2.sb.smt2,8318894,SLEEK,20564,default,304221,complete,0.07515,0.0702159,113176.0,sat,unsat
+430232071,shidlia_entl/sls_join_2_get_last-1.sb.smt2,8318911,SLEEK,20564,default,304221,complete,0.168555,0.160389,113176.0,sat,unsat
+430232134,shidlia_entl/sls_join_2_get_last-2.sb.smt2,8318974,SLEEK,20564,default,304221,complete,0.069901,0.065182,113176.0,sat,unsat
+430232184,shidlia_entl/sls_join_3_get_last-1.sb.smt2,8319024,SLEEK,20564,default,304221,complete,0.542207,0.52636,113176.0,sat,unsat
+430232115,shidlia_entl/sls_join_3_get_last-2.sb.smt2,8318955,SLEEK,20564,default,304221,complete,0.076474,0.146456,113176.0,sat,unsat
+430232208,shidlia_entl/tree_size_entail_tseg-1.sb.smt2,8319048,SLEEK,20564,default,304221,complete,0.140505,0.133593,113176.0,unsat,unsat
+430232086,shidlia_entl/tree_size_entail_tseg-2.sb.smt2,8318926,SLEEK,20564,default,304221,complete,0.096901,0.091934,113176.0,unsat,unsat
+430232201,shidlia_entl/tree_size_split-1.sb.smt2,8319041,SLEEK,20564,default,304221,complete,0.104533,0.098567,113176.0,sat,unsat
+430232095,shidlia_entl/tree_size_split-2.sb.smt2,8318935,SLEEK,20564,default,304221,complete,0.137401,0.131313,113176.0,unsat,unsat
+430232220,shidlia_entl/tree_tseg_mix_entail_tree_tseg_mix-1.sb.smt2,8319060,SLEEK,20564,default,304221,complete,0.218834,0.211482,113176.0,unsat,unsat
+430232105,shidlia_entl/tree_tseg_mix_entail_tree_tseg_mix-2.sb.smt2,8318945,SLEEK,20564,default,304221,complete,0.108406,0.103134,113176.0,unsat,unsat
+430232082,shidlia_entl/tree_tseg_mix_entail_tree_tseg_mix-3.sb.smt2,8318922,SLEEK,20564,default,304221,complete,0.111669,0.105829,113176.0,unsat,unsat
+430232182,shidlia_entl/tseg_size_join_tree_size_entail_tree_unk-1.sb.smt2,8319022,SLEEK,20564,default,304221,complete,0.157586,0.149951,113176.0,unsat,unsat
+430232113,shidlia_entl/tseg_size_join_tree_size_entail_tree_unk-2.sb.smt2,8318953,SLEEK,20564,default,304221,complete,0.098038,0.0931411,113176.0,unsat,unsat
+430232084,shidlia_entl/tseg_size_split-1.sb.smt2,8318924,SLEEK,20564,default,304221,complete,0.100646,0.0948489,113176.0,sat,unsat
+430232214,shidlia_entl/tseg_size_split-2.sb.smt2,8319054,SLEEK,20564,default,304221,complete,0.102783,0.09682,113176.0,sat,unsat

@@ -1,0 +1,100 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result,expected
+433163254,qf_shid_sat/abduced00.defs.smt2,8318320,SLSAT,22694,default,326680,complete,0.016647,0.0166941,33168.0,sat,sat
+433163250,qf_shid_sat/abduced01.defs.smt2,8318316,SLSAT,22694,default,326680,complete,0.016005,0.0160531,34504.0,sat,sat
+433163247,qf_shid_sat/abduced02.defs.smt2,8318313,SLSAT,22694,default,326680,complete,0.015655,0.015678,33928.0,sat,sat
+433163246,qf_shid_sat/abduced03.defs.smt2,8318312,SLSAT,22694,default,326680,complete,0.016146,0.016158,33168.0,sat,sat
+433163242,qf_shid_sat/abduced04.defs.smt2,8318308,SLSAT,22694,default,326680,complete,0.015661,0.0156719,34768.0,sat,sat
+433163234,qf_shid_sat/abduced05.defs.smt2,8318300,SLSAT,22694,default,326680,complete,0.016544,0.016533,33168.0,sat,sat
+433163232,qf_shid_sat/abduced06.defs.smt2,8318298,SLSAT,22694,default,326680,complete,0.016991,0.017038,48548.0,sat,sat
+433163231,qf_shid_sat/abduced07.defs.smt2,8318297,SLSAT,22694,default,326680,complete,0.016146,0.0162049,33168.0,sat,sat
+433163268,qf_shid_sat/abduced08.defs.smt2,8318334,SLSAT,22694,default,326680,complete,0.018279,0.0182761,44756.0,sat,sat
+433163273,qf_shid_sat/abduced09.defs.smt2,8318339,SLSAT,22694,default,326680,complete,0.020187,0.0202331,34504.0,sat,sat
+433163309,qf_shid_sat/abduced10.defs.smt2,8318375,SLSAT,22694,default,326680,complete,0.017105,0.0171419,33168.0,sat,sat
+433163311,qf_shid_sat/abduced11.defs.smt2,8318377,SLSAT,22694,default,326680,complete,0.016086,0.016118,33168.0,sat,sat
+433163300,qf_shid_sat/abduced12.defs.smt2,8318366,SLSAT,22694,default,326680,complete,0.019014,0.019049,33168.0,sat,sat
+433163303,qf_shid_sat/abduced13.defs.smt2,8318369,SLSAT,22694,default,326680,complete,0.018551,0.018561,33168.0,sat,sat
+433163324,qf_shid_sat/abduced14.defs.smt2,8318390,SLSAT,22694,default,326680,complete,0.017498,0.017531,33168.0,sat,sat
+433163328,qf_shid_sat/abduced15.defs.smt2,8318394,SLSAT,22694,default,326680,complete,0.016664,0.016717,33168.0,sat,sat
+433163318,qf_shid_sat/abduced16.defs.smt2,8318384,SLSAT,22694,default,326680,complete,0.015841,0.0158449,33168.0,sat,sat
+433163321,qf_shid_sat/abduced17.defs.smt2,8318387,SLSAT,22694,default,326680,complete,0.016962,0.016999,34504.0,sat,sat
+433163284,qf_shid_sat/abduced18.defs.smt2,8318350,SLSAT,22694,default,326680,complete,0.016472,0.0164779,48548.0,sat,sat
+433163282,qf_shid_sat/abduced19.defs.smt2,8318348,SLSAT,22694,default,326680,complete,0.017613,0.0176919,49884.0,sat,sat
+433163272,qf_shid_sat/atll-01.smt2,8318338,SLSAT,22694,default,326680,complete,0.01394,0.013956,33168.0,sat,sat
+433163314,qf_shid_sat/atll-02.smt2,8318380,SLSAT,22694,default,326680,complete,0.013266,0.0133179,33168.0,unsat,unsat
+433163295,qf_shid_sat/atll-03.smt2,8318361,SLSAT,22694,default,326680,complete,0.013037,0.013065,33168.0,unsat,unsat
+433163266,qf_shid_sat/dll-01.smt2,8318332,SLSAT,22694,default,326680,complete,0.012723,0.012757,33168.0,unsat,unsat
+433163305,qf_shid_sat/dll-02.smt2,8318371,SLSAT,22694,default,326680,complete,0.012936,0.0129771,33928.0,unsat,unsat
+433163287,qf_shid_sat/dll-03.smt2,8318353,SLSAT,22694,default,326680,complete,0.013132,0.013144,33168.0,sat,sat
+433163239,qf_shid_sat/dll-04.smt2,8318305,SLSAT,22694,default,326680,complete,0.020052,0.0201049,34504.0,unsat,unsat
+433163274,qf_shid_sat/dll-05.smt2,8318340,SLSAT,22694,default,326680,complete,0.01336,0.013356,33168.0,sat,sat
+433163315,qf_shid_sat/dll-06.smt2,8318381,SLSAT,22694,default,326680,complete,1.17808,1.18055,49884.0,unsat,unsat
+433163281,qf_shid_sat/dltree-01.smt2,8318347,SLSAT,22694,default,326680,complete,0.01236,0.0123601,33168.0,sat,sat
+433163304,qf_shid_sat/inconsistent-ls-of-ls.defs.smt2,8318370,SLSAT,22694,default,326680,complete,0.014503,0.014517,33168.0,unsat,unsat
+433163292,qf_shid_sat/lasso-01.smt2,8318358,SLSAT,22694,default,326680,complete,0.014322,0.014361,34504.0,sat,sat
+433163238,qf_shid_sat/lasso-02.smt2,8318304,SLSAT,22694,default,326680,complete,0.012636,0.0126491,34504.0,unsat,unsat
+433163269,qf_shid_sat/lasso-03.smt2,8318335,SLSAT,22694,default,326680,complete,0.012982,0.0129961,34504.0,unsat,unsat
+433163299,qf_shid_sat/lasso-04.smt2,8318365,SLSAT,22694,default,326680,complete,0.015123,0.0151169,33168.0,unsat,unsat
+433163285,qf_shid_sat/lasso-05.smt2,8318351,SLSAT,22694,default,326680,complete,0.012857,0.012869,33168.0,sat,sat
+433163312,qf_shid_sat/lss-03-01.smt2,8318378,SLSAT,22694,default,326680,complete,0.015504,0.015512,34504.0,unsat,unsat
+433163275,qf_shid_sat/lss-03-02.smt2,8318341,SLSAT,22694,default,326680,complete,0.013251,0.0132711,33168.0,unsat,unsat
+433163240,qf_shid_sat/lss-03-03.smt2,8318306,SLSAT,22694,default,326680,complete,0.013237,0.013237,33168.0,unsat,unsat
+433163270,qf_shid_sat/lss-04-01.smt2,8318336,SLSAT,22694,default,326680,complete,0.014485,0.0145271,33168.0,sat,sat
+433163310,qf_shid_sat/lss-04-02.smt2,8318376,SLSAT,22694,default,326680,complete,0.014362,0.014368,34768.0,sat,sat
+433163293,qf_shid_sat/lss-04-03.smt2,8318359,SLSAT,22694,default,326680,complete,0.014488,0.014522,33168.0,unsat,unsat
+433163235,qf_shid_sat/lss-05-01.smt2,8318301,SLSAT,22694,default,326680,complete,0.014998,0.015296,0.0,sat,sat
+433163289,qf_shid_sat/lss-05-02.smt2,8318355,SLSAT,22694,default,326680,complete,0.015082,0.0150809,37332.0,sat,sat
+433163308,qf_shid_sat/lss-05-03.smt2,8318374,SLSAT,22694,default,326680,complete,0.017359,0.017453,34504.0,sat,sat
+433163260,qf_shid_sat/ncll-01.smt2,8318326,SLSAT,22694,default,326680,complete,0.014871,0.0148709,34504.0,sat,sat
+433163249,qf_shid_sat/nll-01.smt2,8318315,SLSAT,22694,default,326680,complete,0.012102,0.0121661,33168.0,sat,sat
+433163265,qf_shid_sat/sll2h-01.smt2,8318331,SLSAT,22694,default,326680,complete,0.013274,0.0132911,34504.0,sat,sat
+433163323,qf_shid_sat/succ-circuit01.defs.smt2,8318389,SLSAT,22694,default,326680,complete,0.014413,0.014416,34504.0,sat,sat
+433163320,qf_shid_sat/succ-circuit02.defs.smt2,8318386,SLSAT,22694,default,326680,complete,0.013766,0.013827,33168.0,sat,sat
+433163319,qf_shid_sat/succ-circuit03.defs.smt2,8318385,SLSAT,22694,default,326680,complete,0.02565,0.0257101,33168.0,sat,sat
+433163313,qf_shid_sat/succ-circuit04.defs.smt2,8318379,SLSAT,22694,default,326680,complete,0.252203,0.252231,48548.0,sat,sat
+433163307,qf_shid_sat/succ-circuit05.defs.smt2,8318373,SLSAT,22694,default,326680,complete,7.9927,7.99315,48548.0,sat,sat
+433163302,qf_shid_sat/succ-circuit06.defs.smt2,8318368,SLSAT,22694,default,326680,complete,316.621,316.633,48548.0,sat,sat
+433163301,qf_shid_sat/succ-circuit07.defs.smt2,8318367,SLSAT,22694,default,326680,timeout (wallclock),2399.82,2400.04,48548.0,starexec-unknown,sat
+433163290,qf_shid_sat/succ-circuit08.defs.smt2,8318356,SLSAT,22694,default,326680,timeout (wallclock),2399.97,2400.03,48548.0,starexec-unknown,sat
+433163296,qf_shid_sat/succ-circuit09.defs.smt2,8318362,SLSAT,22694,default,326680,timeout (wallclock),2399.64,2400.04,48548.0,starexec-unknown,sat
+433163236,qf_shid_sat/succ-circuit10.defs.smt2,8318302,SLSAT,22694,default,326680,timeout (wallclock),2400.02,2400.03,49884.0,starexec-unknown,sat
+433163241,qf_shid_sat/succ-circuit11.defs.smt2,8318307,SLSAT,22694,default,326680,timeout (wallclock),2399.92,2400.1,48548.0,starexec-unknown,sat
+433163230,qf_shid_sat/succ-circuit12.defs.smt2,8318296,SLSAT,22694,default,326680,timeout (wallclock),2399.93,2400.02,55652.0,starexec-unknown,sat
+433163233,qf_shid_sat/succ-circuit13.defs.smt2,8318299,SLSAT,22694,default,326680,timeout (wallclock),2399.93,2400.05,48548.0,starexec-unknown,sat
+433163252,qf_shid_sat/succ-circuit14.defs.smt2,8318318,SLSAT,22694,default,326680,timeout (wallclock),2399.84,2400.04,50148.0,starexec-unknown,sat
+433163253,qf_shid_sat/succ-circuit15.defs.smt2,8318319,SLSAT,22694,default,326680,timeout (wallclock),2399.79,2400.04,48548.0,starexec-unknown,sat
+433163245,qf_shid_sat/succ-circuit16.defs.smt2,8318311,SLSAT,22694,default,326680,timeout (cpu),2400.06,2400.09,48548.0,starexec-unknown,sat
+433163248,qf_shid_sat/succ-circuit17.defs.smt2,8318314,SLSAT,22694,default,326680,timeout (wallclock),2399.9,2400.09,48548.0,starexec-unknown,sat
+433163263,qf_shid_sat/succ-circuit18.defs.smt2,8318329,SLSAT,22694,default,326680,timeout (wallclock),2399.97,2400.06,48548.0,starexec-unknown,sat
+433163261,qf_shid_sat/succ-circuit19.defs.smt2,8318327,SLSAT,22694,default,326680,timeout (wallclock),2399.72,2400.03,50148.0,starexec-unknown,sat
+433163294,qf_shid_sat/succ-circuit20.defs.smt2,8318360,SLSAT,22694,default,326680,timeout (wallclock),2399.82,2400.04,49884.0,starexec-unknown,sat
+433163297,qf_shid_sat/succ-rec01.defs.smt2,8318363,SLSAT,22694,default,326680,complete,0.01264,0.0126349,33168.0,sat,sat
+433163286,qf_shid_sat/succ-rec02.defs.smt2,8318352,SLSAT,22694,default,326680,complete,0.012648,0.0127001,34768.0,sat,sat
+433163288,qf_shid_sat/succ-rec03.defs.smt2,8318354,SLSAT,22694,default,326680,complete,0.013809,0.0138121,33168.0,sat,sat
+433163280,qf_shid_sat/succ-rec04.defs.smt2,8318346,SLSAT,22694,default,326680,complete,0.021671,0.0216949,34504.0,sat,sat
+433163283,qf_shid_sat/succ-rec05.defs.smt2,8318349,SLSAT,22694,default,326680,complete,0.046854,0.046884,48548.0,sat,sat
+433163277,qf_shid_sat/succ-rec06.defs.smt2,8318343,SLSAT,22694,default,326680,complete,0.178588,0.178645,48548.0,sat,sat
+433163279,qf_shid_sat/succ-rec07.defs.smt2,8318345,SLSAT,22694,default,326680,complete,0.920816,0.920802,50148.0,sat,sat
+433163326,qf_shid_sat/succ-rec08.defs.smt2,8318392,SLSAT,22694,default,326680,complete,5.08901,5.0897,49884.0,sat,sat
+433163322,qf_shid_sat/succ-rec09.defs.smt2,8318388,SLSAT,22694,default,326680,complete,28.3218,28.3223,48548.0,sat,sat
+433163262,qf_shid_sat/succ-rec10.defs.smt2,8318328,SLSAT,22694,default,326680,complete,152.772,152.773,48548.0,sat,sat
+433163258,qf_shid_sat/succ-rec11.defs.smt2,8318324,SLSAT,22694,default,326680,complete,798.925,798.933,55652.0,sat,sat
+433163257,qf_shid_sat/succ-rec12.defs.smt2,8318323,SLSAT,22694,default,326680,timeout (wallclock),2399.84,2400.04,70324.0,starexec-unknown,sat
+433163256,qf_shid_sat/succ-rec13.defs.smt2,8318322,SLSAT,22694,default,326680,timeout (wallclock),2399.81,2400.02,54316.0,starexec-unknown,sat
+433163276,qf_shid_sat/succ-rec14.defs.smt2,8318342,SLSAT,22694,default,326680,timeout (wallclock),2399.89,2400.02,54316.0,starexec-unknown,sat
+433163271,qf_shid_sat/succ-rec15.defs.smt2,8318337,SLSAT,22694,default,326680,timeout (wallclock),2399.77,2400.09,55652.0,starexec-unknown,sat
+433163267,qf_shid_sat/succ-rec16.defs.smt2,8318333,SLSAT,22694,default,326680,timeout (wallclock),2399.95,2400.08,54316.0,starexec-unknown,sat
+433163264,qf_shid_sat/succ-rec17.defs.smt2,8318330,SLSAT,22694,default,326680,timeout (wallclock),2399.92,2400.01,54316.0,starexec-unknown,sat
+433163237,qf_shid_sat/succ-rec18.defs.smt2,8318303,SLSAT,22694,default,326680,timeout (wallclock),2399.84,2400.03,54316.0,starexec-unknown,sat
+433163243,qf_shid_sat/succ-rec19.defs.smt2,8318309,SLSAT,22694,default,326680,timeout (cpu),2400.1,2400.05,54316.0,starexec-unknown,sat
+433163327,qf_shid_sat/succ-rec20.defs.smt2,8318393,SLSAT,22694,default,326680,timeout (cpu),2400.06,2400.01,55916.0,starexec-unknown,sat
+433163325,qf_shid_sat/tll-01.smt2,8318391,SLSAT,22694,default,326680,complete,0.014151,0.014126,33168.0,sat,sat
+433163259,qf_shid_sat/tll-02.smt2,8318325,SLSAT,22694,default,326680,complete,0.013387,0.013403,33168.0,unsat,unsat
+433163251,qf_shid_sat/tll-03.smt2,8318317,SLSAT,22694,default,326680,complete,0.013285,0.0132959,34504.0,sat,sat
+433163278,qf_shid_sat/tll-04.smt2,8318344,SLSAT,22694,default,326680,complete,0.012496,0.0124959,34768.0,sat,sat
+433163317,qf_shid_sat/tll-05.smt2,8318383,SLSAT,22694,default,326680,complete,0.014392,0.0144281,34768.0,sat,sat
+433163255,qf_shid_sat/tll-06.smt2,8318321,SLSAT,22694,default,326680,complete,0.014044,0.014041,34768.0,unsat,unsat
+433163244,qf_shid_sat/tll-07.smt2,8318310,SLSAT,22694,default,326680,complete,0.014767,0.014777,33168.0,sat,sat
+433163298,qf_shid_sat/tll-08.smt2,8318364,SLSAT,22694,default,326680,complete,0.01577,0.0158071,33168.0,unsat,unsat
+433163316,qf_shid_sat/tll-09.smt2,8318382,SLSAT,22694,default,326680,complete,0.081306,0.08136,48548.0,unsat,unsat
+433163291,qf_shid_sat/tll-10.smt2,8318357,SLSAT,22694,default,326680,complete,1.02708,1.02715,48548.0,sat,sat
+433163306,qf_shid_sat/tree-01.smt2,8318372,SLSAT,22694,default,326680,complete,0.012885,0.01293,33168.0,sat,sat

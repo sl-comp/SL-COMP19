@@ -1,0 +1,25 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result,expected
+429882088,qf_bsllia_sat/chain-sat-1.cvc4.smt2,8317043,CVC4-070618,20439,def,303345,complete,0.019313,0.0193481,113176.0,unsat,unsat
+429882085,qf_bsllia_sat/chain-sat-2.cvc4.smt2,8317040,CVC4-070618,20439,def,303345,complete,0.028527,0.028621,113176.0,unsat,unsat
+429882086,qf_bsllia_sat/chain-sat-3.cvc4.smt2,8317041,CVC4-070618,20439,def,303345,complete,0.043422,0.0434521,147336.0,unsat,unsat
+429882091,qf_bsllia_sat/chain-sat-4.cvc4.smt2,8317046,CVC4-070618,20439,def,303345,complete,0.062243,0.062297,113176.0,unsat,unsat
+429882083,qf_bsllia_sat/chain-sat-8.cvc4.smt2,8317038,CVC4-070618,20439,def,303345,complete,0.215275,0.215464,113176.0,unsat,unsat
+429882073,qf_bsllia_sat/chain-unsat-2.cvc4.smt2,8317028,CVC4-070618,20439,def,303345,complete,0.037324,0.0373989,113176.0,unsat,unsat
+429882075,qf_bsllia_sat/chain-unsat-3.cvc4.smt2,8317030,CVC4-070618,20439,def,303345,complete,0.070887,0.07091,113176.0,unsat,unsat
+429882080,qf_bsllia_sat/chain-unsat-4.cvc4.smt2,8317035,CVC4-070618,20439,def,303345,complete,0.114932,0.114979,113176.0,unsat,unsat
+429882070,qf_bsllia_sat/chain-unsat-8.cvc4.smt2,8317025,CVC4-070618,20439,def,303345,complete,0.566793,0.567018,152080.0,unsat,unsat
+429882076,qf_bsllia_sat/lseg-1.cvc4.smt2,8317031,CVC4-070618,20439,def,303345,complete,0.00846,0.023147,0.0,unsat,unsat
+429882074,qf_bsllia_sat/lseg-2.cvc4.smt2,8317029,CVC4-070618,20439,def,303345,complete,0.008687,0.0224759,0.0,unsat,unsat
+429882072,qf_bsllia_sat/lseg-3.cvc4.smt2,8317027,CVC4-070618,20439,def,303345,complete,0.009205,0.0208529,0.0,unsat,unsat
+429882081,qf_bsllia_sat/lseg-4.cvc4.smt2,8317036,CVC4-070618,20439,def,303345,complete,0.009538,0.0104651,0.0,unsat,unsat
+429882069,qf_bsllia_sat/lseg-8.cvc4.smt2,8317024,CVC4-070618,20439,def,303345,complete,0.011649,0.0117189,113176.0,unsat,unsat
+429882082,qf_bsllia_sat/unfold-sat-1.cvc4.smt2,8317037,CVC4-070618,20439,def,303345,complete,0.019644,0.0197339,113176.0,unsat,unsat
+429882078,qf_bsllia_sat/unfold-sat-2.cvc4.smt2,8317033,CVC4-070618,20439,def,303345,complete,0.02218,0.022298,113176.0,unsat,unsat
+429882079,qf_bsllia_sat/unfold-sat-3.cvc4.smt2,8317034,CVC4-070618,20439,def,303345,complete,0.033514,0.0335471,113176.0,unsat,unsat
+429882077,qf_bsllia_sat/unfold-sat-4.cvc4.smt2,8317032,CVC4-070618,20439,def,303345,complete,0.051817,0.0520161,113176.0,unsat,unsat
+429882071,qf_bsllia_sat/unfold-sat-8.cvc4.smt2,8317026,CVC4-070618,20439,def,303345,complete,0.244805,0.244878,113176.0,unsat,unsat
+429882092,qf_bsllia_sat/unfold-unsat-1.cvc4.smt2,8317047,CVC4-070618,20439,def,303345,complete,0.017014,0.0171009,113176.0,unsat,unsat
+429882089,qf_bsllia_sat/unfold-unsat-2.cvc4.smt2,8317044,CVC4-070618,20439,def,303345,complete,0.037714,0.0378061,113176.0,unsat,unsat
+429882090,qf_bsllia_sat/unfold-unsat-3.cvc4.smt2,8317045,CVC4-070618,20439,def,303345,complete,0.066659,0.066691,113176.0,unsat,unsat
+429882087,qf_bsllia_sat/unfold-unsat-4.cvc4.smt2,8317042,CVC4-070618,20439,def,303345,complete,0.107252,0.107335,113176.0,unsat,unsat
+429882084,qf_bsllia_sat/unfold-unsat-8.cvc4.smt2,8317039,CVC4-070618,20439,def,303345,complete,0.554285,0.554293,113176.0,unsat,unsat

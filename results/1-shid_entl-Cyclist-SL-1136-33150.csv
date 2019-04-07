@@ -1,0 +1,74 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result,expected
+430234624,shid_entl/dll-entails-node-dll-rev.smt2,8318827,Cyclist-SL,1136,default,1487,timeout (cpu),2400.05,2400.09,165124.0,starexec-unknown,sat
+430234670,shid_entl/dll-entails-node-node-dll.smt2,8318873,Cyclist-SL,1136,default,1487,complete,228.547,228.551,164724.0,starexec-unknown,sat
+430234634,shid_entl/dll-spaghetti-existential.smt2,8318837,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.94,2400.02,164724.0,starexec-unknown,unsat
+430234629,shid_entl/dll2-spaghetti-existential.smt2,8318832,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.8,2400.02,165124.0,starexec-unknown,unsat
+430234610,shid_entl/dllnull_entails_dll.sb.smt2,8318813,Cyclist-SL,1136,default,1487,complete,1.49933,1.49912,155068.0,starexec-unknown,unsat
+430234636,shid_entl/dllnull_entails_dllrev.sb.smt2,8318839,Cyclist-SL,1136,default,1487,complete,0.390648,0.39035,113176.0,starexec-unknown,unsat
+430234616,shid_entl/dll_concat_dllrev_get_last.sb.smt2,8318819,Cyclist-SL,1136,default,1487,complete,156.896,156.897,165124.0,starexec-unknown,unsat
+430234658,shid_entl/dll_entails_ls_node.sb.smt2,8318861,Cyclist-SL,1136,default,1487,complete,1.74365,1.74341,155068.0,starexec-unknown,unsat
+430234653,shid_entl/dll_entails_node_lsrev.sb.smt2,8318856,Cyclist-SL,1136,default,1487,complete,3.10672,3.10648,155068.0,starexec-unknown,unsat
+430234641,shid_entl/eolseg_03.sb.smt2,8318844,Cyclist-SL,1136,default,1487,complete,361.67,361.691,165124.0,starexec-unknown,unsat
+430234665,shid_entl/eolseg_04.sb.smt2,8318868,Cyclist-SL,1136,default,1487,complete,761.142,761.215,165124.0,starexec-unknown,unsat
+430234666,shid_entl/eolseg_08.sb.smt2,8318869,Cyclist-SL,1136,default,1487,timeout (cpu),2400.07,2400.07,154668.0,starexec-unknown,unsat
+430234643,shid_entl/eolseg_10.sb.smt2,8318846,Cyclist-SL,1136,default,1487,complete,718.273,718.3,165124.0,starexec-unknown,unsat
+430234674,shid_entl/eolseg_11.sb.smt2,8318877,Cyclist-SL,1136,default,1487,complete,103.973,103.968,165124.0,starexec-unknown,unsat
+430234625,shid_entl/eolseg_13.sb.smt2,8318828,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.8,2400.01,154668.0,starexec-unknown,unsat
+430234644,shid_entl/eolseg_14.sb.smt2,8318847,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.96,2400.09,154668.0,starexec-unknown,unsat
+430234632,shid_entl/eolseg_16.sb.smt2,8318835,Cyclist-SL,1136,default,1487,timeout (cpu),2400.02,2400.09,154668.0,starexec-unknown,unsat
+430234673,shid_entl/ls2_entail_ls_02.sb.smt2,8318876,Cyclist-SL,1136,default,1487,complete,24.7218,24.7233,164832.0,starexec-unknown,unsat
+430234642,shid_entl/ls2_entail_ls_03.sb.smt2,8318845,Cyclist-SL,1136,default,1487,timeout (cpu),2400.04,2400.1,165124.0,starexec-unknown,unsat
+430234633,shid_entl/ls2_entail_ls_05.sb.smt2,8318836,Cyclist-SL,1136,default,1487,complete,114.177,114.18,164724.0,starexec-unknown,unsat
+430234675,shid_entl/ls2_entail_ls_06.sb.smt2,8318878,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.89,2400.02,164596.0,starexec-unknown,unsat
+430234623,shid_entl/lsevenodd_05.sb.smt2,8318826,Cyclist-SL,1136,default,1487,complete,103.662,103.662,164704.0,starexec-unknown,unsat
+430234646,shid_entl/lsevenodd_06.sb.smt2,8318849,Cyclist-SL,1136,default,1487,complete,284.078,284.084,154668.0,starexec-unknown,unsat
+430234678,shid_entl/lsevenodd_07.sb.smt2,8318881,Cyclist-SL,1136,default,1487,complete,72.6205,72.6221,155068.0,starexec-unknown,unsat
+430234631,shid_entl/lsevenodd_08.sb.smt2,8318834,Cyclist-SL,1136,default,1487,complete,22.1596,22.1594,154668.0,starexec-unknown,unsat
+430234613,shid_entl/lsevenodd_10.sb.smt2,8318816,Cyclist-SL,1136,default,1487,complete,709.956,709.946,164724.0,starexec-unknown,unsat
+430234672,shid_entl/lsevenodd_12.sb.smt2,8318875,Cyclist-SL,1136,default,1487,complete,511.943,511.974,165124.0,starexec-unknown,unsat
+430234662,shid_entl/lsevenodd_13.sb.smt2,8318865,Cyclist-SL,1136,default,1487,complete,1522.81,1522.92,154668.0,starexec-unknown,unsat
+430234660,shid_entl/lsevenodd_17.sb.smt2,8318863,Cyclist-SL,1136,default,1487,complete,72.9154,72.9238,155068.0,starexec-unknown,unsat
+430234614,shid_entl/lsevenodd_18.sb.smt2,8318817,Cyclist-SL,1136,default,1487,complete,22.1885,22.1907,155068.0,starexec-unknown,unsat
+430234637,shid_entl/lsevenodd_19.sb.smt2,8318840,Cyclist-SL,1136,default,1487,complete,14.2135,14.2134,155068.0,starexec-unknown,unsat
+430234676,shid_entl/lsevenodd_20.sb.smt2,8318879,Cyclist-SL,1136,default,1487,complete,283.663,283.673,155068.0,starexec-unknown,unsat
+430234648,shid_entl/lsevenodd_ls2_03.sb.smt2,8318851,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.89,2400.01,164724.0,starexec-unknown,unsat
+430234621,shid_entl/lsevenodd_ls2_04.sb.smt2,8318824,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.94,2400.01,155068.0,starexec-unknown,unsat
+430234647,shid_entl/lsevenodd_ls2_07.sb.smt2,8318850,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.82,2400.02,154668.0,starexec-unknown,unsat
+430234622,shid_entl/lsevenodd_ls2_08.sb.smt2,8318825,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.79,2400.02,155068.0,starexec-unknown,unsat
+430234638,shid_entl/lsevenodd_ls2_10.sb.smt2,8318841,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.9,2400.09,155068.0,starexec-unknown,unsat
+430234615,shid_entl/lsevenodd_ls2_11.sb.smt2,8318818,Cyclist-SL,1136,default,1487,timeout (wallclock),2400.0,2400.02,165124.0,starexec-unknown,unsat
+430234657,shid_entl/lsevenodd_ls2_12.sb.smt2,8318860,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.82,2400.07,154668.0,starexec-unknown,unsat
+430234630,shid_entl/lsleftright_03.sb.smt2,8318833,Cyclist-SL,1136,default,1487,complete,23.0203,23.0188,154668.0,starexec-unknown,unsat
+430234667,shid_entl/ls_entail_ls2_01.sb.smt2,8318870,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.98,2400.02,165124.0,starexec-unknown,unsat
+430234618,shid_entl/ls_entail_ls2_03.sb.smt2,8318821,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.96,2400.1,164996.0,starexec-unknown,unsat
+430234680,shid_entl/ls_even_split_ls_even.sb.smt2,8318883,Cyclist-SL,1136,default,1487,timeout (wallclock),2400.02,2400.05,154668.0,starexec-unknown,unsat
+430234639,shid_entl/ls_lsrev_concat_entail_split_1.sb.smt2,8318842,Cyclist-SL,1136,default,1487,timeout (cpu),2400.06,2400.06,154668.0,starexec-unknown,unsat
+430234671,shid_entl/ls_lsrev_concat_entail_split_2.sb.smt2,8318874,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.83,2400.04,154668.0,starexec-unknown,unsat
+430234661,shid_entl/ls_lsrev_concat_entail_split_3.sb.smt2,8318864,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.91,2400.05,154668.0,starexec-unknown,unsat
+430234612,shid_entl/ls_lsrev_concat_entail_split_4.sb.smt2,8318815,Cyclist-SL,1136,default,1487,timeout (cpu),2400.02,2399.96,155068.0,starexec-unknown,unsat
+430234656,shid_entl/ls_lsrev_node_concat_entail_split_1.sb.smt2,8318859,Cyclist-SL,1136,default,1487,complete,22.9341,22.9347,154668.0,starexec-unknown,unsat
+430234619,shid_entl/ls_lsrev_node_concat_entail_split_2.sb.smt2,8318822,Cyclist-SL,1136,default,1487,timeout (cpu),2400.08,2400.07,154668.0,starexec-unknown,unsat
+430234640,shid_entl/ls_lsrev_node_concat_entail_split_3.sb.smt2,8318843,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.93,2400.1,155068.0,starexec-unknown,unsat
+430234669,shid_entl/ls_lsrev_node_concat_entail_split_4.sb.smt2,8318872,Cyclist-SL,1136,default,1487,timeout (cpu),2400.07,2399.99,155068.0,starexec-unknown,unsat
+430234649,shid_entl/ls_odd_split_ls_even_node.sb.smt2,8318852,Cyclist-SL,1136,default,1487,complete,1.60022,1.59989,154668.0,starexec-unknown,unsat
+430234679,shid_entl/ls_odd_split_ls_even_odd.sb.smt2,8318882,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.99,2400.06,154668.0,starexec-unknown,unsat
+430234654,shid_entl/ls_split_ls.sb.smt2,8318857,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.9,2400.04,154668.0,starexec-unknown,unsat
+430234663,shid_entl/node-dll-rev-dll-entails-dll.smt2,8318866,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.98,2400.02,177404.0,starexec-unknown,unsat
+430234620,shid_entl/node-node-dll-entails-dll.smt2,8318823,Cyclist-SL,1136,default,1487,complete,0.044973,0.0446721,113176.0,unsat,unsat
+430234677,shid_entl/node-tll-tll-entails-tll.smt2,8318880,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.84,2400.05,186612.0,starexec-unknown,unsat
+430234650,shid_entl/tll-entails-node-tll-tll.smt2,8318853,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.93,2400.04,165124.0,starexec-unknown,sat
+430234668,shid_entl/tll-ravioli-existential.smt2,8318871,Cyclist-SL,1136,default,1487,complete,0.014517,0.0142579,113176.0,unsat,unsat
+430234609,shid_entl/tree_2_entail_tseg_2_unk-1.sb.smt2,8318812,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.88,2400.01,154668.0,starexec-unknown,unsat
+430234655,shid_entl/tree_2_entail_tseg_2_unk-2.sb.smt2,8318858,Cyclist-SL,1136,default,1487,timeout (cpu),2400.08,2400.07,154668.0,starexec-unknown,unsat
+430234664,shid_entl/tree_2_entail_tseg_2_unk-3.sb.smt2,8318867,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.91,2400.01,155068.0,starexec-unknown,unsat
+430234652,shid_entl/tree_entail_tseg_unk-1.sb.smt2,8318855,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.6,2400.02,155068.0,starexec-unknown,unsat
+430234611,shid_entl/tree_entail_tseg_unk-2.sb.smt2,8318814,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.99,2400.07,154668.0,starexec-unknown,unsat
+430234626,shid_entl/tree_split_tseg-1.sb.smt2,8318829,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.86,2400.05,155068.0,starexec-unknown,unsat
+430234645,shid_entl/tree_split_tseg-2.sb.smt2,8318848,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.85,2400.02,155068.0,starexec-unknown,unsat
+430234628,shid_entl/tseg_join_2_entail_tree_unk.sb.smt2,8318831,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.9,2400.03,155068.0,starexec-unknown,unsat
+430234659,shid_entl/tseg_join_2_entail_unk_tseg-1.sb.smt2,8318862,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.72,2400.03,155068.0,starexec-unknown,unsat
+430234617,shid_entl/tseg_join_2_entail_unk_tseg-2.sb.smt2,8318820,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.93,2400.07,154668.0,starexec-unknown,unsat
+430234627,shid_entl/tseg_join_tree_entail_unk_tree-1.sb.smt2,8318830,Cyclist-SL,1136,default,1487,timeout (cpu),2400.0,2399.99,154668.0,starexec-unknown,unsat
+430234651,shid_entl/tseg_join_tree_entail_unk_tree-2.sb.smt2,8318854,Cyclist-SL,1136,default,1487,timeout (cpu),2400.02,2400.01,155068.0,starexec-unknown,unsat
+430234681,shid_entl/tseg_join_tree_entail_unk_tseg-1.sb.smt2,8318884,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.97,2400.07,155068.0,starexec-unknown,unsat
+430234635,shid_entl/tseg_join_tree_entail_unk_tseg-2.sb.smt2,8318838,Cyclist-SL,1136,default,1487,timeout (wallclock),2399.95,2400.02,154776.0,starexec-unknown,unsat

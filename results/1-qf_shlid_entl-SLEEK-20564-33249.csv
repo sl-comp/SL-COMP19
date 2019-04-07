@@ -1,0 +1,61 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result,expected
+430512510,qf_shlid_entl/dll-vc01.smt2,8318278,SLEEK,20564,default,304221,complete,0.117917,0.112725,113176.0,unsat,unsat
+430512468,qf_shlid_entl/dll-vc02.smt2,8318236,SLEEK,20564,default,304221,complete,0.117368,0.112261,113176.0,unsat,unsat
+430512492,qf_shlid_entl/dll-vc03.smt2,8318260,SLEEK,20564,default,304221,complete,0.133464,0.127893,113176.0,unsat,unsat
+430512516,qf_shlid_entl/dll-vc04.smt2,8318284,SLEEK,20564,default,304221,complete,0.152757,0.145933,113176.0,sat,sat
+430512512,qf_shlid_entl/dll-vc05.smt2,8318280,SLEEK,20564,default,304221,complete,0.154796,0.148257,113176.0,sat,unsat
+430512473,qf_shlid_entl/dll-vc06.smt2,8318241,SLEEK,20564,default,304221,complete,0.221016,0.22974,113176.0,sat,sat
+430512497,qf_shlid_entl/dll-vc07.smt2,8318265,SLEEK,20564,default,304221,complete,0.163526,0.156269,113176.0,sat,unsat
+430512521,qf_shlid_entl/dll-vc08.smt2,8318289,SLEEK,20564,default,304221,complete,0.324085,0.314303,113176.0,sat,sat
+430512503,qf_shlid_entl/dll-vc09.smt2,8318271,SLEEK,20564,default,304221,complete,0.182596,0.176723,113176.0,unsat,unsat
+430512519,qf_shlid_entl/dll-vc10.smt2,8318287,SLEEK,20564,default,304221,complete,0.326479,0.316284,113176.0,sat,sat
+430512500,qf_shlid_entl/dll-vc11.smt2,8318268,SLEEK,20564,default,304221,complete,0.157853,0.15109,113176.0,sat,unsat
+430512475,qf_shlid_entl/dll-vc12.smt2,8318243,SLEEK,20564,default,304221,complete,0.233896,0.225262,113176.0,sat,sat
+430512483,qf_shlid_entl/dll-vc13.smt2,8318251,SLEEK,20564,default,304221,complete,0.156215,0.149576,113176.0,sat,sat
+430512525,qf_shlid_entl/dll-vc14.smt2,8318293,SLEEK,20564,default,304221,complete,0.162947,0.156026,113176.0,sat,sat
+430512507,qf_shlid_entl/dll-vc15.smt2,8318275,SLEEK,20564,default,304221,complete,0.110858,0.106276,113176.0,unsat,unsat
+430512480,qf_shlid_entl/dll-vc16.smt2,8318248,SLEEK,20564,default,304221,complete,0.787969,0.771912,252980.0,sat,sat
+430512489,qf_shlid_entl/dll-vc17.smt2,8318257,SLEEK,20564,default,304221,complete,0.223066,0.21532,113176.0,sat,unsat
+430512501,qf_shlid_entl/lss-vc01.smt2,8318269,SLEEK,20564,default,304221,complete,0.074948,0.069806,113176.0,unsat,unsat
+430512477,qf_shlid_entl/lss-vc02.smt2,8318245,SLEEK,20564,default,304221,complete,0.116663,0.111086,113176.0,unsat,unsat
+430512486,qf_shlid_entl/lss-vc03.smt2,8318254,SLEEK,20564,default,304221,complete,0.136764,0.130628,113176.0,unsat,unsat
+430512478,qf_shlid_entl/nll-vc01.smt2,8318246,SLEEK,20564,default,304221,complete,0.972432,0.965289,253600.0,unsat,unsat
+430512505,qf_shlid_entl/nll-vc02.smt2,8318273,SLEEK,20564,default,304221,complete,0.971132,0.96392,253628.0,unsat,unsat
+430512522,qf_shlid_entl/nll-vc03.smt2,8318290,SLEEK,20564,default,304221,complete,1.08037,1.07058,253660.0,unsat,unsat
+430512490,qf_shlid_entl/nll-vc04.smt2,8318258,SLEEK,20564,default,304221,complete,1.61334,1.59571,253744.0,unsat,unsat
+430512482,qf_shlid_entl/nll-vc05.smt2,8318250,SLEEK,20564,default,304221,complete,2.13991,1.08854,253608.0,unsat,unsat
+430512509,qf_shlid_entl/nll-vc06.smt2,8318277,SLEEK,20564,default,304221,complete,1.14361,1.13582,253748.0,unsat,sat
+430512526,qf_shlid_entl/nll-vc07.smt2,8318294,SLEEK,20564,default,304221,complete,1.15217,1.14087,253748.0,unsat,unsat
+430512494,qf_shlid_entl/nll-vc08.smt2,8318262,SLEEK,20564,default,304221,complete,1.89179,1.87118,256664.0,unsat,unsat
+430512470,qf_shlid_entl/nll-vc09.smt2,8318238,SLEEK,20564,default,304221,complete,1.22757,1.21532,253752.0,unsat,unsat
+430512495,qf_shlid_entl/nll-vc10.smt2,8318263,SLEEK,20564,default,304221,complete,1.57805,1.56044,255776.0,unsat,unsat
+430512471,qf_shlid_entl/nll-vc11.smt2,8318239,SLEEK,20564,default,304221,complete,1.28324,1.26894,254332.0,unsat,unsat
+430512511,qf_shlid_entl/nll-vc12.smt2,8318279,SLEEK,20564,default,304221,complete,0.987799,0.97957,253752.0,unsat,unsat
+430512515,qf_shlid_entl/nll-vc13.smt2,8318283,SLEEK,20564,default,304221,complete,1.07819,1.06936,253748.0,sat,sat
+430512498,qf_shlid_entl/nll-vc14.smt2,8318266,SLEEK,20564,default,304221,complete,1.28916,1.27453,253748.0,sat,sat
+430512474,qf_shlid_entl/nll-vc15.smt2,8318242,SLEEK,20564,default,304221,complete,1.07958,1.07122,253584.0,sat,sat
+430512513,qf_shlid_entl/nll-vc16.smt2,8318281,SLEEK,20564,default,304221,complete,1.22545,1.21584,253748.0,sat,sat
+430512518,qf_shlid_entl/nll-vc17.smt2,8318286,SLEEK,20564,default,304221,complete,3.33879,3.30596,263788.0,sat,sat
+430512484,qf_shlid_entl/nll-vc18.smt2,8318252,SLEEK,20564,default,304221,complete,3.55045,3.50791,258860.0,sat,sat
+430512476,qf_shlid_entl/nll-vc19.smt2,8318244,SLEEK,20564,default,304221,complete,4.90789,4.85747,268036.0,sat,sat
+430512487,qf_shlid_entl/skl2-vc01.smt2,8318255,SLEEK,20564,default,304221,complete,0.992427,0.98632,253892.0,unsat,unsat
+430512523,qf_shlid_entl/skl2-vc02.smt2,8318291,SLEEK,20564,default,304221,complete,0.988978,0.982577,253896.0,unsat,unsat
+430512504,qf_shlid_entl/skl2-vc03.smt2,8318272,SLEEK,20564,default,304221,complete,59.451,59.1529,327320.0,sat,unsat
+430512481,qf_shlid_entl/skl2-vc04.smt2,8318249,SLEEK,20564,default,304221,complete,1.07648,1.07251,254056.0,unsat,unsat
+430512491,qf_shlid_entl/skl2-vc05.smt2,8318259,SLEEK,20564,default,304221,complete,2.71782,2.68285,256084.0,sat,sat
+430512527,qf_shlid_entl/skl2-vc06.smt2,8318295,SLEEK,20564,default,304221,complete,4.47679,4.40867,259164.0,sat,sat
+430512508,qf_shlid_entl/skl2-vc07.smt2,8318276,SLEEK,20564,default,304221,complete,208.554,206.177,506172.0,unsat,sat
+430512485,qf_shlid_entl/skl3-vc01.smt2,8318253,SLEEK,20564,default,304221,complete,4.92583,4.91808,254300.0,unsat,unsat
+430512520,qf_shlid_entl/skl3-vc02.smt2,8318288,SLEEK,20564,default,304221,complete,82.1085,81.8111,301888.0,sat,sat
+430512502,qf_shlid_entl/skl3-vc03.smt2,8318270,SLEEK,20564,default,304221,complete,1148.25,1147.53,354140.0,unsat,unsat
+430512479,qf_shlid_entl/skl3-vc04.smt2,8318247,SLEEK,20564,default,304221,timeout (cpu),2400.06,2396.47,811616.0,starexec-unknown,unsat
+430512488,qf_shlid_entl/skl3-vc05.smt2,8318256,SLEEK,20564,default,304221,timeout (cpu),2400.03,2399.46,730576.0,starexec-unknown,unsat
+430512524,qf_shlid_entl/skl3-vc06.smt2,8318292,SLEEK,20564,default,304221,timeout (cpu),2400.05,2399.48,738164.0,starexec-unknown,unsat
+430512506,qf_shlid_entl/skl3-vc07.smt2,8318274,SLEEK,20564,default,304221,timeout (cpu),2400.04,2394.42,871580.0,starexec-unknown,unsat
+430512472,qf_shlid_entl/skl3-vc08.smt2,8318240,SLEEK,20564,default,304221,timeout (cpu),2400.02,2396.92,687268.0,starexec-unknown,unsat
+430512496,qf_shlid_entl/skl3-vc09.smt2,8318264,SLEEK,20564,default,304221,timeout (cpu),2400.02,2396.5,868956.0,starexec-unknown,unsat
+430512469,qf_shlid_entl/skl3-vc10.smt2,8318237,SLEEK,20564,default,304221,complete,5.25712,5.2443,256688.0,unsat,unsat
+430512493,qf_shlid_entl/skl3-vc11.smt2,8318261,SLEEK,20564,default,304221,timeout (cpu),2400.08,2396.05,790972.0,starexec-unknown,sat
+430512514,qf_shlid_entl/skl3-vc12.smt2,8318282,SLEEK,20564,default,304221,timeout (cpu),2400.01,2398.68,639992.0,starexec-unknown,sat
+430512517,qf_shlid_entl/sll-vc01.smt2,8318285,SLEEK,20564,default,304221,complete,0.075,0.0702669,113176.0,sat,sat
+430512499,qf_shlid_entl/sll-vc02.smt2,8318267,SLEEK,20564,default,304221,complete,0.074559,0.0699589,113176.0,sat,sat

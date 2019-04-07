@@ -1,0 +1,100 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result,expected
+433163452,qf_shid_sat/abduced00.defs.smt2,8318320,Songbird v2,20617,songbird.sh,304292,complete,0.025381,0.0792931,113176.0,sat,sat
+433163448,qf_shid_sat/abduced01.defs.smt2,8318316,Songbird v2,20617,songbird.sh,304292,complete,0.027753,0.0817271,113176.0,sat,sat
+433163445,qf_shid_sat/abduced02.defs.smt2,8318313,Songbird v2,20617,songbird.sh,304292,complete,0.023247,0.0772541,113176.0,sat,sat
+433163444,qf_shid_sat/abduced03.defs.smt2,8318312,Songbird v2,20617,songbird.sh,304292,complete,0.030026,0.0849609,113176.0,sat,sat
+433163440,qf_shid_sat/abduced04.defs.smt2,8318308,Songbird v2,20617,songbird.sh,304292,complete,0.028551,0.0831409,113176.0,sat,sat
+433163432,qf_shid_sat/abduced05.defs.smt2,8318300,Songbird v2,20617,songbird.sh,304292,complete,0.035668,0.089383,113176.0,sat,sat
+433163430,qf_shid_sat/abduced06.defs.smt2,8318298,Songbird v2,20617,songbird.sh,304292,complete,0.031705,0.0854151,113176.0,sat,sat
+433163429,qf_shid_sat/abduced07.defs.smt2,8318297,Songbird v2,20617,songbird.sh,304292,complete,0.032013,0.08575,113176.0,sat,sat
+433163466,qf_shid_sat/abduced08.defs.smt2,8318334,Songbird v2,20617,songbird.sh,304292,complete,0.030658,0.084701,113176.0,sat,sat
+433163471,qf_shid_sat/abduced09.defs.smt2,8318339,Songbird v2,20617,songbird.sh,304292,complete,0.031886,0.085812,113176.0,sat,sat
+433163507,qf_shid_sat/abduced10.defs.smt2,8318375,Songbird v2,20617,songbird.sh,304292,complete,0.033949,0.0896669,113176.0,sat,sat
+433163509,qf_shid_sat/abduced11.defs.smt2,8318377,Songbird v2,20617,songbird.sh,304292,complete,0.030932,0.0848401,113176.0,sat,sat
+433163498,qf_shid_sat/abduced12.defs.smt2,8318366,Songbird v2,20617,songbird.sh,304292,complete,0.032686,0.086748,113176.0,sat,sat
+433163501,qf_shid_sat/abduced13.defs.smt2,8318369,Songbird v2,20617,songbird.sh,304292,complete,0.030756,0.0851971,113176.0,sat,sat
+433163522,qf_shid_sat/abduced14.defs.smt2,8318390,Songbird v2,20617,songbird.sh,304292,complete,0.030678,0.084701,113176.0,sat,sat
+433163526,qf_shid_sat/abduced15.defs.smt2,8318394,Songbird v2,20617,songbird.sh,304292,complete,0.031479,0.086092,113176.0,sat,sat
+433163516,qf_shid_sat/abduced16.defs.smt2,8318384,Songbird v2,20617,songbird.sh,304292,complete,0.030324,0.0844581,113176.0,sat,sat
+433163519,qf_shid_sat/abduced17.defs.smt2,8318387,Songbird v2,20617,songbird.sh,304292,complete,0.028521,0.082465,113176.0,sat,sat
+433163482,qf_shid_sat/abduced18.defs.smt2,8318350,Songbird v2,20617,songbird.sh,304292,complete,0.0288,0.0828229,113176.0,sat,sat
+433163480,qf_shid_sat/abduced19.defs.smt2,8318348,Songbird v2,20617,songbird.sh,304292,complete,0.029968,0.083067,113176.0,sat,sat
+433163470,qf_shid_sat/atll-01.smt2,8318338,Songbird v2,20617,songbird.sh,304292,complete,0.024796,0.179362,113176.0,sat,sat
+433163512,qf_shid_sat/atll-02.smt2,8318380,Songbird v2,20617,songbird.sh,304292,complete,238.49,238.549,430808.0,starexec-unknown,unsat
+433163493,qf_shid_sat/atll-03.smt2,8318361,Songbird v2,20617,songbird.sh,304292,complete,0.020684,0.172636,113176.0,unsat,unsat
+433163464,qf_shid_sat/dll-01.smt2,8318332,Songbird v2,20617,songbird.sh,304292,complete,10.18,10.2866,217576.0,unsat,unsat
+433163503,qf_shid_sat/dll-02.smt2,8318371,Songbird v2,20617,songbird.sh,304292,complete,14.67,14.6987,280072.0,unsat,unsat
+433163485,qf_shid_sat/dll-03.smt2,8318353,Songbird v2,20617,songbird.sh,304292,complete,0.036631,0.0573379,113176.0,sat,sat
+433163437,qf_shid_sat/dll-04.smt2,8318305,Songbird v2,20617,songbird.sh,304292,complete,259.1,259.227,242696.0,starexec-unknown,unsat
+433163472,qf_shid_sat/dll-05.smt2,8318340,Songbird v2,20617,songbird.sh,304292,complete,313.35,313.409,253780.0,starexec-unknown,sat
+433163513,qf_shid_sat/dll-06.smt2,8318381,Songbird v2,20617,songbird.sh,304292,complete,221.42,221.503,763168.0,starexec-unknown,unsat
+433163479,qf_shid_sat/dltree-01.smt2,8318347,Songbird v2,20617,songbird.sh,304292,complete,0.027499,0.0545679,113176.0,sat,sat
+433163502,qf_shid_sat/inconsistent-ls-of-ls.defs.smt2,8318370,Songbird v2,20617,songbird.sh,304292,complete,10.61,10.6583,218032.0,unsat,unsat
+433163490,qf_shid_sat/lasso-01.smt2,8318358,Songbird v2,20617,songbird.sh,304292,complete,10.53,10.5684,211108.0,sat,sat
+433163436,qf_shid_sat/lasso-02.smt2,8318304,Songbird v2,20617,songbird.sh,304292,complete,0.011993,0.0247401,113176.0,unsat,unsat
+433163467,qf_shid_sat/lasso-03.smt2,8318335,Songbird v2,20617,songbird.sh,304292,complete,0.013885,0.02682,113176.0,unsat,unsat
+433163497,qf_shid_sat/lasso-04.smt2,8318365,Songbird v2,20617,songbird.sh,304292,complete,0.018358,0.0317309,113176.0,unsat,unsat
+433163483,qf_shid_sat/lasso-05.smt2,8318351,Songbird v2,20617,songbird.sh,304292,complete,30.8,30.832,337688.0,sat,sat
+433163510,qf_shid_sat/lss-03-01.smt2,8318378,Songbird v2,20617,songbird.sh,304292,complete,35.91,35.9457,295492.0,unsat,unsat
+433163473,qf_shid_sat/lss-03-02.smt2,8318341,Songbird v2,20617,songbird.sh,304292,complete,20.7441,10.5997,210676.0,unsat,unsat
+433163438,qf_shid_sat/lss-03-03.smt2,8318306,Songbird v2,20617,songbird.sh,304292,complete,10.19,10.2791,252740.0,unsat,unsat
+433163468,qf_shid_sat/lss-04-01.smt2,8318336,Songbird v2,20617,songbird.sh,304292,complete,0.017089,0.0264859,113176.0,sat,sat
+433163508,qf_shid_sat/lss-04-02.smt2,8318376,Songbird v2,20617,songbird.sh,304292,complete,0.017515,0.027313,113176.0,sat,sat
+433163491,qf_shid_sat/lss-04-03.smt2,8318359,Songbird v2,20617,songbird.sh,304292,complete,91.03,91.0728,324620.0,unsat,unsat
+433163433,qf_shid_sat/lss-05-01.smt2,8318301,Songbird v2,20617,songbird.sh,304292,complete,180.42,180.447,378676.0,starexec-unknown,sat
+433163487,qf_shid_sat/lss-05-02.smt2,8318355,Songbird v2,20617,songbird.sh,304292,complete,182.25,182.231,397260.0,starexec-unknown,sat
+433163506,qf_shid_sat/lss-05-03.smt2,8318374,Songbird v2,20617,songbird.sh,304292,complete,181.2,181.208,388696.0,starexec-unknown,sat
+433163458,qf_shid_sat/ncll-01.smt2,8318326,Songbird v2,20617,songbird.sh,304292,complete,0.013407,0.025748,113176.0,sat,sat
+433163447,qf_shid_sat/nll-01.smt2,8318315,Songbird v2,20617,songbird.sh,304292,complete,0.011787,0.0250101,113176.0,sat,sat
+433163463,qf_shid_sat/sll2h-01.smt2,8318331,Songbird v2,20617,songbird.sh,304292,complete,0.012262,0.0255551,113176.0,sat,sat
+433163521,qf_shid_sat/succ-circuit01.defs.smt2,8318389,Songbird v2,20617,songbird.sh,304292,complete,0.017217,0.103514,113176.0,sat,sat
+433163518,qf_shid_sat/succ-circuit02.defs.smt2,8318386,Songbird v2,20617,songbird.sh,304292,complete,0.083752,0.179299,113176.0,sat,sat
+433163517,qf_shid_sat/succ-circuit03.defs.smt2,8318385,Songbird v2,20617,songbird.sh,304292,complete,34.68,34.6594,616940.0,sat,sat
+433163511,qf_shid_sat/succ-circuit04.defs.smt2,8318379,Songbird v2,20617,songbird.sh,304292,complete,190.913,190.8,2252516.0,starexec-unknown,sat
+433163505,qf_shid_sat/succ-circuit05.defs.smt2,8318373,Songbird v2,20617,songbird.sh,304292,complete,182.48,182.327,3341564.0,starexec-unknown,sat
+433163500,qf_shid_sat/succ-circuit06.defs.smt2,8318368,Songbird v2,20617,songbird.sh,304292,complete,184.38,184.285,3815036.0,starexec-unknown,sat
+433163499,qf_shid_sat/succ-circuit07.defs.smt2,8318367,Songbird v2,20617,songbird.sh,304292,complete,182.78,182.63,3814620.0,starexec-unknown,sat
+433163488,qf_shid_sat/succ-circuit08.defs.smt2,8318356,Songbird v2,20617,songbird.sh,304292,complete,185.03,184.954,3814632.0,starexec-unknown,sat
+433163494,qf_shid_sat/succ-circuit09.defs.smt2,8318362,Songbird v2,20617,songbird.sh,304292,complete,188.95,188.98,3341156.0,starexec-unknown,sat
+433163434,qf_shid_sat/succ-circuit10.defs.smt2,8318302,Songbird v2,20617,songbird.sh,304292,complete,193.2,193.287,2251916.0,starexec-unknown,sat
+433163439,qf_shid_sat/succ-circuit11.defs.smt2,8318307,Songbird v2,20617,songbird.sh,304292,complete,761.56,761.646,616252.0,starexec-unknown,sat
+433163428,qf_shid_sat/succ-circuit12.defs.smt2,8318296,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.8,2400.11,616356.0,starexec-unknown,sat
+433163431,qf_shid_sat/succ-circuit13.defs.smt2,8318299,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.89,2400.11,558188.0,starexec-unknown,sat
+433163450,qf_shid_sat/succ-circuit14.defs.smt2,8318318,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.95,2400.09,464632.0,starexec-unknown,sat
+433163451,qf_shid_sat/succ-circuit15.defs.smt2,8318319,Songbird v2,20617,songbird.sh,304292,timeout (cpu),2400.01,2400.01,391076.0,starexec-unknown,sat
+433163443,qf_shid_sat/succ-circuit16.defs.smt2,8318311,Songbird v2,20617,songbird.sh,304292,timeout (cpu),2400.06,2400.08,362180.0,starexec-unknown,sat
+433163446,qf_shid_sat/succ-circuit17.defs.smt2,8318314,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.85,2400.02,362220.0,starexec-unknown,sat
+433163461,qf_shid_sat/succ-circuit18.defs.smt2,8318329,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.84,2400.03,337088.0,starexec-unknown,sat
+433163459,qf_shid_sat/succ-circuit19.defs.smt2,8318327,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.86,2400.02,315260.0,starexec-unknown,sat
+433163492,qf_shid_sat/succ-circuit20.defs.smt2,8318360,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.86,2400.11,337180.0,starexec-unknown,sat
+433163495,qf_shid_sat/succ-rec01.defs.smt2,8318363,Songbird v2,20617,songbird.sh,304292,complete,0.016958,0.100093,113176.0,sat,sat
+433163484,qf_shid_sat/succ-rec02.defs.smt2,8318352,Songbird v2,20617,songbird.sh,304292,complete,0.037591,0.127132,113176.0,sat,sat
+433163486,qf_shid_sat/succ-rec03.defs.smt2,8318354,Songbird v2,20617,songbird.sh,304292,complete,0.154435,0.253791,113176.0,sat,sat
+433163478,qf_shid_sat/succ-rec04.defs.smt2,8318346,Songbird v2,20617,songbird.sh,304292,complete,0.719466,0.858654,113176.0,sat,sat
+433163481,qf_shid_sat/succ-rec05.defs.smt2,8318349,Songbird v2,20617,songbird.sh,304292,complete,4.42,4.44384,241124.0,sat,sat
+433163475,qf_shid_sat/succ-rec06.defs.smt2,8318343,Songbird v2,20617,songbird.sh,304292,complete,180.75,180.543,1542340.0,starexec-unknown,sat
+433163477,qf_shid_sat/succ-rec07.defs.smt2,8318345,Songbird v2,20617,songbird.sh,304292,complete,180.98,180.778,1542456.0,starexec-unknown,sat
+433163524,qf_shid_sat/succ-rec08.defs.smt2,8318392,Songbird v2,20617,songbird.sh,304292,complete,181.42,181.205,1747312.0,starexec-unknown,sat
+433163520,qf_shid_sat/succ-rec09.defs.smt2,8318388,Songbird v2,20617,songbird.sh,304292,complete,181.44,181.253,1542548.0,starexec-unknown,sat
+433163460,qf_shid_sat/succ-rec10.defs.smt2,8318328,Songbird v2,20617,songbird.sh,304292,complete,180.53,180.465,1368444.0,starexec-unknown,sat
+433163456,qf_shid_sat/succ-rec11.defs.smt2,8318324,Songbird v2,20617,songbird.sh,304292,complete,743.56,743.642,391132.0,starexec-unknown,sat
+433163455,qf_shid_sat/succ-rec12.defs.smt2,8318323,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.99,2400.07,391148.0,starexec-unknown,sat
+433163454,qf_shid_sat/succ-rec13.defs.smt2,8318322,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.7,2400.03,391156.0,starexec-unknown,sat
+433163474,qf_shid_sat/succ-rec14.defs.smt2,8318342,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.8,2400.13,405532.0,starexec-unknown,sat
+433163469,qf_shid_sat/succ-rec15.defs.smt2,8318337,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.8,2400.03,424416.0,starexec-unknown,sat
+433163465,qf_shid_sat/succ-rec16.defs.smt2,8318333,Songbird v2,20617,songbird.sh,304292,timeout (cpu),2400.0,2400.0,424432.0,starexec-unknown,sat
+433163462,qf_shid_sat/succ-rec17.defs.smt2,8318330,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.8,2400.02,424456.0,starexec-unknown,sat
+433163435,qf_shid_sat/succ-rec18.defs.smt2,8318303,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.91,2400.02,424500.0,starexec-unknown,sat
+433163441,qf_shid_sat/succ-rec19.defs.smt2,8318309,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.82,2400.04,424488.0,starexec-unknown,sat
+433163525,qf_shid_sat/succ-rec20.defs.smt2,8318393,Songbird v2,20617,songbird.sh,304292,timeout (wallclock),2399.84,2400.03,424564.0,starexec-unknown,sat
+433163523,qf_shid_sat/tll-01.smt2,8318391,Songbird v2,20617,songbird.sh,304292,complete,0.013052,0.0267681,113176.0,sat,sat
+433163457,qf_shid_sat/tll-02.smt2,8318325,Songbird v2,20617,songbird.sh,304292,complete,30.4019,30.4734,295720.0,unsat,unsat
+433163449,qf_shid_sat/tll-03.smt2,8318317,Songbird v2,20617,songbird.sh,304292,complete,0.018533,0.03235,113176.0,sat,sat
+433163476,qf_shid_sat/tll-04.smt2,8318344,Songbird v2,20617,songbird.sh,304292,complete,0.022366,0.0367991,113176.0,sat,sat
+433163515,qf_shid_sat/tll-05.smt2,8318383,Songbird v2,20617,songbird.sh,304292,complete,0.026965,0.0424019,113176.0,sat,sat
+433163453,qf_shid_sat/tll-06.smt2,8318321,Songbird v2,20617,songbird.sh,304292,complete,0.013125,0.0265601,113176.0,unsat,unsat
+433163442,qf_shid_sat/tll-07.smt2,8318310,Songbird v2,20617,songbird.sh,304292,complete,0.053618,0.071409,113176.0,sat,sat
+433163496,qf_shid_sat/tll-08.smt2,8318364,Songbird v2,20617,songbird.sh,304292,complete,0.013995,0.02788,113176.0,unsat,unsat
+433163514,qf_shid_sat/tll-09.smt2,8318382,Songbird v2,20617,songbird.sh,304292,complete,0.018236,0.032698,113176.0,unsat,unsat
+433163489,qf_shid_sat/tll-10.smt2,8318357,Songbird v2,20617,songbird.sh,304292,complete,2.75,2.80863,204364.0,sat,sat
+433163504,qf_shid_sat/tree-01.smt2,8318372,Songbird v2,20617,songbird.sh,304292,complete,0.011544,0.0244449,113176.0,sat,sat

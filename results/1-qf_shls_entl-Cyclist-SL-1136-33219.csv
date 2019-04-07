@@ -1,0 +1,297 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result,expected
+430494331,qf_shls_entl/bolognesa-10-e01.tptp.smt2,8317378,Cyclist-SL,1136,default,1487,timeout (wallclock),599.961,600.019,155068.0,starexec-unknown,sat
+430494322,qf_shls_entl/bolognesa-10-e02.tptp.smt2,8317369,Cyclist-SL,1136,default,1487,timeout (wallclock),599.956,600.047,155068.0,starexec-unknown,unsat
+430494312,qf_shls_entl/bolognesa-10-e03.tptp.smt2,8317359,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.088,154668.0,starexec-unknown,unsat
+430494294,qf_shls_entl/bolognesa-10-e04.tptp.smt2,8317341,Cyclist-SL,1136,default,1487,timeout (wallclock),600.008,600.059,155068.0,starexec-unknown,sat
+430494289,qf_shls_entl/bolognesa-10-e05.tptp.smt2,8317336,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.064,154668.0,starexec-unknown,sat
+430494280,qf_shls_entl/bolognesa-10-e06.tptp.smt2,8317327,Cyclist-SL,1136,default,1487,timeout (wallclock),600.03,600.089,154668.0,starexec-unknown,sat
+430494269,qf_shls_entl/bolognesa-10-e07.tptp.smt2,8317316,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.051,154668.0,starexec-unknown,sat
+430494390,qf_shls_entl/bolognesa-10-e08.tptp.smt2,8317437,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.014,154668.0,starexec-unknown,sat
+430494398,qf_shls_entl/bolognesa-10-e09.tptp.smt2,8317445,Cyclist-SL,1136,default,1487,timeout (wallclock),600.001,600.012,155068.0,starexec-unknown,sat
+430494215,qf_shls_entl/bolognesa-10-e10.tptp.smt2,8317262,Cyclist-SL,1136,default,1487,timeout (wallclock),600.005,600.05,154668.0,starexec-unknown,unsat
+430494204,qf_shls_entl/bolognesa-11-e01.tptp.smt2,8317251,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,599.998,155068.0,starexec-unknown,unsat
+430494234,qf_shls_entl/bolognesa-11-e02.tptp.smt2,8317281,Cyclist-SL,1136,default,1487,timeout (wallclock),599.974,600.049,154668.0,starexec-unknown,unsat
+430494223,qf_shls_entl/bolognesa-11-e03.tptp.smt2,8317270,Cyclist-SL,1136,default,1487,timeout (wallclock),599.989,600.01,155068.0,starexec-unknown,unsat
+430494242,qf_shls_entl/bolognesa-11-e04.tptp.smt2,8317289,Cyclist-SL,1136,default,1487,timeout (wallclock),599.982,600.042,155068.0,starexec-unknown,unsat
+430494237,qf_shls_entl/bolognesa-11-e05.tptp.smt2,8317284,Cyclist-SL,1136,default,1487,timeout (wallclock),600.002,600.045,155068.0,starexec-unknown,sat
+430494262,qf_shls_entl/bolognesa-11-e06.tptp.smt2,8317309,Cyclist-SL,1136,default,1487,timeout (wallclock),599.995,600.029,155068.0,starexec-unknown,sat
+430494251,qf_shls_entl/bolognesa-11-e07.tptp.smt2,8317298,Cyclist-SL,1136,default,1487,timeout (wallclock),600.006,600.069,154668.0,starexec-unknown,unsat
+430494112,qf_shls_entl/bolognesa-11-e08.tptp.smt2,8317159,Cyclist-SL,1136,default,1487,timeout (cpu),600.04,600.106,154668.0,starexec-unknown,unsat
+430494122,qf_shls_entl/bolognesa-11-e09.tptp.smt2,8317169,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.054,154668.0,starexec-unknown,unsat
+430494304,qf_shls_entl/bolognesa-11-e10.tptp.smt2,8317351,Cyclist-SL,1136,default,1487,timeout (cpu),600.04,600.084,155068.0,starexec-unknown,sat
+430494346,qf_shls_entl/bolognesa-12-e01.tptp.smt2,8317393,Cyclist-SL,1136,default,1487,timeout (cpu),600.07,600.062,154668.0,starexec-unknown,unsat
+430494368,qf_shls_entl/bolognesa-12-e02.tptp.smt2,8317415,Cyclist-SL,1136,default,1487,timeout (wallclock),599.958,600.015,155068.0,starexec-unknown,sat
+430494360,qf_shls_entl/bolognesa-12-e03.tptp.smt2,8317407,Cyclist-SL,1136,default,1487,timeout (wallclock),599.997,600.023,164724.0,starexec-unknown,sat
+430494379,qf_shls_entl/bolognesa-12-e04.tptp.smt2,8317426,Cyclist-SL,1136,default,1487,timeout (wallclock),599.87,600.016,155068.0,starexec-unknown,sat
+430494370,qf_shls_entl/bolognesa-12-e05.tptp.smt2,8317417,Cyclist-SL,1136,default,1487,timeout (wallclock),599.958,600.036,154668.0,starexec-unknown,unsat
+430494401,qf_shls_entl/bolognesa-12-e06.tptp.smt2,8317448,Cyclist-SL,1136,default,1487,timeout (wallclock),600.023,600.045,155068.0,starexec-unknown,unsat
+430494392,qf_shls_entl/bolognesa-12-e07.tptp.smt2,8317439,Cyclist-SL,1136,default,1487,timeout (wallclock),599.974,600.021,164996.0,starexec-unknown,sat
+430494271,qf_shls_entl/bolognesa-12-e08.tptp.smt2,8317318,Cyclist-SL,1136,default,1487,timeout (cpu),600.04,600.054,154668.0,starexec-unknown,unsat
+430494281,qf_shls_entl/bolognesa-12-e09.tptp.smt2,8317328,Cyclist-SL,1136,default,1487,timeout (wallclock),600.011,600.083,165124.0,starexec-unknown,unsat
+430494155,qf_shls_entl/bolognesa-12-e10.tptp.smt2,8317202,Cyclist-SL,1136,default,1487,timeout (cpu),600.05,600.07,154668.0,starexec-unknown,unsat
+430494184,qf_shls_entl/bolognesa-13-e01.tptp.smt2,8317231,Cyclist-SL,1136,default,1487,timeout (wallclock),600.022,600.026,165124.0,starexec-unknown,unsat
+430494170,qf_shls_entl/bolognesa-13-e02.tptp.smt2,8317217,Cyclist-SL,1136,default,1487,timeout (wallclock),599.982,600.014,155068.0,starexec-unknown,sat
+430494159,qf_shls_entl/bolognesa-13-e03.tptp.smt2,8317206,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.072,164832.0,starexec-unknown,unsat
+430494141,qf_shls_entl/bolognesa-13-e04.tptp.smt2,8317188,Cyclist-SL,1136,default,1487,timeout (cpu),600.03,600.083,165124.0,starexec-unknown,sat
+430494134,qf_shls_entl/bolognesa-13-e05.tptp.smt2,8317181,Cyclist-SL,1136,default,1487,timeout (wallclock),599.981,600.012,155068.0,starexec-unknown,sat
+430494127,qf_shls_entl/bolognesa-13-e06.tptp.smt2,8317174,Cyclist-SL,1136,default,1487,timeout (wallclock),600.025,600.111,165124.0,starexec-unknown,sat
+430494114,qf_shls_entl/bolognesa-13-e07.tptp.smt2,8317161,Cyclist-SL,1136,default,1487,timeout (cpu),600.0,600.049,164724.0,starexec-unknown,unsat
+430494253,qf_shls_entl/bolognesa-13-e08.tptp.smt2,8317300,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.006,154668.0,starexec-unknown,unsat
+430494263,qf_shls_entl/bolognesa-13-e09.tptp.smt2,8317310,Cyclist-SL,1136,default,1487,timeout (wallclock),600.021,600.029,155068.0,starexec-unknown,sat
+430494356,qf_shls_entl/bolognesa-13-e10.tptp.smt2,8317403,Cyclist-SL,1136,default,1487,timeout (wallclock),600.027,600.02,164724.0,starexec-unknown,sat
+430494218,qf_shls_entl/bolognesa-14-e01.tptp.smt2,8317265,Cyclist-SL,1136,default,1487,timeout (wallclock),600.006,600.012,165124.0,starexec-unknown,unsat
+430494210,qf_shls_entl/bolognesa-14-e02.tptp.smt2,8317257,Cyclist-SL,1136,default,1487,timeout (wallclock),600.008,600.022,154668.0,starexec-unknown,unsat
+430494195,qf_shls_entl/bolognesa-14-e03.tptp.smt2,8317242,Cyclist-SL,1136,default,1487,timeout (wallclock),599.974,600.046,165124.0,starexec-unknown,unsat
+430494264,qf_shls_entl/bolognesa-14-e04.tptp.smt2,8317311,Cyclist-SL,1136,default,1487,timeout (wallclock),599.989,600.117,155068.0,starexec-unknown,unsat
+430494257,qf_shls_entl/bolognesa-14-e05.tptp.smt2,8317304,Cyclist-SL,1136,default,1487,timeout (wallclock),599.962,600.011,165124.0,starexec-unknown,sat
+430494249,qf_shls_entl/bolognesa-14-e06.tptp.smt2,8317296,Cyclist-SL,1136,default,1487,timeout (wallclock),599.979,600.042,155068.0,starexec-unknown,unsat
+430494239,qf_shls_entl/bolognesa-14-e07.tptp.smt2,8317286,Cyclist-SL,1136,default,1487,timeout (wallclock),599.954,600.018,164724.0,starexec-unknown,unsat
+430494139,qf_shls_entl/bolognesa-14-e08.tptp.smt2,8317186,Cyclist-SL,1136,default,1487,timeout (wallclock),599.971,600.01,164724.0,starexec-unknown,unsat
+430494145,qf_shls_entl/bolognesa-14-e09.tptp.smt2,8317192,Cyclist-SL,1136,default,1487,timeout (cpu),600.06,600.088,164724.0,starexec-unknown,unsat
+430494328,qf_shls_entl/bolognesa-14-e10.tptp.smt2,8317375,Cyclist-SL,1136,default,1487,timeout (wallclock),599.945,600.019,165124.0,starexec-unknown,sat
+430494309,qf_shls_entl/bolognesa-15-e01.tptp.smt2,8317356,Cyclist-SL,1136,default,1487,timeout (wallclock),599.85,600.019,164724.0,starexec-unknown,unsat
+430494335,qf_shls_entl/bolognesa-15-e02.tptp.smt2,8317382,Cyclist-SL,1136,default,1487,timeout (cpu),600.07,600.093,164724.0,starexec-unknown,unsat
+430494324,qf_shls_entl/bolognesa-15-e03.tptp.smt2,8317371,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.059,164724.0,starexec-unknown,sat
+430494283,qf_shls_entl/bolognesa-15-e04.tptp.smt2,8317330,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.056,164724.0,starexec-unknown,unsat
+430494275,qf_shls_entl/bolognesa-15-e05.tptp.smt2,8317322,Cyclist-SL,1136,default,1487,timeout (cpu),600.05,600.09,165124.0,starexec-unknown,unsat
+430494302,qf_shls_entl/bolognesa-15-e06.tptp.smt2,8317349,Cyclist-SL,1136,default,1487,timeout (wallclock),600.011,600.02,165124.0,starexec-unknown,unsat
+430494290,qf_shls_entl/bolognesa-15-e07.tptp.smt2,8317337,Cyclist-SL,1136,default,1487,timeout (wallclock),599.99,600.012,164724.0,starexec-unknown,unsat
+430494377,qf_shls_entl/bolognesa-15-e08.tptp.smt2,8317424,Cyclist-SL,1136,default,1487,timeout (wallclock),599.996,600.012,165124.0,starexec-unknown,sat
+430494382,qf_shls_entl/bolognesa-15-e09.tptp.smt2,8317429,Cyclist-SL,1136,default,1487,timeout (wallclock),599.962,600.027,164724.0,starexec-unknown,sat
+430494199,qf_shls_entl/bolognesa-15-e10.tptp.smt2,8317246,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.01,164832.0,starexec-unknown,unsat
+430494157,qf_shls_entl/bolognesa-16-e01.tptp.smt2,8317204,Cyclist-SL,1136,default,1487,timeout (wallclock),600.001,600.012,165124.0,starexec-unknown,unsat
+430494187,qf_shls_entl/bolognesa-16-e02.tptp.smt2,8317234,Cyclist-SL,1136,default,1487,timeout (wallclock),600.011,600.032,154668.0,starexec-unknown,sat
+430494174,qf_shls_entl/bolognesa-16-e03.tptp.smt2,8317221,Cyclist-SL,1136,default,1487,timeout (wallclock),599.992,600.056,164832.0,starexec-unknown,sat
+430494128,qf_shls_entl/bolognesa-16-e04.tptp.smt2,8317175,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.051,165124.0,starexec-unknown,sat
+430494116,qf_shls_entl/bolognesa-16-e05.tptp.smt2,8317163,Cyclist-SL,1136,default,1487,timeout (wallclock),600.009,600.03,164724.0,starexec-unknown,unsat
+430494151,qf_shls_entl/bolognesa-16-e06.tptp.smt2,8317198,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.106,164724.0,starexec-unknown,sat
+430494140,qf_shls_entl/bolognesa-16-e07.tptp.smt2,8317187,Cyclist-SL,1136,default,1487,timeout (wallclock),599.884,600.047,164724.0,starexec-unknown,unsat
+430494241,qf_shls_entl/bolognesa-16-e08.tptp.smt2,8317288,Cyclist-SL,1136,default,1487,timeout (wallclock),600.014,600.037,164832.0,starexec-unknown,unsat
+430494250,qf_shls_entl/bolognesa-16-e09.tptp.smt2,8317297,Cyclist-SL,1136,default,1487,timeout (wallclock),599.973,600.025,165124.0,starexec-unknown,unsat
+430494345,qf_shls_entl/bolognesa-16-e10.tptp.smt2,8317392,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.049,165124.0,starexec-unknown,sat
+430494359,qf_shls_entl/bolognesa-17-e01.tptp.smt2,8317406,Cyclist-SL,1136,default,1487,timeout (cpu),600.05,600.104,155068.0,starexec-unknown,unsat
+430494348,qf_shls_entl/bolognesa-17-e02.tptp.smt2,8317395,Cyclist-SL,1136,default,1487,timeout (cpu),600.07,600.105,165124.0,starexec-unknown,sat
+430494339,qf_shls_entl/bolognesa-17-e03.tptp.smt2,8317386,Cyclist-SL,1136,default,1487,timeout (cpu),600.1,600.091,165124.0,starexec-unknown,sat
+430494403,qf_shls_entl/bolognesa-17-e04.tptp.smt2,8317450,Cyclist-SL,1136,default,1487,timeout (cpu),600.07,600.098,164724.0,starexec-unknown,unsat
+430494395,qf_shls_entl/bolognesa-17-e05.tptp.smt2,8317442,Cyclist-SL,1136,default,1487,timeout (wallclock),600.012,600.014,165124.0,starexec-unknown,unsat
+430494387,qf_shls_entl/bolognesa-17-e06.tptp.smt2,8317434,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.022,164832.0,starexec-unknown,unsat
+430494378,qf_shls_entl/bolognesa-17-e07.tptp.smt2,8317425,Cyclist-SL,1136,default,1487,timeout (wallclock),600.011,600.02,164724.0,starexec-unknown,unsat
+430494293,qf_shls_entl/bolognesa-17-e08.tptp.smt2,8317340,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.062,164724.0,starexec-unknown,sat
+430494303,qf_shls_entl/bolognesa-17-e09.tptp.smt2,8317350,Cyclist-SL,1136,default,1487,timeout (wallclock),600.023,600.046,164724.0,starexec-unknown,unsat
+430494182,qf_shls_entl/bolognesa-17-e10.tptp.smt2,8317229,Cyclist-SL,1136,default,1487,timeout (wallclock),600.01,600.02,165124.0,starexec-unknown,unsat
+430494388,qf_shls_entl/bolognesa-18-e01.tptp.smt2,8317435,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.024,165124.0,starexec-unknown,unsat
+430494394,qf_shls_entl/bolognesa-18-e02.tptp.smt2,8317441,Cyclist-SL,1136,default,1487,timeout (cpu),600.04,600.107,164724.0,starexec-unknown,sat
+430494402,qf_shls_entl/bolognesa-18-e03.tptp.smt2,8317449,Cyclist-SL,1136,default,1487,timeout (wallclock),599.963,600.034,164724.0,starexec-unknown,sat
+430494340,qf_shls_entl/bolognesa-18-e04.tptp.smt2,8317387,Cyclist-SL,1136,default,1487,timeout (wallclock),599.883,600.048,164724.0,starexec-unknown,sat
+430494349,qf_shls_entl/bolognesa-18-e05.tptp.smt2,8317396,Cyclist-SL,1136,default,1487,timeout (wallclock),599.949,600.012,164724.0,starexec-unknown,sat
+430494358,qf_shls_entl/bolognesa-18-e06.tptp.smt2,8317405,Cyclist-SL,1136,default,1487,timeout (cpu),600.05,600.087,165124.0,starexec-unknown,sat
+430494366,qf_shls_entl/bolognesa-18-e07.tptp.smt2,8317413,Cyclist-SL,1136,default,1487,timeout (wallclock),599.872,600.028,164724.0,starexec-unknown,sat
+430494319,qf_shls_entl/bolognesa-18-e08.tptp.smt2,8317366,Cyclist-SL,1136,default,1487,timeout (cpu),600.07,600.084,164724.0,starexec-unknown,sat
+430494310,qf_shls_entl/bolognesa-18-e09.tptp.smt2,8317357,Cyclist-SL,1136,default,1487,timeout (wallclock),599.947,600.069,165124.0,starexec-unknown,sat
+430494124,qf_shls_entl/bolognesa-18-e10.tptp.smt2,8317171,Cyclist-SL,1136,default,1487,timeout (cpu),600.07,600.106,164724.0,starexec-unknown,unsat
+430494150,qf_shls_entl/bolognesa-19-e01.tptp.smt2,8317197,Cyclist-SL,1136,default,1487,timeout (wallclock),599.983,600.016,165124.0,starexec-unknown,sat
+430494117,qf_shls_entl/bolognesa-19-e02.tptp.smt2,8317164,Cyclist-SL,1136,default,1487,timeout (wallclock),599.966,600.05,165124.0,starexec-unknown,sat
+430494129,qf_shls_entl/bolognesa-19-e03.tptp.smt2,8317176,Cyclist-SL,1136,default,1487,timeout (wallclock),599.959,600.017,164724.0,starexec-unknown,sat
+430494173,qf_shls_entl/bolognesa-19-e04.tptp.smt2,8317220,Cyclist-SL,1136,default,1487,timeout (wallclock),599.93,600.039,165124.0,starexec-unknown,sat
+430494186,qf_shls_entl/bolognesa-19-e05.tptp.smt2,8317233,Cyclist-SL,1136,default,1487,timeout (cpu),600.04,600.097,165124.0,starexec-unknown,unsat
+430494158,qf_shls_entl/bolognesa-19-e06.tptp.smt2,8317205,Cyclist-SL,1136,default,1487,timeout (wallclock),599.991,600.048,164724.0,starexec-unknown,unsat
+430494167,qf_shls_entl/bolognesa-19-e07.tptp.smt2,8317214,Cyclist-SL,1136,default,1487,timeout (wallclock),600.007,600.014,164724.0,starexec-unknown,sat
+430494230,qf_shls_entl/bolognesa-19-e08.tptp.smt2,8317277,Cyclist-SL,1136,default,1487,timeout (wallclock),599.96,600.018,165124.0,starexec-unknown,unsat
+430494221,qf_shls_entl/bolognesa-19-e09.tptp.smt2,8317268,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.015,165124.0,starexec-unknown,sat
+430494399,qf_shls_entl/bolognesa-19-e10.tptp.smt2,8317446,Cyclist-SL,1136,default,1487,timeout (wallclock),599.936,600.015,154668.0,starexec-unknown,unsat
+430494119,qf_shls_entl/bolognesa-20-e01.tptp.smt2,8317166,Cyclist-SL,1136,default,1487,timeout (wallclock),600.0,600.047,165124.0,starexec-unknown,sat
+430494147,qf_shls_entl/bolognesa-20-e02.tptp.smt2,8317194,Cyclist-SL,1136,default,1487,timeout (wallclock),600.019,600.046,165124.0,starexec-unknown,sat
+430494138,qf_shls_entl/bolognesa-20-e03.tptp.smt2,8317185,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.081,164724.0,starexec-unknown,sat
+430494166,qf_shls_entl/bolognesa-20-e04.tptp.smt2,8317213,Cyclist-SL,1136,default,1487,timeout (wallclock),599.977,600.033,165124.0,starexec-unknown,sat
+430494153,qf_shls_entl/bolognesa-20-e05.tptp.smt2,8317200,Cyclist-SL,1136,default,1487,timeout (wallclock),599.987,600.023,164724.0,starexec-unknown,sat
+430494188,qf_shls_entl/bolognesa-20-e06.tptp.smt2,8317235,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.012,164724.0,starexec-unknown,unsat
+430494176,qf_shls_entl/bolognesa-20-e07.tptp.smt2,8317223,Cyclist-SL,1136,default,1487,timeout (wallclock),599.997,600.019,154668.0,starexec-unknown,unsat
+430494196,qf_shls_entl/bolognesa-20-e08.tptp.smt2,8317243,Cyclist-SL,1136,default,1487,timeout (cpu),600.0,600.017,165124.0,starexec-unknown,unsat
+430494209,qf_shls_entl/bolognesa-20-e09.tptp.smt2,8317256,Cyclist-SL,1136,default,1487,timeout (cpu),600.04,600.115,164724.0,starexec-unknown,sat
+430494371,qf_shls_entl/bolognesa-20-e10.tptp.smt2,8317418,Cyclist-SL,1136,default,1487,timeout (wallclock),599.994,600.049,164724.0,starexec-unknown,unsat
+430494125,qf_shls_entl/clones-01-e01.tptp.smt2,8317172,Cyclist-SL,1136,default,1487,complete,0.009876,0.00970196,113176.0,starexec-unknown,unsat
+430494133,qf_shls_entl/clones-01-e02.tptp.smt2,8317180,Cyclist-SL,1136,default,1487,complete,0.009968,0.00976793,113176.0,starexec-unknown,unsat
+430494142,qf_shls_entl/clones-01-e03.tptp.smt2,8317189,Cyclist-SL,1136,default,1487,complete,0.010154,0.00995893,113176.0,starexec-unknown,unsat
+430494160,qf_shls_entl/clones-01-e04.tptp.smt2,8317207,Cyclist-SL,1136,default,1487,complete,0.010939,0.0107369,113176.0,starexec-unknown,unsat
+430494169,qf_shls_entl/clones-01-e05.tptp.smt2,8317216,Cyclist-SL,1136,default,1487,complete,0.014736,0.0144321,113176.0,unsat,unsat
+430494183,qf_shls_entl/clones-01-e06.tptp.smt2,8317230,Cyclist-SL,1136,default,1487,complete,0.010761,0.010559,113176.0,starexec-unknown,unsat
+430494193,qf_shls_entl/clones-01-e07.tptp.smt2,8317240,Cyclist-SL,1136,default,1487,complete,2.82512,2.82504,177404.0,starexec-unknown,sat
+430494214,qf_shls_entl/clones-01-e08.tptp.smt2,8317261,Cyclist-SL,1136,default,1487,complete,13.0289,13.028,177404.0,starexec-unknown,sat
+430494206,qf_shls_entl/clones-01-e09.tptp.smt2,8317253,Cyclist-SL,1136,default,1487,complete,3.42139,3.42111,176780.0,starexec-unknown,sat
+430494386,qf_shls_entl/clones-01-e10.tptp.smt2,8317433,Cyclist-SL,1136,default,1487,complete,2.82022,2.82006,177404.0,starexec-unknown,sat
+430494278,qf_shls_entl/clones-02-e01.tptp.smt2,8317325,Cyclist-SL,1136,default,1487,complete,0.010086,0.00996393,0.0,starexec-unknown,unsat
+430494286,qf_shls_entl/clones-02-e02.tptp.smt2,8317333,Cyclist-SL,1136,default,1487,complete,0.010305,0.010079,113176.0,starexec-unknown,unsat
+430494297,qf_shls_entl/clones-02-e03.tptp.smt2,8317344,Cyclist-SL,1136,default,1487,complete,0.009779,0.00957502,113176.0,starexec-unknown,unsat
+430494314,qf_shls_entl/clones-02-e04.tptp.smt2,8317361,Cyclist-SL,1136,default,1487,complete,0.010611,0.0104151,113176.0,starexec-unknown,unsat
+430494320,qf_shls_entl/clones-02-e05.tptp.smt2,8317367,Cyclist-SL,1136,default,1487,complete,0.013115,0.0128361,113176.0,unsat,unsat
+430494329,qf_shls_entl/clones-02-e06.tptp.smt2,8317376,Cyclist-SL,1136,default,1487,complete,0.011146,0.0109561,113176.0,starexec-unknown,unsat
+430494337,qf_shls_entl/clones-02-e07.tptp.smt2,8317384,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.09,176556.0,starexec-unknown,sat
+430494351,qf_shls_entl/clones-02-e08.tptp.smt2,8317398,Cyclist-SL,1136,default,1487,timeout (cpu),600.07,600.115,176780.0,starexec-unknown,sat
+430494344,qf_shls_entl/clones-02-e09.tptp.smt2,8317391,Cyclist-SL,1136,default,1487,timeout (wallclock),599.985,600.017,176780.0,starexec-unknown,sat
+430494247,qf_shls_entl/clones-02-e10.tptp.smt2,8317294,Cyclist-SL,1136,default,1487,timeout (wallclock),600.018,600.027,176780.0,starexec-unknown,sat
+430494259,qf_shls_entl/clones-03-e01.tptp.smt2,8317306,Cyclist-SL,1136,default,1487,complete,0.00972,0.00963698,0.0,starexec-unknown,unsat
+430494236,qf_shls_entl/clones-03-e02.tptp.smt2,8317283,Cyclist-SL,1136,default,1487,complete,0.010567,0.0103619,113176.0,starexec-unknown,unsat
+430494244,qf_shls_entl/clones-03-e03.tptp.smt2,8317291,Cyclist-SL,1136,default,1487,complete,0.010745,0.0105679,113176.0,starexec-unknown,unsat
+430494224,qf_shls_entl/clones-03-e04.tptp.smt2,8317271,Cyclist-SL,1136,default,1487,complete,0.010058,0.00987694,113176.0,starexec-unknown,unsat
+430494231,qf_shls_entl/clones-03-e05.tptp.smt2,8317278,Cyclist-SL,1136,default,1487,complete,0.014573,0.0142649,113176.0,unsat,unsat
+430494201,qf_shls_entl/clones-03-e06.tptp.smt2,8317248,Cyclist-SL,1136,default,1487,complete,0.00977,0.00955388,0.0,starexec-unknown,unsat
+430494213,qf_shls_entl/clones-03-e07.tptp.smt2,8317260,Cyclist-SL,1136,default,1487,timeout (wallclock),600.027,600.03,177404.0,starexec-unknown,sat
+430494191,qf_shls_entl/clones-03-e08.tptp.smt2,8317238,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.106,176780.0,starexec-unknown,sat
+430494181,qf_shls_entl/clones-03-e09.tptp.smt2,8317228,Cyclist-SL,1136,default,1487,timeout (wallclock),599.998,600.021,176780.0,starexec-unknown,sat
+430494301,qf_shls_entl/clones-03-e10.tptp.smt2,8317348,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.061,177404.0,starexec-unknown,sat
+430494149,qf_shls_entl/clones-04-e01.tptp.smt2,8317196,Cyclist-SL,1136,default,1487,complete,0.010207,0.0100501,113176.0,starexec-unknown,unsat
+430494115,qf_shls_entl/clones-04-e02.tptp.smt2,8317162,Cyclist-SL,1136,default,1487,complete,0.009958,0.00975202,0.0,starexec-unknown,unsat
+430494130,qf_shls_entl/clones-04-e03.tptp.smt2,8317177,Cyclist-SL,1136,default,1487,complete,0.009929,0.00979792,113176.0,starexec-unknown,unsat
+430494175,qf_shls_entl/clones-04-e04.tptp.smt2,8317222,Cyclist-SL,1136,default,1487,complete,0.009271,0.00914798,113176.0,starexec-unknown,unsat
+430494185,qf_shls_entl/clones-04-e05.tptp.smt2,8317232,Cyclist-SL,1136,default,1487,complete,0.014131,0.0138491,113176.0,unsat,unsat
+430494156,qf_shls_entl/clones-04-e06.tptp.smt2,8317203,Cyclist-SL,1136,default,1487,complete,0.010509,0.0154999,0.0,starexec-unknown,unsat
+430494168,qf_shls_entl/clones-04-e07.tptp.smt2,8317215,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.015,176780.0,starexec-unknown,sat
+430494229,qf_shls_entl/clones-04-e08.tptp.smt2,8317276,Cyclist-SL,1136,default,1487,timeout (wallclock),599.99,600.01,186612.0,starexec-unknown,sat
+430494222,qf_shls_entl/clones-04-e09.tptp.smt2,8317269,Cyclist-SL,1136,default,1487,timeout (wallclock),599.903,600.058,177404.0,starexec-unknown,sat
+430494400,qf_shls_entl/clones-04-e10.tptp.smt2,8317447,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.069,176780.0,starexec-unknown,sat
+430494385,qf_shls_entl/clones-05-e01.tptp.smt2,8317432,Cyclist-SL,1136,default,1487,complete,0.010459,0.010885,0.0,starexec-unknown,unsat
+430494393,qf_shls_entl/clones-05-e02.tptp.smt2,8317440,Cyclist-SL,1136,default,1487,complete,0.010117,0.0205351,0.0,starexec-unknown,unsat
+430494404,qf_shls_entl/clones-05-e03.tptp.smt2,8317451,Cyclist-SL,1136,default,1487,complete,0.010309,0.0100961,113176.0,starexec-unknown,unsat
+430494341,qf_shls_entl/clones-05-e04.tptp.smt2,8317388,Cyclist-SL,1136,default,1487,complete,0.01039,0.0152689,0.0,starexec-unknown,unsat
+430494347,qf_shls_entl/clones-05-e05.tptp.smt2,8317394,Cyclist-SL,1136,default,1487,complete,0.013384,0.013062,113176.0,unsat,unsat
+430494357,qf_shls_entl/clones-05-e06.tptp.smt2,8317404,Cyclist-SL,1136,default,1487,complete,0.009761,0.00957011,113176.0,starexec-unknown,unsat
+430494367,qf_shls_entl/clones-05-e07.tptp.smt2,8317414,Cyclist-SL,1136,default,1487,timeout (cpu),600.03,600.072,176780.0,starexec-unknown,sat
+430494318,qf_shls_entl/clones-05-e08.tptp.smt2,8317365,Cyclist-SL,1136,default,1487,timeout (wallclock),599.981,600.012,186836.0,starexec-unknown,sat
+430494311,qf_shls_entl/clones-05-e09.tptp.smt2,8317358,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.076,176780.0,starexec-unknown,sat
+430494126,qf_shls_entl/clones-05-e10.tptp.smt2,8317173,Cyclist-SL,1136,default,1487,timeout (wallclock),599.982,600.032,176556.0,starexec-unknown,sat
+430494245,qf_shls_entl/clones-06-e01.tptp.smt2,8317292,Cyclist-SL,1136,default,1487,complete,0.010381,0.0101611,113176.0,starexec-unknown,unsat
+430494255,qf_shls_entl/clones-06-e02.tptp.smt2,8317302,Cyclist-SL,1136,default,1487,complete,0.010506,0.0103749,113176.0,starexec-unknown,unsat
+430494268,qf_shls_entl/clones-06-e03.tptp.smt2,8317315,Cyclist-SL,1136,default,1487,complete,0.01067,0.0104651,113176.0,starexec-unknown,unsat
+430494197,qf_shls_entl/clones-06-e04.tptp.smt2,8317244,Cyclist-SL,1136,default,1487,complete,0.010365,0.0101641,113176.0,starexec-unknown,unsat
+430494207,qf_shls_entl/clones-06-e05.tptp.smt2,8317254,Cyclist-SL,1136,default,1487,complete,0.015357,0.0150591,113176.0,unsat,unsat
+430494217,qf_shls_entl/clones-06-e06.tptp.smt2,8317264,Cyclist-SL,1136,default,1487,complete,0.00986,0.00978407,113176.0,starexec-unknown,unsat
+430494228,qf_shls_entl/clones-06-e07.tptp.smt2,8317275,Cyclist-SL,1136,default,1487,timeout (wallclock),599.969,600.027,176780.0,starexec-unknown,sat
+430494164,qf_shls_entl/clones-06-e08.tptp.smt2,8317211,Cyclist-SL,1136,default,1487,timeout (cpu),600.06,600.116,186836.0,starexec-unknown,sat
+430494154,qf_shls_entl/clones-06-e09.tptp.smt2,8317201,Cyclist-SL,1136,default,1487,timeout (wallclock),600.019,600.066,177404.0,starexec-unknown,sat
+430494279,qf_shls_entl/clones-06-e10.tptp.smt2,8317326,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.04,176780.0,starexec-unknown,sat
+430494299,qf_shls_entl/clones-07-e01.tptp.smt2,8317346,Cyclist-SL,1136,default,1487,complete,0.010963,0.0116409,0.0,starexec-unknown,unsat
+430494273,qf_shls_entl/clones-07-e02.tptp.smt2,8317320,Cyclist-SL,1136,default,1487,complete,0.010275,0.010106,113176.0,starexec-unknown,unsat
+430494284,qf_shls_entl/clones-07-e03.tptp.smt2,8317331,Cyclist-SL,1136,default,1487,complete,0.01073,0.015801,0.0,starexec-unknown,unsat
+430494326,qf_shls_entl/clones-07-e04.tptp.smt2,8317373,Cyclist-SL,1136,default,1487,complete,0.010317,0.0101251,113176.0,starexec-unknown,unsat
+430494334,qf_shls_entl/clones-07-e05.tptp.smt2,8317381,Cyclist-SL,1136,default,1487,complete,0.014698,0.014443,113176.0,unsat,unsat
+430494306,qf_shls_entl/clones-07-e06.tptp.smt2,8317353,Cyclist-SL,1136,default,1487,complete,0.009657,0.0100189,0.0,starexec-unknown,unsat
+430494316,qf_shls_entl/clones-07-e07.tptp.smt2,8317363,Cyclist-SL,1136,default,1487,timeout (wallclock),599.994,600.019,177404.0,starexec-unknown,sat
+430494363,qf_shls_entl/clones-07-e08.tptp.smt2,8317410,Cyclist-SL,1136,default,1487,timeout (wallclock),599.995,600.014,186836.0,starexec-unknown,sat
+430494354,qf_shls_entl/clones-07-e09.tptp.smt2,8317401,Cyclist-SL,1136,default,1487,timeout (wallclock),600.007,600.113,154668.0,starexec-unknown,sat
+430494261,qf_shls_entl/clones-07-e10.tptp.smt2,8317308,Cyclist-SL,1136,default,1487,timeout (wallclock),599.961,600.012,177404.0,starexec-unknown,sat
+430494307,qf_shls_entl/clones-08-e01.tptp.smt2,8317354,Cyclist-SL,1136,default,1487,complete,0.010973,0.0107581,113176.0,starexec-unknown,unsat
+430494333,qf_shls_entl/clones-08-e02.tptp.smt2,8317380,Cyclist-SL,1136,default,1487,complete,0.010815,0.010619,113176.0,starexec-unknown,unsat
+430494325,qf_shls_entl/clones-08-e03.tptp.smt2,8317372,Cyclist-SL,1136,default,1487,complete,0.010523,0.0206759,0.0,starexec-unknown,unsat
+430494285,qf_shls_entl/clones-08-e04.tptp.smt2,8317332,Cyclist-SL,1136,default,1487,complete,0.010205,0.0105111,0.0,starexec-unknown,unsat
+430494274,qf_shls_entl/clones-08-e05.tptp.smt2,8317321,Cyclist-SL,1136,default,1487,complete,0.014028,0.013713,113176.0,unsat,unsat
+430494298,qf_shls_entl/clones-08-e06.tptp.smt2,8317345,Cyclist-SL,1136,default,1487,complete,0.010666,0.0104659,113176.0,starexec-unknown,unsat
+430494292,qf_shls_entl/clones-08-e07.tptp.smt2,8317339,Cyclist-SL,1136,default,1487,timeout (wallclock),600.009,600.026,177404.0,starexec-unknown,sat
+430494374,qf_shls_entl/clones-08-e08.tptp.smt2,8317421,Cyclist-SL,1136,default,1487,timeout (cpu),600.05,600.124,186836.0,starexec-unknown,sat
+430494383,qf_shls_entl/clones-08-e09.tptp.smt2,8317430,Cyclist-SL,1136,default,1487,timeout (wallclock),599.977,600.016,154668.0,starexec-unknown,sat
+430494203,qf_shls_entl/clones-08-e10.tptp.smt2,8317250,Cyclist-SL,1136,default,1487,timeout (wallclock),599.97,600.02,177404.0,starexec-unknown,sat
+430494216,qf_shls_entl/clones-09-e01.tptp.smt2,8317263,Cyclist-SL,1136,default,1487,complete,0.011218,0.011049,113176.0,starexec-unknown,unsat
+430494208,qf_shls_entl/clones-09-e02.tptp.smt2,8317255,Cyclist-SL,1136,default,1487,complete,0.01011,0.00990904,113176.0,starexec-unknown,unsat
+430494198,qf_shls_entl/clones-09-e03.tptp.smt2,8317245,Cyclist-SL,1136,default,1487,complete,0.010179,0.010041,113176.0,starexec-unknown,unsat
+430494267,qf_shls_entl/clones-09-e04.tptp.smt2,8317314,Cyclist-SL,1136,default,1487,complete,0.010035,0.00988594,113176.0,starexec-unknown,unsat
+430494254,qf_shls_entl/clones-09-e05.tptp.smt2,8317301,Cyclist-SL,1136,default,1487,complete,0.014521,0.0141821,113176.0,unsat,unsat
+430494246,qf_shls_entl/clones-09-e06.tptp.smt2,8317293,Cyclist-SL,1136,default,1487,complete,0.010207,0.0100471,113176.0,starexec-unknown,unsat
+430494240,qf_shls_entl/clones-09-e07.tptp.smt2,8317287,Cyclist-SL,1136,default,1487,timeout (wallclock),599.919,600.019,176780.0,starexec-unknown,sat
+430494136,qf_shls_entl/clones-09-e08.tptp.smt2,8317183,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.072,186708.0,starexec-unknown,sat
+430494148,qf_shls_entl/clones-09-e09.tptp.smt2,8317195,Cyclist-SL,1136,default,1487,timeout (wallclock),600.001,600.017,154668.0,starexec-unknown,sat
+430494330,qf_shls_entl/clones-09-e10.tptp.smt2,8317377,Cyclist-SL,1136,default,1487,timeout (wallclock),599.997,600.013,176780.0,starexec-unknown,sat
+430494143,qf_shls_entl/clones-10-e01.tptp.smt2,8317190,Cyclist-SL,1136,default,1487,complete,0.009627,0.0137071,0.0,starexec-unknown,unsat
+430494111,qf_shls_entl/clones-10-e02.tptp.smt2,8317158,Cyclist-SL,1136,default,1487,complete,0.009848,0.00974607,0.0,starexec-unknown,unsat
+430494123,qf_shls_entl/clones-10-e03.tptp.smt2,8317170,Cyclist-SL,1136,default,1487,complete,0.010161,0.00996102,113176.0,starexec-unknown,unsat
+430494180,qf_shls_entl/clones-10-e04.tptp.smt2,8317227,Cyclist-SL,1136,default,1487,complete,0.009906,0.00972692,113176.0,starexec-unknown,unsat
+430494190,qf_shls_entl/clones-10-e05.tptp.smt2,8317237,Cyclist-SL,1136,default,1487,complete,0.014734,0.01443,113176.0,unsat,unsat
+430494161,qf_shls_entl/clones-10-e06.tptp.smt2,8317208,Cyclist-SL,1136,default,1487,complete,0.010874,0.011355,0.0,starexec-unknown,unsat
+430494172,qf_shls_entl/clones-10-e07.tptp.smt2,8317219,Cyclist-SL,1136,default,1487,timeout (cpu),600.0,600.017,177404.0,starexec-unknown,sat
+430494233,qf_shls_entl/clones-10-e08.tptp.smt2,8317280,Cyclist-SL,1136,default,1487,timeout (cpu),600.02,600.023,186708.0,starexec-unknown,sat
+430494226,qf_shls_entl/clones-10-e09.tptp.smt2,8317273,Cyclist-SL,1136,default,1487,timeout (cpu),600.05,600.114,154668.0,starexec-unknown,sat
+430494406,qf_shls_entl/clones-10-e10.tptp.smt2,8317453,Cyclist-SL,1136,default,1487,timeout (wallclock),599.955,600.017,176780.0,starexec-unknown,sat
+430494389,qf_shls_entl/ls-vc01.smt2,8317436,Cyclist-SL,1136,default,1487,complete,1.39814,1.39792,155068.0,starexec-unknown,sat
+430494220,qf_shls_entl/ls-vc02.smt2,8317267,Cyclist-SL,1136,default,1487,complete,13.7088,13.7089,154668.0,starexec-unknown,sat
+430494178,qf_shls_entl/ls-vc03.smt2,8317225,Cyclist-SL,1136,default,1487,timeout (wallclock),599.96,600.012,154668.0,starexec-unknown,sat
+430494272,qf_shls_entl/ls-vc04.smt2,8317319,Cyclist-SL,1136,default,1487,complete,0.231566,0.231253,113176.0,starexec-unknown,sat
+430494376,qf_shls_entl/ls-vc05.smt2,8317423,Cyclist-SL,1136,default,1487,complete,0.0134,0.0202379,0.0,unsat,unsat
+430494205,qf_shls_entl/ls-vc06.smt2,8317252,Cyclist-SL,1136,default,1487,complete,450.703,450.724,165124.0,starexec-unknown,sat
+430494163,qf_shls_entl/ls-vc07.smt2,8317210,Cyclist-SL,1136,default,1487,timeout (cpu),600.03,600.074,154776.0,starexec-unknown,sat
+430494332,qf_shls_entl/ls-vc08.smt2,8317379,Cyclist-SL,1136,default,1487,complete,0.03226,0.031957,113176.0,unsat,unsat
+430494364,qf_shls_entl/ls-vc09.smt2,8317411,Cyclist-SL,1136,default,1487,complete,0.03853,0.038236,113176.0,unsat,unsat
+430494194,qf_shls_entl/smallfoot-vc01.tptp.smt2,8317241,Cyclist-SL,1136,default,1487,complete,0.01361,0.0167011,0.0,unsat,unsat
+430494227,qf_shls_entl/smallfoot-vc02.tptp.smt2,8317274,Cyclist-SL,1136,default,1487,complete,0.013416,0.0131079,113176.0,unsat,unsat
+430494219,qf_shls_entl/smallfoot-vc03.tptp.smt2,8317266,Cyclist-SL,1136,default,1487,complete,0.010675,0.0104559,113176.0,starexec-unknown,unsat
+430494248,qf_shls_entl/smallfoot-vc04.tptp.smt2,8317295,Cyclist-SL,1136,default,1487,complete,0.016843,0.0165349,113176.0,unsat,unsat
+430494238,qf_shls_entl/smallfoot-vc05.tptp.smt2,8317285,Cyclist-SL,1136,default,1487,complete,0.013268,0.0129901,113176.0,unsat,unsat
+430494265,qf_shls_entl/smallfoot-vc06.tptp.smt2,8317312,Cyclist-SL,1136,default,1487,complete,0.013452,0.0131399,113176.0,unsat,unsat
+430494258,qf_shls_entl/smallfoot-vc07.tptp.smt2,8317305,Cyclist-SL,1136,default,1487,complete,0.014988,0.014691,113176.0,unsat,unsat
+430494118,qf_shls_entl/smallfoot-vc08.tptp.smt2,8317165,Cyclist-SL,1136,default,1487,complete,0.013643,0.0138221,0.0,unsat,unsat
+430494132,qf_shls_entl/smallfoot-vc09.tptp.smt2,8317179,Cyclist-SL,1136,default,1487,complete,0.014705,0.0143821,113176.0,unsat,unsat
+430494313,qf_shls_entl/smallfoot-vc10.tptp.smt2,8317360,Cyclist-SL,1136,default,1487,complete,0.017052,0.0167211,113176.0,unsat,unsat
+430494321,qf_shls_entl/smallfoot-vc11.tptp.smt2,8317368,Cyclist-SL,1136,default,1487,complete,0.013554,0.013223,113176.0,unsat,unsat
+430494327,qf_shls_entl/smallfoot-vc12.tptp.smt2,8317374,Cyclist-SL,1136,default,1487,complete,0.013271,0.013,113176.0,unsat,unsat
+430494338,qf_shls_entl/smallfoot-vc13.tptp.smt2,8317385,Cyclist-SL,1136,default,1487,complete,0.015009,0.0147511,113176.0,unsat,unsat
+430494270,qf_shls_entl/smallfoot-vc14.tptp.smt2,8317317,Cyclist-SL,1136,default,1487,complete,0.009678,0.00947898,113176.0,starexec-unknown,unsat
+430494277,qf_shls_entl/smallfoot-vc15.tptp.smt2,8317324,Cyclist-SL,1136,default,1487,complete,0.010334,0.0102211,113176.0,starexec-unknown,unsat
+430494287,qf_shls_entl/smallfoot-vc16.tptp.smt2,8317334,Cyclist-SL,1136,default,1487,complete,0.015297,0.01499,113176.0,unsat,unsat
+430494296,qf_shls_entl/smallfoot-vc17.tptp.smt2,8317343,Cyclist-SL,1136,default,1487,complete,0.010145,0.00996292,113176.0,starexec-unknown,unsat
+430494380,qf_shls_entl/smallfoot-vc18.tptp.smt2,8317427,Cyclist-SL,1136,default,1487,complete,0.0145,0.014263,113176.0,unsat,unsat
+430494373,qf_shls_entl/smallfoot-vc19.tptp.smt2,8317420,Cyclist-SL,1136,default,1487,complete,0.010157,0.00999792,113176.0,starexec-unknown,unsat
+430494113,qf_shls_entl/smallfoot-vc20.tptp.smt2,8317160,Cyclist-SL,1136,default,1487,complete,0.01343,0.0131341,113176.0,unsat,unsat
+430494121,qf_shls_entl/smallfoot-vc21.tptp.smt2,8317168,Cyclist-SL,1136,default,1487,complete,0.0163,0.0162239,0.0,unsat,unsat
+430494135,qf_shls_entl/smallfoot-vc22.tptp.smt2,8317182,Cyclist-SL,1136,default,1487,complete,0.016508,0.016224,113176.0,starexec-unknown,sat
+430494144,qf_shls_entl/smallfoot-vc23.tptp.smt2,8317191,Cyclist-SL,1136,default,1487,complete,0.041389,0.041084,113176.0,starexec-unknown,sat
+430494162,qf_shls_entl/smallfoot-vc24.tptp.smt2,8317209,Cyclist-SL,1136,default,1487,complete,0.015629,0.0153031,113176.0,unsat,unsat
+430494171,qf_shls_entl/smallfoot-vc25.tptp.smt2,8317218,Cyclist-SL,1136,default,1487,complete,0.014153,0.0138419,113176.0,unsat,unsat
+430494179,qf_shls_entl/smallfoot-vc26.tptp.smt2,8317226,Cyclist-SL,1136,default,1487,complete,0.014078,0.0137881,113176.0,unsat,unsat
+430494192,qf_shls_entl/smallfoot-vc27.tptp.smt2,8317239,Cyclist-SL,1136,default,1487,complete,0.009834,0.00964305,113176.0,starexec-unknown,unsat
+430494211,qf_shls_entl/smallfoot-vc28.tptp.smt2,8317258,Cyclist-SL,1136,default,1487,complete,0.043714,0.0434069,113176.0,unsat,unsat
+430494202,qf_shls_entl/smallfoot-vc29.tptp.smt2,8317249,Cyclist-SL,1136,default,1487,complete,2.824,2.82403,176780.0,starexec-unknown,sat
+430494384,qf_shls_entl/smallfoot-vc30.tptp.smt2,8317431,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.061,176780.0,starexec-unknown,sat
+430494375,qf_shls_entl/smallfoot-vc31.tptp.smt2,8317422,Cyclist-SL,1136,default,1487,complete,26.7012,26.7023,176780.0,starexec-unknown,sat
+430494405,qf_shls_entl/smallfoot-vc32.tptp.smt2,8317452,Cyclist-SL,1136,default,1487,complete,4.42837,4.42824,177404.0,starexec-unknown,sat
+430494396,qf_shls_entl/smallfoot-vc33.tptp.smt2,8317443,Cyclist-SL,1136,default,1487,complete,4.00294,4.00381,176780.0,starexec-unknown,sat
+430494350,qf_shls_entl/smallfoot-vc34.tptp.smt2,8317397,Cyclist-SL,1136,default,1487,complete,0.013866,0.0135491,113176.0,unsat,unsat
+430494342,qf_shls_entl/smallfoot-vc35.tptp.smt2,8317389,Cyclist-SL,1136,default,1487,complete,3.40696,3.40685,177404.0,starexec-unknown,sat
+430494362,qf_shls_entl/smallfoot-vc36.tptp.smt2,8317409,Cyclist-SL,1136,default,1487,complete,0.014748,0.014464,113176.0,unsat,unsat
+430494355,qf_shls_entl/smallfoot-vc37.tptp.smt2,8317402,Cyclist-SL,1136,default,1487,complete,13.0121,13.0125,176556.0,starexec-unknown,sat
+430494305,qf_shls_entl/smallfoot-vc38.tptp.smt2,8317352,Cyclist-SL,1136,default,1487,timeout (wallclock),599.989,600.051,177404.0,starexec-unknown,unsat
+430494317,qf_shls_entl/smallfoot-vc39.tptp.smt2,8317364,Cyclist-SL,1136,default,1487,complete,0.441499,0.441267,113176.0,starexec-unknown,sat
+430494369,qf_shls_entl/smallfoot-vc40.tptp.smt2,8317416,Cyclist-SL,1136,default,1487,timeout (wallclock),599.984,600.034,154668.0,starexec-unknown,sat
+430494361,qf_shls_entl/smallfoot-vc41.tptp.smt2,8317408,Cyclist-SL,1136,default,1487,complete,0.08142,0.081086,113176.0,unsat,unsat
+430494352,qf_shls_entl/smallfoot-vc42.tptp.smt2,8317399,Cyclist-SL,1136,default,1487,complete,11.3167,11.317,177404.0,unsat,unsat
+430494343,qf_shls_entl/smallfoot-vc43.tptp.smt2,8317390,Cyclist-SL,1136,default,1487,timeout (wallclock),599.986,600.039,154668.0,starexec-unknown,sat
+430494397,qf_shls_entl/smallfoot-vc44.tptp.smt2,8317444,Cyclist-SL,1136,default,1487,complete,0.044764,0.0445179,113176.0,unsat,unsat
+430494391,qf_shls_entl/smallfoot-vc45.tptp.smt2,8317438,Cyclist-SL,1136,default,1487,complete,0.013738,0.01347,113176.0,unsat,unsat
+430494381,qf_shls_entl/smallfoot-vc46.tptp.smt2,8317428,Cyclist-SL,1136,default,1487,complete,0.01429,0.0139869,113176.0,unsat,unsat
+430494372,qf_shls_entl/smallfoot-vc47.tptp.smt2,8317419,Cyclist-SL,1136,default,1487,complete,0.010169,0.0100001,113176.0,starexec-unknown,unsat
+430494288,qf_shls_entl/smallfoot-vc48.tptp.smt2,8317335,Cyclist-SL,1136,default,1487,complete,0.014156,0.0138361,113176.0,unsat,unsat
+430494295,qf_shls_entl/smallfoot-vc49.tptp.smt2,8317342,Cyclist-SL,1136,default,1487,complete,26.8144,26.8153,155068.0,starexec-unknown,sat
+430494177,qf_shls_entl/smallfoot-vc50.tptp.smt2,8317224,Cyclist-SL,1136,default,1487,complete,0.013954,0.0136689,113176.0,unsat,unsat
+430494189,qf_shls_entl/smallfoot-vc51.tptp.smt2,8317236,Cyclist-SL,1136,default,1487,complete,0.014366,0.014056,113176.0,unsat,unsat
+430494152,qf_shls_entl/smallfoot-vc52.tptp.smt2,8317199,Cyclist-SL,1136,default,1487,complete,0.014048,0.013723,113176.0,unsat,unsat
+430494165,qf_shls_entl/smallfoot-vc53.tptp.smt2,8317212,Cyclist-SL,1136,default,1487,complete,0.014456,0.014103,113176.0,unsat,unsat
+430494137,qf_shls_entl/smallfoot-vc54.tptp.smt2,8317184,Cyclist-SL,1136,default,1487,complete,0.015978,0.0156741,113176.0,starexec-unknown,sat
+430494146,qf_shls_entl/smallfoot-vc55.tptp.smt2,8317193,Cyclist-SL,1136,default,1487,complete,0.014744,0.014421,113176.0,unsat,unsat
+430494120,qf_shls_entl/smallfoot-vc56.tptp.smt2,8317167,Cyclist-SL,1136,default,1487,complete,0.32967,0.329413,113176.0,starexec-unknown,sat
+430494131,qf_shls_entl/smallfoot-vc57.tptp.smt2,8317178,Cyclist-SL,1136,default,1487,timeout (wallclock),600.022,600.045,164724.0,starexec-unknown,sat
+430494266,qf_shls_entl/smallfoot-vc58.tptp.smt2,8317313,Cyclist-SL,1136,default,1487,complete,0.013908,0.0136181,113176.0,unsat,unsat
+430494256,qf_shls_entl/smallfoot-vc59.tptp.smt2,8317303,Cyclist-SL,1136,default,1487,complete,0.013683,0.0133541,113176.0,unsat,unsat
+430494291,qf_shls_entl/smallfoot-vc60.tptp.smt2,8317338,Cyclist-SL,1136,default,1487,complete,0.014593,0.0143039,113176.0,unsat,unsat
+430494300,qf_shls_entl/smallfoot-vc61.tptp.smt2,8317347,Cyclist-SL,1136,default,1487,complete,0.375818,0.375579,113176.0,starexec-unknown,sat
+430494276,qf_shls_entl/smallfoot-vc62.tptp.smt2,8317323,Cyclist-SL,1136,default,1487,complete,0.01099,0.020241,0.0,starexec-unknown,unsat
+430494282,qf_shls_entl/smallfoot-vc63.tptp.smt2,8317329,Cyclist-SL,1136,default,1487,complete,0.014737,0.014513,113176.0,unsat,unsat
+430494323,qf_shls_entl/smallfoot-vc64.tptp.smt2,8317370,Cyclist-SL,1136,default,1487,complete,0.011009,0.010798,113176.0,starexec-unknown,unsat
+430494336,qf_shls_entl/smallfoot-vc65.tptp.smt2,8317383,Cyclist-SL,1136,default,1487,complete,0.016691,0.0189869,0.0,unsat,unsat
+430494308,qf_shls_entl/smallfoot-vc66.tptp.smt2,8317355,Cyclist-SL,1136,default,1487,complete,0.014336,0.014092,113176.0,unsat,unsat
+430494315,qf_shls_entl/smallfoot-vc67.tptp.smt2,8317362,Cyclist-SL,1136,default,1487,complete,0.014281,0.0197301,0.0,unsat,unsat
+430494365,qf_shls_entl/smallfoot-vc68.tptp.smt2,8317412,Cyclist-SL,1136,default,1487,complete,0.323186,0.322896,113176.0,starexec-unknown,sat
+430494353,qf_shls_entl/smallfoot-vc69.tptp.smt2,8317400,Cyclist-SL,1136,default,1487,complete,0.0145,0.014203,113176.0,starexec-unknown,sat
+430494260,qf_shls_entl/smallfoot-vc70.tptp.smt2,8317307,Cyclist-SL,1136,default,1487,timeout (cpu),600.01,600.091,177404.0,starexec-unknown,sat
+430494252,qf_shls_entl/smallfoot-vc71.tptp.smt2,8317299,Cyclist-SL,1136,default,1487,complete,0.01636,0.016073,113176.0,unsat,unsat
+430494243,qf_shls_entl/smallfoot-vc72.tptp.smt2,8317290,Cyclist-SL,1136,default,1487,complete,0.398747,0.398512,154668.0,starexec-unknown,sat
+430494235,qf_shls_entl/smallfoot-vc73.tptp.smt2,8317282,Cyclist-SL,1136,default,1487,complete,0.39756,0.397333,113176.0,starexec-unknown,sat
+430494232,qf_shls_entl/smallfoot-vc74.tptp.smt2,8317279,Cyclist-SL,1136,default,1487,complete,0.016605,0.016333,113176.0,unsat,unsat
+430494225,qf_shls_entl/smallfoot-vc75.tptp.smt2,8317272,Cyclist-SL,1136,default,1487,complete,0.014638,0.0143449,113176.0,unsat,unsat
+430494212,qf_shls_entl/smallfoot-vc76.tptp.smt2,8317259,Cyclist-SL,1136,default,1487,complete,0.325811,0.325582,113176.0,starexec-unknown,sat
+430494200,qf_shls_entl/smallfoot-vc77.tptp.smt2,8317247,Cyclist-SL,1136,default,1487,complete,0.012909,0.01267,113176.0,unsat,unsat

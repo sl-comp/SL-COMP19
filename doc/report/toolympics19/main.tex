@@ -470,7 +470,7 @@ a sort \texttt{Data} as a datatype as follows:
 \begin{Verbatim}
 (declare-sort Loc 0)
 
-(declare-datatype Data ((node (d Int) (next  U))))
+(declare-datatype Data ((node (d Int) (next  Loc))))
 
 (declare-heap (Loc Data))
 \end{Verbatim}

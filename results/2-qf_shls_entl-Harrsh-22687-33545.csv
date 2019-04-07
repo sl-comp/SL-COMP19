@@ -1,0 +1,297 @@
+pair id,benchmark,benchmark id,solver,solver id,configuration,configuration id,status,cpu time,wallclock time,memory usage,result,expected
+433166502,qf_shls_entl/bolognesa-10-e01.tptp.smt2,8317378,Harrsh 2019.9,22687,harrsh_default,326665,complete,1279.25,411.221,3088508.0,starexec-unknown,sat
+433166493,qf_shls_entl/bolognesa-10-e02.tptp.smt2,8317369,Harrsh 2019.9,22687,harrsh_default,326665,complete,1345.53,431.429,3093960.0,starexec-unknown,unsat
+433166483,qf_shls_entl/bolognesa-10-e03.tptp.smt2,8317359,Harrsh 2019.9,22687,harrsh_default,326665,complete,1193.46,390.271,3094452.0,starexec-unknown,unsat
+433166465,qf_shls_entl/bolognesa-10-e04.tptp.smt2,8317341,Harrsh 2019.9,22687,harrsh_default,326665,complete,1238.76,415.375,3095532.0,starexec-unknown,sat
+433166460,qf_shls_entl/bolognesa-10-e05.tptp.smt2,8317336,Harrsh 2019.9,22687,harrsh_default,326665,complete,1185.09,390.302,3095376.0,starexec-unknown,sat
+433166451,qf_shls_entl/bolognesa-10-e06.tptp.smt2,8317327,Harrsh 2019.9,22687,harrsh_default,326665,complete,1279.64,409.51,3091324.0,starexec-unknown,sat
+433166440,qf_shls_entl/bolognesa-10-e07.tptp.smt2,8317316,Harrsh 2019.9,22687,harrsh_default,326665,complete,1121.01,370.282,3094568.0,starexec-unknown,sat
+433166561,qf_shls_entl/bolognesa-10-e08.tptp.smt2,8317437,Harrsh 2019.9,22687,harrsh_default,326665,complete,1248.93,407.517,3096396.0,starexec-unknown,sat
+433166569,qf_shls_entl/bolognesa-10-e09.tptp.smt2,8317445,Harrsh 2019.9,22687,harrsh_default,326665,complete,1560.26,488.233,3099364.0,starexec-unknown,sat
+433166386,qf_shls_entl/bolognesa-10-e10.tptp.smt2,8317262,Harrsh 2019.9,22687,harrsh_default,326665,complete,1247.64,396.714,3093204.0,starexec-unknown,unsat
+433166375,qf_shls_entl/bolognesa-11-e01.tptp.smt2,8317251,Harrsh 2019.9,22687,harrsh_default,326665,complete,1288.87,411.574,3089956.0,starexec-unknown,unsat
+433166405,qf_shls_entl/bolognesa-11-e02.tptp.smt2,8317281,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.26,684.31,3096900.0,starexec-unknown,unsat
+433166394,qf_shls_entl/bolognesa-11-e03.tptp.smt2,8317270,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.09,692.803,3092988.0,starexec-unknown,unsat
+433166413,qf_shls_entl/bolognesa-11-e04.tptp.smt2,8317289,Harrsh 2019.9,22687,harrsh_default,326665,complete,1173.78,385.446,3095948.0,starexec-unknown,unsat
+433166408,qf_shls_entl/bolognesa-11-e05.tptp.smt2,8317284,Harrsh 2019.9,22687,harrsh_default,326665,complete,1469.86,490.762,3090676.0,starexec-unknown,sat
+433166433,qf_shls_entl/bolognesa-11-e06.tptp.smt2,8317309,Harrsh 2019.9,22687,harrsh_default,326665,complete,1176.76,379.543,3096480.0,starexec-unknown,sat
+433166422,qf_shls_entl/bolognesa-11-e07.tptp.smt2,8317298,Harrsh 2019.9,22687,harrsh_default,326665,complete,1194.42,380.233,3091672.0,starexec-unknown,unsat
+433166283,qf_shls_entl/bolognesa-11-e08.tptp.smt2,8317159,Harrsh 2019.9,22687,harrsh_default,326665,complete,1244.35,397.995,3091580.0,starexec-unknown,unsat
+433166293,qf_shls_entl/bolognesa-11-e09.tptp.smt2,8317169,Harrsh 2019.9,22687,harrsh_default,326665,complete,1395.02,444.276,3094924.0,starexec-unknown,unsat
+433166475,qf_shls_entl/bolognesa-11-e10.tptp.smt2,8317351,Harrsh 2019.9,22687,harrsh_default,326665,complete,1301.1,407.898,3094848.0,starexec-unknown,sat
+433166517,qf_shls_entl/bolognesa-12-e01.tptp.smt2,8317393,Harrsh 2019.9,22687,harrsh_default,326665,complete,1087.18,351.104,3090428.0,starexec-unknown,unsat
+433166539,qf_shls_entl/bolognesa-12-e02.tptp.smt2,8317415,Harrsh 2019.9,22687,harrsh_default,326665,complete,1226.5,396.588,3093568.0,starexec-unknown,sat
+433166531,qf_shls_entl/bolognesa-12-e03.tptp.smt2,8317407,Harrsh 2019.9,22687,harrsh_default,326665,complete,1236.38,397.168,3094156.0,starexec-unknown,sat
+433166550,qf_shls_entl/bolognesa-12-e04.tptp.smt2,8317426,Harrsh 2019.9,22687,harrsh_default,326665,complete,1987.73,598.638,3093556.0,starexec-unknown,sat
+433166541,qf_shls_entl/bolognesa-12-e05.tptp.smt2,8317417,Harrsh 2019.9,22687,harrsh_default,326665,complete,1335.54,425.42,3091764.0,starexec-unknown,unsat
+433166572,qf_shls_entl/bolognesa-12-e06.tptp.smt2,8317448,Harrsh 2019.9,22687,harrsh_default,326665,complete,1146.42,371.884,3092740.0,starexec-unknown,unsat
+433166563,qf_shls_entl/bolognesa-12-e07.tptp.smt2,8317439,Harrsh 2019.9,22687,harrsh_default,326665,complete,1138.71,367.242,3089916.0,starexec-unknown,sat
+433166442,qf_shls_entl/bolognesa-12-e08.tptp.smt2,8317318,Harrsh 2019.9,22687,harrsh_default,326665,complete,1277.96,402.8,3091764.0,starexec-unknown,unsat
+433166452,qf_shls_entl/bolognesa-12-e09.tptp.smt2,8317328,Harrsh 2019.9,22687,harrsh_default,326665,complete,1262.85,399.08,3090316.0,starexec-unknown,unsat
+433166326,qf_shls_entl/bolognesa-12-e10.tptp.smt2,8317202,Harrsh 2019.9,22687,harrsh_default,326665,complete,1390.03,433.763,3092992.0,starexec-unknown,unsat
+433166355,qf_shls_entl/bolognesa-13-e01.tptp.smt2,8317231,Harrsh 2019.9,22687,harrsh_default,326665,complete,1250.45,391.834,3094180.0,starexec-unknown,unsat
+433166341,qf_shls_entl/bolognesa-13-e02.tptp.smt2,8317217,Harrsh 2019.9,22687,harrsh_default,326665,complete,1286.43,405.721,3092844.0,starexec-unknown,sat
+433166330,qf_shls_entl/bolognesa-13-e03.tptp.smt2,8317206,Harrsh 2019.9,22687,harrsh_default,326665,complete,1236.29,400.351,3095340.0,starexec-unknown,unsat
+433166312,qf_shls_entl/bolognesa-13-e04.tptp.smt2,8317188,Harrsh 2019.9,22687,harrsh_default,326665,complete,1146.72,370.032,3091520.0,starexec-unknown,sat
+433166305,qf_shls_entl/bolognesa-13-e05.tptp.smt2,8317181,Harrsh 2019.9,22687,harrsh_default,326665,complete,1288.99,408.362,3088472.0,starexec-unknown,sat
+433166298,qf_shls_entl/bolognesa-13-e06.tptp.smt2,8317174,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.02,682.728,3094868.0,starexec-unknown,sat
+433166285,qf_shls_entl/bolognesa-13-e07.tptp.smt2,8317161,Harrsh 2019.9,22687,harrsh_default,326665,complete,1173.55,373.058,3090156.0,starexec-unknown,unsat
+433166424,qf_shls_entl/bolognesa-13-e08.tptp.smt2,8317300,Harrsh 2019.9,22687,harrsh_default,326665,complete,1237.3,393.248,3094900.0,starexec-unknown,unsat
+433166434,qf_shls_entl/bolognesa-13-e09.tptp.smt2,8317310,Harrsh 2019.9,22687,harrsh_default,326665,complete,1122.46,352.877,3090144.0,starexec-unknown,sat
+433166527,qf_shls_entl/bolognesa-13-e10.tptp.smt2,8317403,Harrsh 2019.9,22687,harrsh_default,326665,complete,1201.75,385.262,3086556.0,starexec-unknown,sat
+433166389,qf_shls_entl/bolognesa-14-e01.tptp.smt2,8317265,Harrsh 2019.9,22687,harrsh_default,326665,complete,1183.46,372.636,3091608.0,starexec-unknown,unsat
+433166381,qf_shls_entl/bolognesa-14-e02.tptp.smt2,8317257,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.11,681.651,3090744.0,starexec-unknown,unsat
+433166366,qf_shls_entl/bolognesa-14-e03.tptp.smt2,8317242,Harrsh 2019.9,22687,harrsh_default,326665,complete,1289.3,402.172,3092064.0,starexec-unknown,unsat
+433166435,qf_shls_entl/bolognesa-14-e04.tptp.smt2,8317311,Harrsh 2019.9,22687,harrsh_default,326665,complete,1129.64,363.62,3094116.0,starexec-unknown,unsat
+433166428,qf_shls_entl/bolognesa-14-e05.tptp.smt2,8317304,Harrsh 2019.9,22687,harrsh_default,326665,complete,1374.82,432.122,3097072.0,starexec-unknown,sat
+433166420,qf_shls_entl/bolognesa-14-e06.tptp.smt2,8317296,Harrsh 2019.9,22687,harrsh_default,326665,complete,1262.46,401.665,3092304.0,starexec-unknown,unsat
+433166410,qf_shls_entl/bolognesa-14-e07.tptp.smt2,8317286,Harrsh 2019.9,22687,harrsh_default,326665,complete,1276.42,400.268,3091876.0,starexec-unknown,unsat
+433166310,qf_shls_entl/bolognesa-14-e08.tptp.smt2,8317186,Harrsh 2019.9,22687,harrsh_default,326665,complete,1223.12,389.483,3094620.0,starexec-unknown,unsat
+433166316,qf_shls_entl/bolognesa-14-e09.tptp.smt2,8317192,Harrsh 2019.9,22687,harrsh_default,326665,complete,1117.25,355.919,3085064.0,starexec-unknown,unsat
+433166499,qf_shls_entl/bolognesa-14-e10.tptp.smt2,8317375,Harrsh 2019.9,22687,harrsh_default,326665,complete,1319.27,417.73,3083804.0,starexec-unknown,sat
+433166480,qf_shls_entl/bolognesa-15-e01.tptp.smt2,8317356,Harrsh 2019.9,22687,harrsh_default,326665,complete,1217.28,387.12,3090988.0,starexec-unknown,unsat
+433166506,qf_shls_entl/bolognesa-15-e02.tptp.smt2,8317382,Harrsh 2019.9,22687,harrsh_default,326665,complete,1152.17,365.625,3094012.0,starexec-unknown,unsat
+433166495,qf_shls_entl/bolognesa-15-e03.tptp.smt2,8317371,Harrsh 2019.9,22687,harrsh_default,326665,complete,1289.8,413.098,3090600.0,starexec-unknown,sat
+433166454,qf_shls_entl/bolognesa-15-e04.tptp.smt2,8317330,Harrsh 2019.9,22687,harrsh_default,326665,complete,1357.36,426.747,3093300.0,starexec-unknown,unsat
+433166446,qf_shls_entl/bolognesa-15-e05.tptp.smt2,8317322,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.04,681.2,3091740.0,starexec-unknown,unsat
+433166473,qf_shls_entl/bolognesa-15-e06.tptp.smt2,8317349,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.13,681.379,3090488.0,starexec-unknown,unsat
+433166461,qf_shls_entl/bolognesa-15-e07.tptp.smt2,8317337,Harrsh 2019.9,22687,harrsh_default,326665,complete,1319.24,420.445,3093572.0,starexec-unknown,unsat
+433166548,qf_shls_entl/bolognesa-15-e08.tptp.smt2,8317424,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.06,682.854,3091496.0,starexec-unknown,sat
+433166553,qf_shls_entl/bolognesa-15-e09.tptp.smt2,8317429,Harrsh 2019.9,22687,harrsh_default,326665,complete,1331.26,424.461,3093888.0,starexec-unknown,sat
+433166370,qf_shls_entl/bolognesa-15-e10.tptp.smt2,8317246,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.13,686.254,3093928.0,starexec-unknown,unsat
+433166328,qf_shls_entl/bolognesa-16-e01.tptp.smt2,8317204,Harrsh 2019.9,22687,harrsh_default,326665,complete,1237.78,382.927,3083836.0,starexec-unknown,unsat
+433166358,qf_shls_entl/bolognesa-16-e02.tptp.smt2,8317234,Harrsh 2019.9,22687,harrsh_default,326665,complete,1279.32,399.421,3093760.0,starexec-unknown,sat
+433166345,qf_shls_entl/bolognesa-16-e03.tptp.smt2,8317221,Harrsh 2019.9,22687,harrsh_default,326665,complete,1167.43,375.155,3095188.0,starexec-unknown,sat
+433166299,qf_shls_entl/bolognesa-16-e04.tptp.smt2,8317175,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.03,681.143,3095612.0,starexec-unknown,sat
+433166287,qf_shls_entl/bolognesa-16-e05.tptp.smt2,8317163,Harrsh 2019.9,22687,harrsh_default,326665,complete,1249.58,393.632,3082992.0,starexec-unknown,unsat
+433166322,qf_shls_entl/bolognesa-16-e06.tptp.smt2,8317198,Harrsh 2019.9,22687,harrsh_default,326665,complete,1235.57,390.244,3090180.0,starexec-unknown,sat
+433166311,qf_shls_entl/bolognesa-16-e07.tptp.smt2,8317187,Harrsh 2019.9,22687,harrsh_default,326665,complete,1190.43,371.221,3091328.0,starexec-unknown,unsat
+433166412,qf_shls_entl/bolognesa-16-e08.tptp.smt2,8317288,Harrsh 2019.9,22687,harrsh_default,326665,complete,1159.88,374.958,3092788.0,starexec-unknown,unsat
+433166421,qf_shls_entl/bolognesa-16-e09.tptp.smt2,8317297,Harrsh 2019.9,22687,harrsh_default,326665,complete,1169.37,365.793,3084652.0,starexec-unknown,unsat
+433166516,qf_shls_entl/bolognesa-16-e10.tptp.smt2,8317392,Harrsh 2019.9,22687,harrsh_default,326665,complete,1361.47,414.605,3097708.0,starexec-unknown,sat
+433166530,qf_shls_entl/bolognesa-17-e01.tptp.smt2,8317406,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.03,681.376,3092812.0,starexec-unknown,unsat
+433166519,qf_shls_entl/bolognesa-17-e02.tptp.smt2,8317395,Harrsh 2019.9,22687,harrsh_default,326665,complete,1303.35,404.53,3089484.0,starexec-unknown,sat
+433166510,qf_shls_entl/bolognesa-17-e03.tptp.smt2,8317386,Harrsh 2019.9,22687,harrsh_default,326665,complete,1142.83,365.036,3090468.0,starexec-unknown,sat
+433166574,qf_shls_entl/bolognesa-17-e04.tptp.smt2,8317450,Harrsh 2019.9,22687,harrsh_default,326665,complete,1199.76,382.846,3094744.0,starexec-unknown,unsat
+433166566,qf_shls_entl/bolognesa-17-e05.tptp.smt2,8317442,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.03,689.851,3087108.0,starexec-unknown,unsat
+433166558,qf_shls_entl/bolognesa-17-e06.tptp.smt2,8317434,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.25,687.055,3091116.0,starexec-unknown,unsat
+433166549,qf_shls_entl/bolognesa-17-e07.tptp.smt2,8317425,Harrsh 2019.9,22687,harrsh_default,326665,complete,1277.76,404.648,3090360.0,starexec-unknown,unsat
+433166464,qf_shls_entl/bolognesa-17-e08.tptp.smt2,8317340,Harrsh 2019.9,22687,harrsh_default,326665,complete,2044.95,591.859,3092756.0,starexec-unknown,sat
+433166474,qf_shls_entl/bolognesa-17-e09.tptp.smt2,8317350,Harrsh 2019.9,22687,harrsh_default,326665,complete,1285.92,406.438,3094316.0,starexec-unknown,unsat
+433166353,qf_shls_entl/bolognesa-17-e10.tptp.smt2,8317229,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.18,685.96,3086112.0,starexec-unknown,unsat
+433166559,qf_shls_entl/bolognesa-18-e01.tptp.smt2,8317435,Harrsh 2019.9,22687,harrsh_default,326665,complete,1262.9,393.867,3091520.0,starexec-unknown,unsat
+433166565,qf_shls_entl/bolognesa-18-e02.tptp.smt2,8317441,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.12,679.573,3082356.0,starexec-unknown,sat
+433166573,qf_shls_entl/bolognesa-18-e03.tptp.smt2,8317449,Harrsh 2019.9,22687,harrsh_default,326665,complete,1158.99,365.04,3084612.0,starexec-unknown,sat
+433166511,qf_shls_entl/bolognesa-18-e04.tptp.smt2,8317387,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.23,680.278,3093916.0,starexec-unknown,sat
+433166520,qf_shls_entl/bolognesa-18-e05.tptp.smt2,8317396,Harrsh 2019.9,22687,harrsh_default,326665,complete,1170.81,366.149,3084976.0,starexec-unknown,sat
+433166529,qf_shls_entl/bolognesa-18-e06.tptp.smt2,8317405,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.11,677.315,3085656.0,starexec-unknown,sat
+433166537,qf_shls_entl/bolognesa-18-e07.tptp.smt2,8317413,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.3,683.372,3091196.0,starexec-unknown,sat
+433166490,qf_shls_entl/bolognesa-18-e08.tptp.smt2,8317366,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.11,685.259,3091684.0,starexec-unknown,sat
+433166481,qf_shls_entl/bolognesa-18-e09.tptp.smt2,8317357,Harrsh 2019.9,22687,harrsh_default,326665,complete,1135.94,352.268,3094420.0,starexec-unknown,sat
+433166295,qf_shls_entl/bolognesa-18-e10.tptp.smt2,8317171,Harrsh 2019.9,22687,harrsh_default,326665,complete,1090.77,343.585,3100552.0,starexec-unknown,unsat
+433166321,qf_shls_entl/bolognesa-19-e01.tptp.smt2,8317197,Harrsh 2019.9,22687,harrsh_default,326665,complete,1296.2,400.087,3093480.0,starexec-unknown,sat
+433166288,qf_shls_entl/bolognesa-19-e02.tptp.smt2,8317164,Harrsh 2019.9,22687,harrsh_default,326665,complete,1274.18,396.526,3091392.0,starexec-unknown,sat
+433166300,qf_shls_entl/bolognesa-19-e03.tptp.smt2,8317176,Harrsh 2019.9,22687,harrsh_default,326665,complete,1893.32,563.695,3093032.0,starexec-unknown,sat
+433166344,qf_shls_entl/bolognesa-19-e04.tptp.smt2,8317220,Harrsh 2019.9,22687,harrsh_default,326665,complete,1241.19,384.846,3089416.0,starexec-unknown,sat
+433166357,qf_shls_entl/bolognesa-19-e05.tptp.smt2,8317233,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.17,686.689,3090172.0,starexec-unknown,unsat
+433166329,qf_shls_entl/bolognesa-19-e06.tptp.smt2,8317205,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.15,682.366,3094204.0,starexec-unknown,unsat
+433166338,qf_shls_entl/bolognesa-19-e07.tptp.smt2,8317214,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.12,681.31,3090528.0,starexec-unknown,sat
+433166401,qf_shls_entl/bolognesa-19-e08.tptp.smt2,8317277,Harrsh 2019.9,22687,harrsh_default,326665,complete,873.142,264.723,3093144.0,starexec-unknown,unsat
+433166392,qf_shls_entl/bolognesa-19-e09.tptp.smt2,8317268,Harrsh 2019.9,22687,harrsh_default,326665,complete,1277.14,386.112,3090016.0,starexec-unknown,sat
+433166570,qf_shls_entl/bolognesa-19-e10.tptp.smt2,8317446,Harrsh 2019.9,22687,harrsh_default,326665,complete,1264.31,394.608,3086612.0,starexec-unknown,unsat
+433166290,qf_shls_entl/bolognesa-20-e01.tptp.smt2,8317166,Harrsh 2019.9,22687,harrsh_default,326665,complete,1178.2,369.481,3090324.0,starexec-unknown,sat
+433166318,qf_shls_entl/bolognesa-20-e02.tptp.smt2,8317194,Harrsh 2019.9,22687,harrsh_default,326665,complete,1003.59,320.464,3093412.0,starexec-unknown,sat
+433166309,qf_shls_entl/bolognesa-20-e03.tptp.smt2,8317185,Harrsh 2019.9,22687,harrsh_default,326665,complete,1249.1,390.129,3087536.0,starexec-unknown,sat
+433166337,qf_shls_entl/bolognesa-20-e04.tptp.smt2,8317213,Harrsh 2019.9,22687,harrsh_default,326665,complete,1062.38,345.097,3092300.0,starexec-unknown,sat
+433166324,qf_shls_entl/bolognesa-20-e05.tptp.smt2,8317200,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.06,676.602,3090492.0,starexec-unknown,sat
+433166359,qf_shls_entl/bolognesa-20-e06.tptp.smt2,8317235,Harrsh 2019.9,22687,harrsh_default,326665,complete,1214.72,384.556,3096268.0,starexec-unknown,unsat
+433166347,qf_shls_entl/bolognesa-20-e07.tptp.smt2,8317223,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.17,683.793,3088860.0,starexec-unknown,unsat
+433166367,qf_shls_entl/bolognesa-20-e08.tptp.smt2,8317243,Harrsh 2019.9,22687,harrsh_default,326665,complete,1620.13,481.123,3091792.0,starexec-unknown,unsat
+433166380,qf_shls_entl/bolognesa-20-e09.tptp.smt2,8317256,Harrsh 2019.9,22687,harrsh_default,326665,complete,1212.23,375.083,3083672.0,starexec-unknown,sat
+433166542,qf_shls_entl/bolognesa-20-e10.tptp.smt2,8317418,Harrsh 2019.9,22687,harrsh_default,326665,complete,1065.71,343.573,3083228.0,starexec-unknown,unsat
+433166296,qf_shls_entl/clones-01-e01.tptp.smt2,8317172,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.95822,1.33366,3071992.0,unsat,unsat
+433166304,qf_shls_entl/clones-01-e02.tptp.smt2,8317180,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.97511,1.33178,3071968.0,unsat,unsat
+433166313,qf_shls_entl/clones-01-e03.tptp.smt2,8317189,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.95066,1.3373,3071988.0,unsat,unsat
+433166331,qf_shls_entl/clones-01-e04.tptp.smt2,8317207,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.93634,1.30789,3072092.0,unsat,unsat
+433166340,qf_shls_entl/clones-01-e05.tptp.smt2,8317216,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.96587,1.3194,3072028.0,unsat,unsat
+433166354,qf_shls_entl/clones-01-e06.tptp.smt2,8317230,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.96574,1.33352,3072076.0,unsat,unsat
+433166364,qf_shls_entl/clones-01-e07.tptp.smt2,8317240,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.54515,2.03916,3076364.0,sat,sat
+433166385,qf_shls_entl/clones-01-e08.tptp.smt2,8317261,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.93871,2.20311,3078116.0,sat,sat
+433166377,qf_shls_entl/clones-01-e09.tptp.smt2,8317253,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.51732,2.0302,3076760.0,sat,sat
+433166557,qf_shls_entl/clones-01-e10.tptp.smt2,8317433,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.53952,2.02597,3076768.0,sat,sat
+433166449,qf_shls_entl/clones-02-e01.tptp.smt2,8317325,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.98937,1.32731,3072024.0,unsat,unsat
+433166457,qf_shls_entl/clones-02-e02.tptp.smt2,8317333,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.97922,1.31833,3072020.0,unsat,unsat
+433166468,qf_shls_entl/clones-02-e03.tptp.smt2,8317344,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.98683,1.32745,3072000.0,unsat,unsat
+433166485,qf_shls_entl/clones-02-e04.tptp.smt2,8317361,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.93108,1.29338,3072080.0,unsat,unsat
+433166491,qf_shls_entl/clones-02-e05.tptp.smt2,8317367,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.98198,1.33197,3072052.0,unsat,unsat
+433166500,qf_shls_entl/clones-02-e06.tptp.smt2,8317376,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.93372,1.29927,3072000.0,unsat,unsat
+433166508,qf_shls_entl/clones-02-e07.tptp.smt2,8317384,Harrsh 2019.9,22687,harrsh_default,326665,complete,5.91957,2.94928,3077236.0,sat,sat
+433166522,qf_shls_entl/clones-02-e08.tptp.smt2,8317398,Harrsh 2019.9,22687,harrsh_default,326665,complete,35.6941,22.1444,3090240.0,sat,sat
+433166515,qf_shls_entl/clones-02-e09.tptp.smt2,8317391,Harrsh 2019.9,22687,harrsh_default,326665,complete,6.04669,3.01738,3077032.0,sat,sat
+433166418,qf_shls_entl/clones-02-e10.tptp.smt2,8317294,Harrsh 2019.9,22687,harrsh_default,326665,complete,6.0087,2.94398,3077100.0,sat,sat
+433166430,qf_shls_entl/clones-03-e01.tptp.smt2,8317306,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.97623,1.92288,3072084.0,unsat,unsat
+433166407,qf_shls_entl/clones-03-e02.tptp.smt2,8317283,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.00868,1.35097,3072000.0,unsat,unsat
+433166415,qf_shls_entl/clones-03-e03.tptp.smt2,8317291,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.97024,1.33559,3072060.0,unsat,unsat
+433166395,qf_shls_entl/clones-03-e04.tptp.smt2,8317271,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.93586,1.30369,3072064.0,unsat,unsat
+433166402,qf_shls_entl/clones-03-e05.tptp.smt2,8317278,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.00549,1.3373,3072084.0,unsat,unsat
+433166372,qf_shls_entl/clones-03-e06.tptp.smt2,8317248,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.95616,1.34037,3071992.0,unsat,unsat
+433166384,qf_shls_entl/clones-03-e07.tptp.smt2,8317260,Harrsh 2019.9,22687,harrsh_default,326665,complete,33.7992,21.5751,3090180.0,sat,sat
+433166362,qf_shls_entl/clones-03-e08.tptp.smt2,8317238,Harrsh 2019.9,22687,harrsh_default,326665,complete,1434.16,482.352,3099880.0,starexec-unknown,sat
+433166352,qf_shls_entl/clones-03-e09.tptp.smt2,8317228,Harrsh 2019.9,22687,harrsh_default,326665,complete,38.4261,24.4504,3088328.0,sat,sat
+433166472,qf_shls_entl/clones-03-e10.tptp.smt2,8317348,Harrsh 2019.9,22687,harrsh_default,326665,complete,34.2673,22.1931,3088564.0,sat,sat
+433166320,qf_shls_entl/clones-04-e01.tptp.smt2,8317196,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.98682,1.3316,3071992.0,unsat,unsat
+433166286,qf_shls_entl/clones-04-e02.tptp.smt2,8317162,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.00843,1.35337,3072056.0,unsat,unsat
+433166301,qf_shls_entl/clones-04-e03.tptp.smt2,8317177,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.99932,1.33891,3072052.0,unsat,unsat
+433166346,qf_shls_entl/clones-04-e04.tptp.smt2,8317222,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.93142,1.30942,3071964.0,unsat,unsat
+433166356,qf_shls_entl/clones-04-e05.tptp.smt2,8317232,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.00361,1.34571,3071964.0,unsat,unsat
+433166327,qf_shls_entl/clones-04-e06.tptp.smt2,8317203,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.92535,1.29861,3072156.0,unsat,unsat
+433166339,qf_shls_entl/clones-04-e07.tptp.smt2,8317215,Harrsh 2019.9,22687,harrsh_default,326665,complete,1426.83,468.148,3091832.0,starexec-unknown,sat
+433166400,qf_shls_entl/clones-04-e08.tptp.smt2,8317276,Harrsh 2019.9,22687,harrsh_default,326665,complete,1534.76,486.802,3088904.0,starexec-unknown,sat
+433166393,qf_shls_entl/clones-04-e09.tptp.smt2,8317269,Harrsh 2019.9,22687,harrsh_default,326665,complete,1445.44,466.066,3091140.0,starexec-unknown,sat
+433166571,qf_shls_entl/clones-04-e10.tptp.smt2,8317447,Harrsh 2019.9,22687,harrsh_default,326665,complete,1402.75,457.993,3092072.0,starexec-unknown,sat
+433166556,qf_shls_entl/clones-05-e01.tptp.smt2,8317432,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.99714,1.3457,3072052.0,unsat,unsat
+433166564,qf_shls_entl/clones-05-e02.tptp.smt2,8317440,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.00912,1.35675,3072092.0,unsat,unsat
+433166575,qf_shls_entl/clones-05-e03.tptp.smt2,8317451,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.02702,1.38124,3071964.0,unsat,unsat
+433166512,qf_shls_entl/clones-05-e04.tptp.smt2,8317388,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.95107,1.32346,3072112.0,unsat,unsat
+433166518,qf_shls_entl/clones-05-e05.tptp.smt2,8317394,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.02281,1.3573,3072016.0,unsat,unsat
+433166528,qf_shls_entl/clones-05-e06.tptp.smt2,8317404,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.95653,1.34459,3072092.0,unsat,unsat
+433166538,qf_shls_entl/clones-05-e07.tptp.smt2,8317414,Harrsh 2019.9,22687,harrsh_default,326665,complete,1760.24,555.254,3093228.0,starexec-unknown,sat
+433166489,qf_shls_entl/clones-05-e08.tptp.smt2,8317365,Harrsh 2019.9,22687,harrsh_default,326665,complete,1563.94,484.51,3094192.0,starexec-unknown,sat
+433166482,qf_shls_entl/clones-05-e09.tptp.smt2,8317358,Harrsh 2019.9,22687,harrsh_default,326665,complete,1416.84,467.742,3091508.0,starexec-unknown,sat
+433166297,qf_shls_entl/clones-05-e10.tptp.smt2,8317173,Harrsh 2019.9,22687,harrsh_default,326665,complete,1917.19,591.018,3096740.0,starexec-unknown,sat
+433166416,qf_shls_entl/clones-06-e01.tptp.smt2,8317292,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.99607,1.34526,3071964.0,unsat,unsat
+433166426,qf_shls_entl/clones-06-e02.tptp.smt2,8317302,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.0343,1.35612,3071964.0,unsat,unsat
+433166439,qf_shls_entl/clones-06-e03.tptp.smt2,8317315,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.03773,1.37353,3072056.0,unsat,unsat
+433166368,qf_shls_entl/clones-06-e04.tptp.smt2,8317244,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.94343,1.31003,3072084.0,unsat,unsat
+433166378,qf_shls_entl/clones-06-e05.tptp.smt2,8317254,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.04062,1.35376,3072048.0,unsat,unsat
+433166388,qf_shls_entl/clones-06-e06.tptp.smt2,8317264,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.95352,1.32046,3072032.0,unsat,unsat
+433166399,qf_shls_entl/clones-06-e07.tptp.smt2,8317275,Harrsh 2019.9,22687,harrsh_default,326665,complete,1127.86,390.47,3089168.0,starexec-unknown,sat
+433166335,qf_shls_entl/clones-06-e08.tptp.smt2,8317211,Harrsh 2019.9,22687,harrsh_default,326665,complete,1635.12,496.385,3089372.0,starexec-unknown,sat
+433166325,qf_shls_entl/clones-06-e09.tptp.smt2,8317201,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.08,674.617,3091324.0,starexec-unknown,sat
+433166450,qf_shls_entl/clones-06-e10.tptp.smt2,8317326,Harrsh 2019.9,22687,harrsh_default,326665,complete,1217.21,410.928,3091208.0,starexec-unknown,sat
+433166470,qf_shls_entl/clones-07-e01.tptp.smt2,8317346,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.01241,1.36229,3072020.0,unsat,unsat
+433166444,qf_shls_entl/clones-07-e02.tptp.smt2,8317320,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.02743,1.55795,3071960.0,unsat,unsat
+433166455,qf_shls_entl/clones-07-e03.tptp.smt2,8317331,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.03574,1.35762,3072020.0,unsat,unsat
+433166497,qf_shls_entl/clones-07-e04.tptp.smt2,8317373,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.9603,1.31763,3071956.0,unsat,unsat
+433166505,qf_shls_entl/clones-07-e05.tptp.smt2,8317381,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.04666,1.36312,3072084.0,unsat,unsat
+433166477,qf_shls_entl/clones-07-e06.tptp.smt2,8317353,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.96034,1.31379,3072112.0,unsat,unsat
+433166487,qf_shls_entl/clones-07-e07.tptp.smt2,8317363,Harrsh 2019.9,22687,harrsh_default,326665,complete,1254.05,398.409,3090692.0,starexec-unknown,sat
+433166534,qf_shls_entl/clones-07-e08.tptp.smt2,8317410,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.14,683.702,3089252.0,starexec-unknown,sat
+433166525,qf_shls_entl/clones-07-e09.tptp.smt2,8317401,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.08,669.666,3085684.0,starexec-unknown,sat
+433166432,qf_shls_entl/clones-07-e10.tptp.smt2,8317308,Harrsh 2019.9,22687,harrsh_default,326665,complete,1229.48,389.19,3088316.0,starexec-unknown,sat
+433166478,qf_shls_entl/clones-08-e01.tptp.smt2,8317354,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.00646,1.3512,3072120.0,unsat,unsat
+433166504,qf_shls_entl/clones-08-e02.tptp.smt2,8317380,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.02962,1.34643,3071992.0,unsat,unsat
+433166496,qf_shls_entl/clones-08-e03.tptp.smt2,8317372,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.04557,1.36311,3071992.0,unsat,unsat
+433166456,qf_shls_entl/clones-08-e04.tptp.smt2,8317332,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.93854,1.30702,3072052.0,unsat,unsat
+433166445,qf_shls_entl/clones-08-e05.tptp.smt2,8317321,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.06586,1.38011,3071660.0,unsat,unsat
+433166469,qf_shls_entl/clones-08-e06.tptp.smt2,8317345,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.95721,1.31704,3071996.0,unsat,unsat
+433166463,qf_shls_entl/clones-08-e07.tptp.smt2,8317339,Harrsh 2019.9,22687,harrsh_default,326665,complete,1311.11,405.076,3089504.0,starexec-unknown,sat
+433166545,qf_shls_entl/clones-08-e08.tptp.smt2,8317421,Harrsh 2019.9,22687,harrsh_default,326665,complete,1160.35,369.892,3092272.0,starexec-unknown,sat
+433166554,qf_shls_entl/clones-08-e09.tptp.smt2,8317430,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.28,670.875,3084152.0,starexec-unknown,sat
+433166374,qf_shls_entl/clones-08-e10.tptp.smt2,8317250,Harrsh 2019.9,22687,harrsh_default,326665,complete,1302.44,403.012,3088932.0,starexec-unknown,sat
+433166387,qf_shls_entl/clones-09-e01.tptp.smt2,8317263,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.98461,1.33157,3072024.0,unsat,unsat
+433166379,qf_shls_entl/clones-09-e02.tptp.smt2,8317255,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.03837,1.36282,3072020.0,unsat,unsat
+433166369,qf_shls_entl/clones-09-e03.tptp.smt2,8317245,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.04202,1.36611,3072064.0,unsat,unsat
+433166438,qf_shls_entl/clones-09-e04.tptp.smt2,8317314,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.94371,1.31915,3072140.0,unsat,unsat
+433166425,qf_shls_entl/clones-09-e05.tptp.smt2,8317301,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.0772,1.39363,3071996.0,unsat,unsat
+433166417,qf_shls_entl/clones-09-e06.tptp.smt2,8317293,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.9427,1.31783,3072024.0,unsat,unsat
+433166411,qf_shls_entl/clones-09-e07.tptp.smt2,8317287,Harrsh 2019.9,22687,harrsh_default,326665,complete,1267.47,387.175,3093564.0,starexec-unknown,sat
+433166307,qf_shls_entl/clones-09-e08.tptp.smt2,8317183,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.05,663.481,3076860.0,starexec-unknown,sat
+433166319,qf_shls_entl/clones-09-e09.tptp.smt2,8317195,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.11,663.444,3090524.0,starexec-unknown,sat
+433166501,qf_shls_entl/clones-09-e10.tptp.smt2,8317377,Harrsh 2019.9,22687,harrsh_default,326665,timeout (cpu),2400.25,672.06,3092680.0,starexec-unknown,sat
+433166314,qf_shls_entl/clones-10-e01.tptp.smt2,8317190,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.01072,1.34536,3072060.0,unsat,unsat
+433166282,qf_shls_entl/clones-10-e02.tptp.smt2,8317158,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.06146,1.37073,3071924.0,unsat,unsat
+433166294,qf_shls_entl/clones-10-e03.tptp.smt2,8317170,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.05405,1.36983,3071956.0,unsat,unsat
+433166351,qf_shls_entl/clones-10-e04.tptp.smt2,8317227,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.94396,1.30405,3072020.0,unsat,unsat
+433166361,qf_shls_entl/clones-10-e05.tptp.smt2,8317237,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.06966,1.35892,3072052.0,unsat,unsat
+433166332,qf_shls_entl/clones-10-e06.tptp.smt2,8317208,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.92731,1.30001,3071660.0,unsat,unsat
+433166343,qf_shls_entl/clones-10-e07.tptp.smt2,8317219,Harrsh 2019.9,22687,harrsh_default,326665,complete,829.299,246.559,3093268.0,starexec-unknown,sat
+433166404,qf_shls_entl/clones-10-e08.tptp.smt2,8317280,Harrsh 2019.9,22687,harrsh_default,326665,complete,1006.62,284.271,3090216.0,starexec-unknown,sat
+433166397,qf_shls_entl/clones-10-e09.tptp.smt2,8317273,Harrsh 2019.9,22687,harrsh_default,326665,complete,767.805,228.682,3093752.0,starexec-unknown,sat
+433166577,qf_shls_entl/clones-10-e10.tptp.smt2,8317453,Harrsh 2019.9,22687,harrsh_default,326665,complete,828.405,246.689,3091724.0,starexec-unknown,sat
+433166560,qf_shls_entl/ls-vc01.smt2,8317436,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.90648,1.75948,3078068.0,sat,sat
+433166391,qf_shls_entl/ls-vc02.smt2,8317267,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.74171,2.13002,3076812.0,sat,sat
+433166349,qf_shls_entl/ls-vc03.smt2,8317225,Harrsh 2019.9,22687,harrsh_default,326665,complete,1142.72,379.358,3091172.0,starexec-unknown,sat
+433166443,qf_shls_entl/ls-vc04.smt2,8317319,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.65995,1.65781,3074928.0,sat,sat
+433166547,qf_shls_entl/ls-vc05.smt2,8317423,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.93887,1.30586,3072000.0,unsat,unsat
+433166376,qf_shls_entl/ls-vc06.smt2,8317252,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.5344,2.02389,3076724.0,sat,sat
+433166334,qf_shls_entl/ls-vc07.smt2,8317210,Harrsh 2019.9,22687,harrsh_default,326665,complete,5.32931,2.67974,3077308.0,sat,sat
+433166503,qf_shls_entl/ls-vc08.smt2,8317379,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.55805,2.08105,3078100.0,unsat,unsat
+433166535,qf_shls_entl/ls-vc09.smt2,8317411,Harrsh 2019.9,22687,harrsh_default,326665,complete,4.72306,2.48093,3078644.0,unsat,unsat
+433166365,qf_shls_entl/smallfoot-vc01.tptp.smt2,8317241,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.96281,1.30834,3072056.0,unsat,unsat
+433166398,qf_shls_entl/smallfoot-vc02.tptp.smt2,8317274,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.95283,1.31736,3071972.0,unsat,unsat
+433166390,qf_shls_entl/smallfoot-vc03.tptp.smt2,8317266,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.93412,1.30115,3072056.0,unsat,unsat
+433166419,qf_shls_entl/smallfoot-vc04.tptp.smt2,8317295,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.21097,1.45199,3071996.0,unsat,unsat
+433166409,qf_shls_entl/smallfoot-vc05.tptp.smt2,8317285,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.17925,1.48242,3072300.0,unsat,unsat
+433166436,qf_shls_entl/smallfoot-vc06.tptp.smt2,8317312,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.22275,1.43771,3072140.0,sat,unsat
+433166429,qf_shls_entl/smallfoot-vc07.tptp.smt2,8317305,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.96443,1.31999,3071968.0,unsat,unsat
+433166289,qf_shls_entl/smallfoot-vc08.tptp.smt2,8317165,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.97649,1.3109,3072060.0,unsat,unsat
+433166303,qf_shls_entl/smallfoot-vc09.tptp.smt2,8317179,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.97375,1.32117,3072096.0,unsat,unsat
+433166484,qf_shls_entl/smallfoot-vc10.tptp.smt2,8317360,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.30334,1.92352,3077168.0,unsat,unsat
+433166492,qf_shls_entl/smallfoot-vc11.tptp.smt2,8317368,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.27729,1.92844,3076516.0,unsat,unsat
+433166498,qf_shls_entl/smallfoot-vc12.tptp.smt2,8317374,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.96985,1.31612,3072096.0,unsat,unsat
+433166509,qf_shls_entl/smallfoot-vc13.tptp.smt2,8317385,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.30927,1.94024,3078284.0,unsat,unsat
+433166441,qf_shls_entl/smallfoot-vc14.tptp.smt2,8317317,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.98761,1.32585,3071992.0,unsat,unsat
+433166448,qf_shls_entl/smallfoot-vc15.tptp.smt2,8317324,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.97617,1.32649,3072084.0,unsat,unsat
+433166458,qf_shls_entl/smallfoot-vc16.tptp.smt2,8317334,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.97601,1.32431,3072028.0,unsat,unsat
+433166467,qf_shls_entl/smallfoot-vc17.tptp.smt2,8317343,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.97618,1.31621,3071932.0,unsat,unsat
+433166551,qf_shls_entl/smallfoot-vc18.tptp.smt2,8317427,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.9846,1.5789,3072020.0,unsat,unsat
+433166544,qf_shls_entl/smallfoot-vc19.tptp.smt2,8317420,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.94721,1.31008,3072092.0,unsat,unsat
+433166284,qf_shls_entl/smallfoot-vc20.tptp.smt2,8317160,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.96131,1.31772,3072052.0,unsat,unsat
+433166292,qf_shls_entl/smallfoot-vc21.tptp.smt2,8317168,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.96854,1.3173,3072012.0,unsat,unsat
+433166306,qf_shls_entl/smallfoot-vc22.tptp.smt2,8317182,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.47237,1.56443,3074940.0,sat,sat
+433166315,qf_shls_entl/smallfoot-vc23.tptp.smt2,8317191,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.76068,1.69266,3077212.0,sat,sat
+433166333,qf_shls_entl/smallfoot-vc24.tptp.smt2,8317209,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.73807,1.69779,3076376.0,unsat,unsat
+433166342,qf_shls_entl/smallfoot-vc25.tptp.smt2,8317218,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.74339,1.68476,3074284.0,unsat,unsat
+433166350,qf_shls_entl/smallfoot-vc26.tptp.smt2,8317226,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.96015,1.32134,3072020.0,unsat,unsat
+433166363,qf_shls_entl/smallfoot-vc27.tptp.smt2,8317239,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.95779,1.38792,3071896.0,unsat,unsat
+433166382,qf_shls_entl/smallfoot-vc28.tptp.smt2,8317258,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.34677,1.9629,3077208.0,unsat,unsat
+433166373,qf_shls_entl/smallfoot-vc29.tptp.smt2,8317249,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.52324,2.01763,3077124.0,sat,sat
+433166555,qf_shls_entl/smallfoot-vc30.tptp.smt2,8317431,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.62117,2.06325,3076972.0,sat,sat
+433166546,qf_shls_entl/smallfoot-vc31.tptp.smt2,8317422,Harrsh 2019.9,22687,harrsh_default,326665,complete,4.1524,2.26114,3077060.0,sat,sat
+433166576,qf_shls_entl/smallfoot-vc32.tptp.smt2,8317452,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.62699,2.07149,3078052.0,sat,sat
+433166567,qf_shls_entl/smallfoot-vc33.tptp.smt2,8317443,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.94242,2.1918,3077356.0,sat,sat
+433166521,qf_shls_entl/smallfoot-vc34.tptp.smt2,8317397,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.99992,1.34031,3072092.0,unsat,unsat
+433166513,qf_shls_entl/smallfoot-vc35.tptp.smt2,8317389,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.58484,2.04204,3076944.0,sat,sat
+433166533,qf_shls_entl/smallfoot-vc36.tptp.smt2,8317409,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.01681,1.34242,3072092.0,unsat,unsat
+433166526,qf_shls_entl/smallfoot-vc37.tptp.smt2,8317402,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.94525,2.21452,3076900.0,sat,sat
+433166476,qf_shls_entl/smallfoot-vc38.tptp.smt2,8317352,Harrsh 2019.9,22687,harrsh_default,326665,complete,5.01578,2.55525,3077208.0,unsat,unsat
+433166488,qf_shls_entl/smallfoot-vc39.tptp.smt2,8317364,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.42342,1.98819,3076796.0,sat,sat
+433166540,qf_shls_entl/smallfoot-vc40.tptp.smt2,8317416,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.36243,1.9503,3076300.0,sat,sat
+433166532,qf_shls_entl/smallfoot-vc41.tptp.smt2,8317408,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.62247,2.08935,3077296.0,unsat,unsat
+433166523,qf_shls_entl/smallfoot-vc42.tptp.smt2,8317399,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.59216,2.06821,3076784.0,unsat,unsat
+433166514,qf_shls_entl/smallfoot-vc43.tptp.smt2,8317390,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.38675,1.96495,3076832.0,sat,sat
+433166568,qf_shls_entl/smallfoot-vc44.tptp.smt2,8317444,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.62621,2.11997,3077240.0,unsat,unsat
+433166562,qf_shls_entl/smallfoot-vc45.tptp.smt2,8317438,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.37823,1.96812,3076488.0,unsat,unsat
+433166552,qf_shls_entl/smallfoot-vc46.tptp.smt2,8317428,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.34199,1.95581,3076776.0,unsat,unsat
+433166543,qf_shls_entl/smallfoot-vc47.tptp.smt2,8317419,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.95508,1.32672,3071988.0,unsat,unsat
+433166459,qf_shls_entl/smallfoot-vc48.tptp.smt2,8317335,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.98299,1.32774,3071996.0,unsat,unsat
+433166466,qf_shls_entl/smallfoot-vc49.tptp.smt2,8317342,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.31353,1.98122,3078112.0,sat,sat
+433166348,qf_shls_entl/smallfoot-vc50.tptp.smt2,8317224,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.30526,1.95778,3076348.0,unsat,unsat
+433166360,qf_shls_entl/smallfoot-vc51.tptp.smt2,8317236,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.97016,1.32771,3072092.0,unsat,unsat
+433166323,qf_shls_entl/smallfoot-vc52.tptp.smt2,8317199,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.97193,1.32449,3071904.0,unsat,unsat
+433166336,qf_shls_entl/smallfoot-vc53.tptp.smt2,8317212,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.95912,1.31944,3072024.0,unsat,unsat
+433166308,qf_shls_entl/smallfoot-vc54.tptp.smt2,8317184,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.47994,1.59564,3074888.0,sat,sat
+433166317,qf_shls_entl/smallfoot-vc55.tptp.smt2,8317193,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.33377,1.94243,3077172.0,unsat,unsat
+433166291,qf_shls_entl/smallfoot-vc56.tptp.smt2,8317167,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.37035,1.98552,3077744.0,sat,sat
+433166302,qf_shls_entl/smallfoot-vc57.tptp.smt2,8317178,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.32209,1.91768,3076920.0,sat,sat
+433166437,qf_shls_entl/smallfoot-vc58.tptp.smt2,8317313,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.9951,1.34212,3072088.0,unsat,unsat
+433166427,qf_shls_entl/smallfoot-vc59.tptp.smt2,8317303,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.9717,1.43107,3071932.0,unsat,unsat
+433166462,qf_shls_entl/smallfoot-vc60.tptp.smt2,8317338,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.33372,1.97562,3076464.0,unsat,unsat
+433166471,qf_shls_entl/smallfoot-vc61.tptp.smt2,8317347,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.29492,1.9338,3076372.0,sat,sat
+433166447,qf_shls_entl/smallfoot-vc62.tptp.smt2,8317323,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.01589,1.34834,3071948.0,unsat,unsat
+433166453,qf_shls_entl/smallfoot-vc63.tptp.smt2,8317329,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.32686,1.94684,3077188.0,unsat,unsat
+433166494,qf_shls_entl/smallfoot-vc64.tptp.smt2,8317370,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.93968,1.30223,3071760.0,unsat,unsat
+433166507,qf_shls_entl/smallfoot-vc65.tptp.smt2,8317383,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.32598,2.09116,3076556.0,unsat,unsat
+433166479,qf_shls_entl/smallfoot-vc66.tptp.smt2,8317355,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.97002,1.32234,3071988.0,unsat,unsat
+433166486,qf_shls_entl/smallfoot-vc67.tptp.smt2,8317362,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.31262,1.93773,3076808.0,unsat,unsat
+433166536,qf_shls_entl/smallfoot-vc68.tptp.smt2,8317412,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.35586,1.96579,3076928.0,sat,sat
+433166524,qf_shls_entl/smallfoot-vc69.tptp.smt2,8317400,Harrsh 2019.9,22687,harrsh_default,326665,complete,2.519,1.60013,3074284.0,sat,sat
+433166431,qf_shls_entl/smallfoot-vc70.tptp.smt2,8317307,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.64208,2.09217,3076948.0,sat,sat
+433166423,qf_shls_entl/smallfoot-vc71.tptp.smt2,8317299,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.40935,1.99102,3077136.0,unsat,unsat
+433166414,qf_shls_entl/smallfoot-vc72.tptp.smt2,8317290,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.36174,1.97267,3076816.0,sat,sat
+433166406,qf_shls_entl/smallfoot-vc73.tptp.smt2,8317282,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.3826,1.97822,3076676.0,sat,sat
+433166403,qf_shls_entl/smallfoot-vc74.tptp.smt2,8317279,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.41735,1.98747,3077168.0,unsat,unsat
+433166396,qf_shls_entl/smallfoot-vc75.tptp.smt2,8317272,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.98419,1.32752,3071992.0,unsat,unsat
+433166383,qf_shls_entl/smallfoot-vc76.tptp.smt2,8317259,Harrsh 2019.9,22687,harrsh_default,326665,complete,3.2999,1.95603,3076896.0,sat,sat
+433166371,qf_shls_entl/smallfoot-vc77.tptp.smt2,8317247,Harrsh 2019.9,22687,harrsh_default,326665,complete,1.9615,1.33366,3072124.0,unsat,unsat
