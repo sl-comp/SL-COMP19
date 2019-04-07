@@ -1,0 +1,22 @@
+body {
+   background-color: ivory;
+   color: black;
+   font-size: 100%;
+   font-family: normal;
+}
+
+p.summary {
+   background-color: lightcoral;
+   font-size: 70%;
+   font-color: white;
+   text-align: center;
+}
+
+p.modified {
+   background-color: lightcoral;
+   text-align: right;
+   font-color: white;
+   font-size: 70%;
+   font-family: italic;
+}
+

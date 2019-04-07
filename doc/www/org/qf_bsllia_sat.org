@@ -1,0 +1,47 @@
+#+TITLE:      Results of SL-COMP'19 division =qf_bsllia_sat=
+#+AUTHOR:     Mihaela Sighireanu
+#+EMAIL:      sl-comp@googlegroups.com
+#+LANGUAGE:   en
+#+CATEGORY:   competition
+#+OPTIONS:    H:2 num:nil
+#+OPTIONS:    toc:nil
+#+OPTIONS:    \n:nil ::t |:t ^:t -:t f:t *:t d:(HIDE)
+#+OPTIONS:    tex:t
+#+OPTIONS:    html-preamble:nil
+#+OPTIONS:    html-postamble:auto
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/stylebig.css"/>
+
+
+#+MACRO: Asterix [[https://sl-comp.github.io/docs/solvers.html#Asterix][Asterix]]
+#+MACRO: ComSPEN [[https://sl-comp.github.io/docs/solvers.html#ComSPEN][ComSPEN]]
+#+MACRO: Cyclist [[https://sl-comp.github.io/docs/solvers.html#Cyclist][Cyclist]]
+#+MACRO: CVC4    [[https://sl-comp.github.io/docs/solvers.html#CVC4][CVC4]]
+#+MACRO: Harrsh  [[https://sl-comp.github.io/docs/solvers.html#Harrsh][Harrsh]]
+#+MACRO: S2S     [[https://sl-comp.github.io/docs/solvers.html#S2S][S2S]]
+#+MACRO: Sleek   [[https://sl-comp.github.io/docs/solvers.html#Sleek][Sleek]]
+#+MACRO: SLSAT   [[https://sl-comp.github.io/docs/solvers.html#SLSAT][SLSAT]]
+#+MACRO: Songbird  [[https://sl-comp.github.io/docs/solvers.html#Songbird][Songbird]]
+#+MACRO: SPEN    [[https://sl-comp.github.io/docs/solvers.html#SPEN][SPEN]]
+#+MACRO: STAR5   @@html:<font color="gold"> ***** </font>@@
+#+MACRO: STAR4   @@html:<font color="gold"> ****  </font>@@
+#+MACRO: STAR3   @@html:<font color="gold"> *** </font>@@
+#+MACRO: STAR2   @@html:<font color="gold"> ** </font>@@
+#+MACRO: STAR1   @@html:<font color="gold"> * </font>@@
+#+MACRO: COFFEE  @@html: &#9749; @@
+#+MACRO: PODIUM  [[file:gloss.html#PODIUM][Podium]]
+#+MACRO: RO      [[file:gloss.html#RO][RO]]
+#+MACRO: SCORE   [[file:gloss.html#SCORE][Score]]
+#+MACRO: VBS     [[file:gloss.html#VBS][VBS]]
+
+
+* Overview
+
+  
+#+NAME: RUN-1
+** Run 1 
+#+ATTR_HTML: :border 2 :rules all :frame border
+|solver|solver id|configuration|solved|fulltime|maxmem|wrong|to|failed|unknown|job|podium|
+|------+---------+-------------+------+--------+------+-----+--+------+-------+---+------|
+|CVC4-070618|20439|def|24/24|2.40|152080.00|0|0|0|0|[[file:job/1-qf_bsllia_sat-CVC4-070618-20439-33002.csv.html][csv]]|{{{STAR3}}}|
+  

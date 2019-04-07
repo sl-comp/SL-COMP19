@@ -1,0 +1,69 @@
+#+TITLE:      Results of SL-COMP'19 division =qf_shid_entl=
+#+AUTHOR:     Mihaela Sighireanu
+#+EMAIL:      sl-comp@googlegroups.com
+#+LANGUAGE:   en
+#+CATEGORY:   competition
+#+OPTIONS:    H:2 num:nil
+#+OPTIONS:    toc:nil
+#+OPTIONS:    \n:nil ::t |:t ^:t -:t f:t *:t d:(HIDE)
+#+OPTIONS:    tex:t
+#+OPTIONS:    html-preamble:nil
+#+OPTIONS:    html-postamble:auto
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/stylebig.css"/>
+
+
+#+MACRO: Asterix [[https://sl-comp.github.io/docs/solvers.html#Asterix][Asterix]]
+#+MACRO: ComSPEN [[https://sl-comp.github.io/docs/solvers.html#ComSPEN][ComSPEN]]
+#+MACRO: Cyclist [[https://sl-comp.github.io/docs/solvers.html#Cyclist][Cyclist]]
+#+MACRO: CVC4    [[https://sl-comp.github.io/docs/solvers.html#CVC4][CVC4]]
+#+MACRO: Harrsh  [[https://sl-comp.github.io/docs/solvers.html#Harrsh][Harrsh]]
+#+MACRO: S2S     [[https://sl-comp.github.io/docs/solvers.html#S2S][S2S]]
+#+MACRO: Sleek   [[https://sl-comp.github.io/docs/solvers.html#Sleek][Sleek]]
+#+MACRO: Slide   [[https://sl-comp.github.io/docs/solvers.html#Slide][SLIDE]]
+#+MACRO: SLSAT   [[https://sl-comp.github.io/docs/solvers.html#SLSAT][SLSAT]]
+#+MACRO: Songbird  [[https://sl-comp.github.io/docs/solvers.html#Songbird][Songbird]]
+#+MACRO: SPEN    [[https://sl-comp.github.io/docs/solvers.html#SPEN][SPEN]]
+#+MACRO: STAR5   @@html:<font color="gold"> ***** </font>@@
+#+MACRO: STAR4   @@html:<font color="gold"> ****  </font>@@
+#+MACRO: STAR3   @@html:<font color="gold"> *** </font>@@
+#+MACRO: STAR2   @@html:<font color="gold"> ** </font>@@
+#+MACRO: STAR1   @@html:<font color="gold"> * </font>@@
+#+MACRO: COFFEE  @@html: &#9749; @@
+#+MACRO: PODIUM  [[file:gloss.html#PODIUM][Podium]]
+#+MACRO: RO      [[file:gloss.html#RO][RO]]
+#+MACRO: SCORE   [[file:gloss.html#SCORE][Score]]
+#+MACRO: VBS     [[file:gloss.html#VBS][VBS]]
+
+
+
+* Overview
+
+  
+#+NAME: RUN-1
+** Run 1 
+#+ATTR_HTML: :border 2 :rules all :frame border
+|solver|solver id|configuration|solved|fulltime|maxmem|wrong|to|failed|unknown|job|
+|------+---------+-------------+------+--------+------+-----+--+------+-------+---|
+|Cyclist-SL|1136|default|219/312|2322.77|190408.00|0|75|0|18|[[file:job/1-qf_shid_entl-Cyclist-SL-1136-33261.csv.html][csv]]|
+|Harrsh 2019.4|22572|harrsh_default|251/312|2058.44|3105572.00|5|6|0|50|[[file:job/1-qf_shid_entl-Harrsh-22572-33262.csv.html][csv]]|
+|SLEEK|20564|default|196/312|1485.22|354140.00|96|17|0|3|[[file:job/1-qf_shid_entl-SLEEK-20564-33264.csv.html][csv]]|
+|SPEN|22607|qf_shidlia|41/312|1.71|113176.00|3|0|0|268|[[file:job/1-qf_shid_entl-SPEN-22607-33267.csv.html][csv]]|
+|Songbird v2|20617|songbird.sh|300/312|1225.29|685684.00|0|0|0|12|[[file:job/1-qf_shid_entl-Songbird-20617-33266.csv.html][csv]]|
+|s2s.0.3.3|22440|default|312/312|56.10|214164.00|0|0|0|0|[[file:job/1-qf_shid_entl-s2s.0.3.3-22440-33263.csv.html][csv]]|
+|slide-2018-v5|20628|SLD_input|61/312|70.04|633892.00|0|0|0|251|[[file:job/1-qf_shid_entl-slide-2018-v5-20628-33265.csv.html][csv]]|
+  
+  
+#+MACRO: VBSJ  [[file:job/2-qf_shid_entl-VBS.csv.html][job]]
+#+NAME: RUN-2
+** Run 2 
+#+ATTR_HTML: :border 2 :rules all :frame border
+|solver|solver id|config|solved|solved time|full time|maxmem|wrong|{{{RO}}}|failed|unknown|job|{{{SCORE}}}|{{{VBS}}}-{{{VBSJ}}}|{{{PODIUM}}}|
+|------+---------+------+------+-----------+---------+------+-----+--+------+-------+---+-----+---+------|
+|Cyclist-SL|22685|default|252/312|3253.29|111617.07|450552.00|0|45|0|15|[[file:job/2-qf_shid_entl-Cyclist-SL-22685-33509.csv.html][csv]]|252.00|64|{{{STAR2}}}|
+|Harrsh 2019.9|22687|harrsh_default|255/312|2280.58|15618.54|3100160.00|0|6|0|51|[[file:job/2-qf_shid_entl-Harrsh-22687-33511.csv.html][csv]]|255.00|0|{{{STAR3}}}|
+|SLEEK|20564|default|196/312|1483.08|45697.65|354136.00|96|17|0|3|[[file:job/2-qf_shid_entl-SLEEK-20564-33514.csv.html][csv]]|73.00|0|{{{STAR1}}}|
+|Songbird v2|20617|songbird.sh|300/312|1225.96|4359.56|685684.00|0|0|0|12|[[file:job/2-qf_shid_entl-Songbird-20617-33515.csv.html][csv]]|300.00|6|{{{STAR4}}}|
+|s2s.0.3.3|22440|default|312/312|55.58|55.58|214160.00|0|0|0|0|[[file:job/2-qf_shid_entl-s2s.0.3.3-22440-33512.csv.html][csv]]|312.00|241|{{{STAR5}}}|
+|slide-2018-v5|20623|SLD_input|61/312|70.49|149.63|633436.00|0|0|0|251|[[file:job/2-qf_shid_entl-slide-2018-v5-20623-33513.csv.html][csv]]|61.00|1|{{{COFFEE}}}|
+  

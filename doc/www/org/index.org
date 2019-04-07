@@ -1,0 +1,302 @@
+#+TITLE:      SL-COMP 2019
+#+AUTHOR:     Mihaela Sighireanu
+#+EMAIL:      sl-comp@googlegroups.com
+#+LANGUAGE:   en
+#+CATEGORY:   competition
+#+OPTIONS:    H:2 num:nil
+#+OPTIONS:    toc:auto
+#+OPTIONS:    \n:nil ::t |:t ^:t -:t f:t *:t d:(HIDE)
+#+OPTIONS:    tex:t
+#+OPTIONS:    html-preamble:nil
+#+OPTIONS:    html-postamble:auto
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/stylebig.css"/>
+#+HTML_MATHJAX: align: left indent: 5em tagside: left font: Neo-Euler
+
+#+MACRO: sl-comp SL-COMP
+#+MACRO: SL [[http://www0.cs.ucl.ac.uk/staff/p.ohearn/SeparationLogic/Separation_Logic/SL_Home.html][Separation Logic]]
+#+MACRO: SMT-COMP [[http://smtcomp.sourceforge.net][SMT-COMP]]
+#+MACRO: SAT-COMP [[http://www.satcompetition.org][SAT]]
+#+MACRO: SMT-LIB  [[http://smtlib.cs.uiowa.edu/index.shtml][SMT-LIB]]
+#+MACRO: StarExec [[https://www.starexec.org][StarExec]]
+
+#+MACRO: Asterix [[https://sl-comp.github.io/docs/solvers.html#Asterix][Asterix]]
+#+MACRO: ComSPEN [[https://sl-comp.github.io/docs/solvers.html#ComSPEN][ComSPEN]]
+#+MACRO: Cyclist [[https://sl-comp.github.io/docs/solvers.html#Cyclist][Cyclist]]
+#+MACRO: CVC4    [[https://sl-comp.github.io/docs/solvers.html#CVC4][CVC4]]
+#+MACRO: Harrsh  [[https://sl-comp.github.io/docs/solvers.html#Harrsh][Harrsh]]
+#+MACRO: S2S     [[https://sl-comp.github.io/docs/solvers.html#S2S][S2S]]
+#+MACRO: Sleek   [[https://sl-comp.github.io/docs/solvers.html#Sleek][Sleek]]
+#+MACRO: SLSAT   [[https://sl-comp.github.io/docs/solvers.html#SLSAT][SLSAT]]
+#+MACRO: Songbird  [[https://sl-comp.github.io/docs/solvers.html#Songbird][Songbird]]
+#+MACRO: SPEN    [[https://sl-comp.github.io/docs/solvers.html#SPEN][SPEN]]
+
+
+* Synopsis
+   This is the 3rd edition of 
+   {{{sl-comp}}}, an initiative for collecting decision problems in {{{SL}}}
+   and solvers dealing with such problems.
+
+   This initiative started in 2014 and it was inspired by the very
+   popular initiatives on other theories, like 
+   first-order theories for {{{SMT-COMP}}} and 
+   Boolean constraints for {{{SAT-COMP}}}.
+
+   For more details, see competition's [[https://sl-comp.github.io][web site]].
+
+* News and Key Dates
+  - *April 6th, 2019*: Presentation of SL-COMP'19 at [[https://tacas.info/toolympics.php][TOOLympics 2019]]
+  - *March 31, 2019*: Last official run of SL-COMP'19 on [[https://starexec.org][StarExec]]
+  - *March 22, 2019*: First official run of SL-COMP'19 on [[https://starexec.org][StarExec]]
+  - March 8, 2019: First training run of SL-COMP'19 on [[https://starexec.org][StarExec]]
+  - February 25, 2019: Preliminary description of SL-COMP'19 at [[https://tacas.info/toolympics.php][TOOLympics 2019]] 
+    available at [[https://github.com/sl-comp/SL-COMP19/tree/master/doc/report/toolympics19/main.pdf][competition's web site]]
+  - January 8, 2019: Deadline for registration of solvers for SL-COMP 2019 at 
+     [[https://easychair.org/conferences/?conf=slcomp19][easychair submission site]]
+  - December 7, 2018: Call for participation to SL-COMP 2019 at [[https://tacas.info/toolympics.php][TOOLympics 2019]]
+
+* Specifications and rules
+
+  The same input format as for SL-COMP 2018 edition, detailed on [[https://sl-comp.github.io][competition web site]].
+
+  The competition takes place on the {{{StarExec}}} platform based on the following rules:
+  - timeout for solving one problem: 2400 seconds except for division =qf_shls_*= whre timeout is 600 seconds
+  - maximum memory: 10 GB
+  - no scrambling
+  - official pre-processors accepted
+  
+  The scoring scheme used is explained [[file:gloss.html#SCORE][here]]
+
+#+NAME: bench
+* Benchmarks and divisions
+
+  This edition uses the same set of problems than [[https://github.com/sl-comp/SL-COMP18/tree/master/bench][SL-COMP 2018 edition]],
+  i.e., 1296 problems split into the same 11 divisions:
+  + Satisfiability checking:
+    - [[https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shls_sat][=qf_shls_sat=]]: for quantifier free (QF) formulas in the symbolic heaps (SH) fragment using only acyclic singly linked lists
+    - [[https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shid_sat][=qf_shid_sat=]]: for QF formulas in the SH fragment using general inductive definitions (ID)
+    - [[https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shidlia_sat][=qf_shidlia_sat=]]: for QF formulas in the SH fragment with ID and linear integer constraints (LIA)
+    - [[https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_bsl_sat][=qf_bsl_sat=]]: for QF fragment with boolean combination of SL atoms; the quantified version of this division [[https://github.com/sl-comp/SL-COMP18/tree/master/bench/bsl_sat][=bsl_sat=]] has not enough problems to be considered by this edition
+    - [[https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_bsllia_sat][=qf_bsllia_sat=]]: for QF fragment with boolean combination of SL atoms and LIA
+
+  + Entailment checking:
+    - [[https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shls_entl][=qf_shls_entl=]]: for QF formulas in the SH fragment using only acyclic singly linked lists
+    - [[https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shid_entl][=qf_shid_entl=]]: for QF formulas in the SH fragment with ID
+    - [[https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shlid_entl][=qf_shlid_entl=]]: for QF formulas in the SH fragment with linear ID
+    - [[https://github.com/sl-comp/SL-COMP19/tree/master/bench/shid_entl][=shid_entl=]]: for formulas in the SH fragment with ID
+    - [[https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shidlia_entl][=qf_shidlia_entl=]]: for formulas in the SH fragment with ID and LIA
+    - [[https://github.com/sl-comp/SL-COMP19/tree/master/bench/shidlia_entl][=shidlia_entl=]]: for QF formulas in the SH fragment with IS and LIA
+
+  A set of new problems proposed for division `qf_shid_entl` are on probation at this edition.
+
+
+- The contributions to the benchmark of SL-COMP are summarized below:
+
+#+ATTR_HTML: :border 2 :rules all :frame border
+| Division          | #problems | {{{Asterix}}} | ComSPEN | CVC4 | Cyclist | Harrsh |  S2S | Sleek | Slide | Songbird | SPEN |
+|                   |  <4> |  <4> |  <4> |  <4> |  <4> |  <4> |  <4> |  <4> |  <4> |  <4> |  <4> |
+|-------------------+------+------+------+------+------+------+------+------+------+------+------|
+| =qf_bsl_sat=      |   46 |    0 |    0 |   46 |    0 |    0 |    0 |    0 |    0 |    0 |    0 |
+| =qf_bsllia_sat=   |   24 |    0 |    0 |   24 |    0 |    0 |    0 |    0 |    0 |    0 |    0 |
+| =qf_shid_entl=    |  312 |    1 |    0 |    0 |   22 |    0 |   59 |   81 |   17 |  132 |   46 |
+| =qf_shid_sat=     |   99 |    0 |    0 |    0 |   61 |   29 |    9 |    0 |    0 |    0 |    0 |
+| =qf_shidlia_entl= |   61 |    0 |   22 |    0 |    0 |    0 |    0 |    0 |    0 |   39 |    0 |
+| =qf_shidlia_sat=  |   33 |    0 |   20 |    0 |    0 |    0 |   13 |    0 |    0 |    0 |    0 |
+| =qf_shlid_entl=   |   60 |    0 |    0 |    0 |    0 |    0 |   14 |    0 |    0 |    0 |   46 |
+| =qf_shls_entl=    |  296 |  287 |    0 |    0 |    0 |    0 |    9 |    0 |    0 |    0 |    5 |
+| =qf_shls_sat=     |  110 |  110 |    0 |    0 |    0 |    0 |    0 |    0 |    0 |    0 |    0 |
+| =shid_entl=       |   73 |    0 |    0 |    0 |    0 |    0 |    0 |    0 |    9 |   64 |    0 |
+| =shidlia_entl=    |  181 |    0 |    0 |    0 |    0 |    0 |    0 |    0 |    0 |  181 |    0 |
+|-------------------+------+------+------+------+------+------+------+------+------+------+------|
+
+
+
+
+
+* Participants
+#+NAME: solvers
+  These are the solvers participating in the SL-COMP 2019.
+
+#+ATTR_HTML: :border 2 :rules all :frame border
+|------------+-------------+------------+--------------------+----------------------------|
+| Solver     | Preliminary |      Final | System description | Contact                    |
+|            |  version id | version id |                    | for StarExec               |
+|------------+-------------+------------+--------------------+----------------------------|
+| {{{Asterix}}}    |       20618 |      20618 | [[https://sl-comp.github.io/docs/solvers.html#Asterix][Asterix]] | [[mailto:juannavarroperez@gmail.com][Juan Antonio Navarro Pérez]] |
+|------------+-------------+------------+--------------------+----------------------------|
+| ComSPEN    |       22337 |      22337 | [[https://sl-comp.github.io/docs/solvers.html#ComSPEN][ComSPEN]] | [[mailto:gaochong@ios.ac.cn][Chong Gao]]                  |
+|------------+-------------+------------+--------------------+----------------------------|
+| CVC4       |       20439 |      20439 | [[https://sl-comp.github.io/docs/solvers.html#CVC4][CVC4-SL]]            | [[mailto:andrew.j.reynolds@gmail.com][Andrew Reynolds]]            |
+|------------+-------------+------------+--------------------+----------------------------|
+| Cyclist-SL |        1136 |      22685 | [[https://sl-comp.github.io/docs/solvers.html#Cyclist-SL][Cyclist-SL]]         | [[mailto:nikos.gorogiannis@gmail.com][Nikos Gorogiannis]]          |
+|------------+-------------+------------+--------------------+----------------------------|
+| Harrsh     |       22424 |      22687 | [[https://sl-comp.github.io/docs/solvers.html#Harrsh][Harrsh]]             | [[mailto:jkatelaan@forsyte.at][Jens Katelaan]]              |
+|------------+-------------+------------+--------------------+----------------------------|
+| S2S        |       22394 |      22440 | [[https://sl-comp.github.io/docs/solvers.html#S2S][S2S]]                | [[mailto:lequangloc@gmail.com][Le Quang Loc]]               |
+|------------+-------------+------------+--------------------+----------------------------|
+| Sleek      |       20564 |      20564 | [[https://sl-comp.github.io/docs/solvers.html#Sleek][Sleek]]              | [[mailto:benedictleejh@gmail.com][Benedict Lee]]               |
+|------------+-------------+------------+--------------------+----------------------------|
+| Slide      |       20623 |      20623 | [[https://sl-comp.github.io/docs/solvers.html#Slide][Slide]]              | [[mailto:rogalew@fit.vutbr.cz][Adam Rogalewicz]]            |
+|------------+-------------+------------+--------------------+----------------------------|
+| SLSAT      |        1137 |      22694 | [[https://sl-comp.github.io/docs/solvers.html#SLSAT][SLSAT]]              | [[mailto:nikos.gorogiannis@gmail.com][Nikos Gorogiannis]]          |
+|------------+-------------+------------+--------------------+----------------------------|
+| Songbird   |       20617 |      20617 | [[https://sl-comp.github.io/docs/solvers.html#Songbird][Songbird]]           | [[mailto:taquangtrungvn@gmail.com][Ta Quang Trung]]             |
+|------------+-------------+------------+--------------------+----------------------------|
+| SPEN       |       20561 |      22729 | [[https://sl-comp.github.io/docs/solvers.html#SPEN][SPEN]]               | [[mailto:mihaela.sighireanu@gmail.com][Mihaela Sighireanu]]         |
+|------------+-------------+------------+--------------------+----------------------------|
+
+
+These are the benchmark divisions in which each solver is competing:
+
+#+ATTR_HTML: :border 2 :rules all :frame border
+|-------------------+------+------+------+------+------+------+------+------+------+------+------+------|
+| Division          | #prob | {{{Asterix}}} | ComSPEN | CVC4 | Cyclist | Harrsh | S2S  | Sleek | Slide | SLSAT | Songbird | SPEN |
+|                   |  <4> | <4>  | <4>  | <4>  | <4>  | <4>  | <4>  | <4>  | <4>  | <4>  | <4>  | <4>  |
+|-------------------+------+------+------+------+------+------+------+------+------+------+------+------|
+| =qf_bsl_sat=      |   46 |      |      | X    |      |      |      |      |      |      |      |      |
+| =qf_bsllia_sat=   |   24 |      |      | X    |      |      |      |      |      |      |      |      |
+| =qf_shid_entl=    |  312 |      |      |      | X    | X    | X    | X    | X    |      | X    |      |
+| =qf_shid_sat=     |   99 |      |      |      |      | X    | X    | X    |      | X    | X    |      |
+| =qf_shidlia_entl= |   61 |      | X    |      |      |      | X    | X    |      |      | X    |      |
+| =qf_shidlia_sat=  |   33 |      | X    |      |      |      | X    | X    |      |      | X    |      |
+| =qf_shlid_entl=   |   60 |      | X    |      | X    | X    | X    | X    | X    |      | X    | X    |
+| =qf_shls_entl=    |  296 | X    | X    |      | X    | X    | X    | X    | X    |      | X    | X    |
+| =qf_shls_sat=     |  110 | X    | X    |      |      | X    | X    | X    |      | X    | X    | X    |
+| =shid_entl=       |   73 |      |      |      | X    |      | X    | X    | X    |      | X    |      |
+| =shidlia_entl=    |  181 |      |      |      |      |      | X    | X    |      |      | X    |      |
+|-------------------+------+------+------+------+------+------+------+------+------+------+------+------|
+
+
+* Results
+#+NAME: Results
+  - Two runs took place between March 8th and April 3rd, 2019.
+  - The final results will be  announced at [[https://tacas.info/toolympics.php][TOOLympics]] during TACAS 2019.
+  - The results are provided below using the following [[file:gloss.html][glossary]].
+
+** Division =qf_bsl_sat=: 46 problems, 1 solver
+   + [[file:qf_bsl_sat.org][Overview]]
+   + [[file:qf_bsl_sat.org::RUN-1][Run 1]]
+#   + [[file:qf_bsl_sat.org::CVC4][CVC4]]
+
+** Division =qf_bsllia_sat=: 24 problems, 1 solver
+   + [[file:qf_bsllia_sat.org][Overview]]
+   + [[file:qf_bsllia_sat.org::RUN-1][Run 1]]
+#   + [[file:qf_bsllia_sat.org::CVC4][CVC4]]
+
+** Division =qf_shid_entl=: 312 problems, 6 solvers
+   + [[file:qf_shid_entl.org][Overview]]
+   + [[file:qf_shid_entl.org::RUN-1][Run 1]]
+   + [[file:qf_shid_entl.org::RUN-2][Run 2]]
+#   + [[file:qf_shid_entl.org::CYCLIST][CYCLIST-SL]]
+#   + [[file:qf_shid_entl.org::HARRSH][Harrsh]]
+#   + [[file:qf_shid_entl.org::S2S][S2S]]
+#   + [[file:qf_shid_entl.org::SLEEK][SLEEK]]
+#   + [[file:qf_shid_entl.org::SLIDE][SLIDE]]
+#   + [[file:qf_shid_entl.org::SB][Songbird]]
+#   + [[file:qf_shid_entl.org::SPEN][SPEN]]
+
+** Division =qf_shid_sat=: 99 problems, 5 solvers
+   + [[file:qf_shid_sat.org][Overview]]
+   + [[file:qf_shid_sat.org::RUN-1][Run 1]]
+   + [[file:qf_shid_sat.org::RUN-2][Run 2]]
+#   + [[file:qf_shid_sat.org::Harrsh][Harrsh]]
+#   + [[file:qf_shid_sat.org::S2S][S2S]]
+#   + [[file:qf_shid_sat.org::SLEEK][SLEEK]]
+#   + [[file:qf_shid_sat.org::CYCLIST][SLSAT]]
+#   + [[file:qf_shid_sat.org::SB][Songbird]]
+#   + [[file:qf_shid_sat.org::SPEN][SPEN]]
+
+** Division =qf_shidlia_entl=: 61 problems, 4 solvers
+   + [[file:qf_shidlia_entl.org][Overview]]
+   + [[file:qf_shidlia_entl.org::RUN-1][Run 1]]
+   + [[file:qf_shidlia_entl.org::RUN-2][Run 2]]
+#   + [[file:qf_shidlia_entl.org::CSPEN][ComSPEN]]
+#   + [[file:qf_shidlia_entl.org::S2S][S2S]]
+#   + [[file:qf_shidlia_entl.org::SLEEK][SLEEK]]
+#   + [[file:qf_shidlia_entl.org::SB][Songbird]]
+
+** Division =qf_shidlia_sat=: 33 problems, 4 solvers
+   + [[file:qf_shidlia_sat.org][Overview]]
+   + [[file:qf_shidlia_sat.org::RUN-1][Run 1]]
+   + [[file:qf_shidlia_sat.org::RUN-2][Run 2]]
+#   + [[file:qf_shidlia_sat.org::CSPEN][ComSPEN]]
+#   + [[file:qf_shidlia_sat.org::S2S][S2S]]
+#   + [[file:qf_shidlia_sat.org::SLEEK][SLEEK]]
+#   + [[file:qf_shidlia_sat.org::SB][Songbird]]
+
+** Division =qf_shlid_entl=: 60 problems, 8 solvers
+   + [[file:qf_shlid_entl.org][Overview]]
+   + [[file:qf_shlid_entl.org::RUN-1][Run 1]]
+   + [[file:qf_shlid_entl.org::RUN-2][Run 2]]
+#   + [[file:qf_shlid_entl.org::CSPEN][ComSPEN]]
+#   + [[file:qf_shlid_entl.org::CYCLIST][CYCLIST-SL]]
+#   + [[file:qf_shlid_entl.org#Harrsh][Harrsh]]
+#   + [[file:qf_shlid_entl.org::S2S][S2S]]
+#   + [[file:qf_shlid_entl.org::SLEEK][SLEEK]]
+#   + [[file:qf_shlid_entl.org::SLIDE][SLIDE]]
+#   + [[file:qf_shlid_entl.org::SB][Songbird]]
+#   + [[file:qf_shlid_entl.org::SPEN][SPEN]]
+
+** Division =qf_shls_entl=: 296 problems, 9 solvers
+   + [[file:qf_shls_entl.org][Overview]]
+   + [[file:qf_shls_entl.org::RUN-1][Run 1]]
+   + [[file:qf_shls_entl.org::RUN-2][Run 2]]
+#   + [[file:qf_shls_entl.org::Asterix][Asterix]]
+#   + [[file:qf_shls_entl.org::CSPEN][ComSPEN]]
+#   + [[file:qf_shls_entl.org::CYCLIST][CYCLIST-SL]]
+#   + [[file:qf_shls_entl.org#Harrsh][Harrsh]]
+#   + [[file:qf_shls_entl.org::S2S][S2S]]
+#   + [[file:qf_shls_entl.org::SLEEK][SLEEK]]
+#   + [[file:qf_shls_entl.org::SLIDE][SLIDE]]
+#   + [[file:qf_shls_entl.org::SB][Songbird]]
+#   + [[file:qf_shls_entl.org::SPEN][SPEN]]
+
+** Division =qf_shls_sat=: 110 problems, 8 solvers
+   + [[file:qf_shls_sat.org][Overview]]
+   + [[file:qf_shls_sat.org::RUN-1][Run 1]]
+   + [[file:qf_shls_sat.org::RUN-2][Run 2]]
+#   + [[file:qf_shls_sat.org::Asterix][Asterix]]
+#   + [[file:qf_shls_sat.org::CSPEN][ComSPEN]]
+#   + [[file:qf_shls_sat.org::HARRSH][Harrsh]]
+#   + [[file:qf_shls_sat.org::S2S][S2S]]
+#   + [[file:qf_shls_sat.org::SLEEK][SLEEK]]
+#   + [[file:qf_shls_sat.org::CYCLIST][SLSAT]]
+#   + [[file:qf_shls_sat.org::SB][Songbird]]
+#   + [[file:qf_shls_sat.org::SPEN][SPEN]]
+
+** Division =shid_entl=: 73 problems, 5 solvers
+   + [[file:shid_entl.org][Overview]]
+   + [[file:shid_entl.org::RUN-1][Run 1]]
+   + [[file:shid_entl.org::RUN-2][Run 2]]
+#   + [[file:shid_entl.org::CYCLIST][CYCLIST-SL]]
+#   + [[file:shid_entl.org::S2S][S2S]]
+#   + [[file:shid_entl.org::SLEEK][SLEEK]]
+#   + [[file:shid_entl.org::SLIDE][SLIDE]]
+#   + [[file:shid_entl.org::SB][Songbird]]
+
+** Division =shidlia_entl=: 181 problems, 3 solvers
+   + [[file:shidlia_entl.org][Overview]]
+   + [[file:shidlia_entl.org::RUN-1][Run 1]]
+   + [[file:shidlia_entl.org::RUN-2][Run 2]]
+#   + [[file:shidlia_entl.org::S2S][S2S]]
+#   + [[file:shidlia_entl.org::SLEEK][SLEEK]]
+#   + [[file:shidlia_entl.org::SB][Songbird]]
+
+
+* Committee
+
+  This edition is run by
+  [[http://www.irif.fr/~sighirea/][Mihaela Sighireanu]].
+
+  The competition committee includes a member for each participating solver.
+
+* Mailing list
+  Any question related to this competition shall be sent to
+  the organisation committee and to the 
+  [[https://groups.google.com/forum/?hl=fr#!forum/sl-comp][mailing list]].
+
+
+
+# INCLUDE:    sitemap.org
+# [[file:sitemap.html][Site Map]] and [[file:theindex.html][index]]
+

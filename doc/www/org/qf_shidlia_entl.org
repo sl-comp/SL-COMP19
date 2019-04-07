@@ -1,0 +1,66 @@
+#+TITLE:      Results of SL-COMP'19 division =qf_shidlia_entl=
+#+AUTHOR:     Mihaela Sighireanu
+#+EMAIL:      sl-comp@googlegroups.com
+#+LANGUAGE:   en
+#+CATEGORY:   competition
+#+OPTIONS:    H:2 num:nil
+#+OPTIONS:    toc:nil
+#+OPTIONS:    \n:nil ::t |:t ^:t -:t f:t *:t d:(HIDE)
+#+OPTIONS:    tex:t
+#+OPTIONS:    html-preamble:nil
+#+OPTIONS:    html-postamble:auto
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/stylebig.css"/>
+
+
+#+MACRO: Asterix [[https://sl-comp.github.io/docs/solvers.html#Asterix][Asterix]]
+#+MACRO: ComSPEN [[https://sl-comp.github.io/docs/solvers.html#ComSPEN][ComSPEN]]
+#+MACRO: Cyclist [[https://sl-comp.github.io/docs/solvers.html#Cyclist][Cyclist]]
+#+MACRO: CVC4    [[https://sl-comp.github.io/docs/solvers.html#CVC4][CVC4]]
+#+MACRO: Harrsh  [[https://sl-comp.github.io/docs/solvers.html#Harrsh][Harrsh]]
+#+MACRO: S2S     [[https://sl-comp.github.io/docs/solvers.html#S2S][S2S]]
+#+MACRO: Sleek   [[https://sl-comp.github.io/docs/solvers.html#Sleek][Sleek]]
+#+MACRO: Slide   [[https://sl-comp.github.io/docs/solvers.html#Slide][Slide]]
+#+MACRO: SLSAT   [[https://sl-comp.github.io/docs/solvers.html#SLSAT][SLSAT]]
+#+MACRO: Songbird  [[https://sl-comp.github.io/docs/solvers.html#Songbird][Songbird]]
+#+MACRO: SPEN    [[https://sl-comp.github.io/docs/solvers.html#SPEN][SPEN]]
+#+MACRO: STAR5   @@html:<font color="gold"> ***** </font>@@
+#+MACRO: STAR4   @@html:<font color="gold"> ****  </font>@@
+#+MACRO: STAR3   @@html:<font color="gold"> *** </font>@@
+#+MACRO: STAR2   @@html:<font color="gold"> ** </font>@@
+#+MACRO: STAR1   @@html:<font color="gold"> * </font>@@
+#+MACRO: COFFEE  @@html: &#9749; @@
+#+MACRO: PODIUM  [[file:gloss.html#PODIUM][Podium]]
+#+MACRO: RO      [[file:gloss.html#RO][RO]]
+#+MACRO: SCORE   [[file:gloss.html#SCORE][Score]]
+#+MACRO: VBS     [[file:gloss.html#VBS][VBS]]
+
+
+
+
+* Overview
+
+  
+#+NAME: RUN-1
+** Run 1 
+#+ATTR_HTML: :border 2 :rules all :frame border
+|solver|solver id|configuration|solved|fulltime|maxmem|wrong|ro|failed|unknown|job|
+|------+---------+-------------+------+--------+------+-----+--+------+-------+---|
+|COMSPEN2019|22337|qf_shls_sat|21/61|48.77|161432.00|0|0|0|40|[[file:job/1-qf_shidlia_entl-COMSPEN2019-22337-33228.csv.html][csv]]|
+|SLEEK|20564|default|11/61|1.93|113176.00|45|5|0|0|[[file:job/1-qf_shidlia_entl-SLEEK-20564-33235.csv.html][csv]]|
+|Songbird v2|20617|songbird.sh|57/61|1137.07|1073532.00|0|0|0|4|[[file:job/1-qf_shidlia_entl-Songbird-20617-33236.csv.html][csv]]|
+|s2s.0.3.3|22440|default|61/61|8.89|113176.00|0|0|0|0|[[file:job/1-qf_shidlia_entl-s2s.0.3.3-22440-33229.csv.html][csv]]|
+  
+  
+  
+#+MACRO: VBSJ  [[file:job/2-qf_shidlia_entl-VBS.csv.html][job]]
+#+NAME: RUN-2
+** Run 2 
+#+ATTR_HTML: :border 2 :rules all :frame border
+|solver|solver id|config|solved|solved time|full time|maxmem|wrong|{{{RO}}}|failed|unknown|job|{{{SCORE}}}|{{{VBS}}}-{{{VBSJ}}}|{{{PODIUM}}}|
+|------+---------+------+------+-----------+---------+------+-----+--+------+-------+---+-----+---+------|
+|COMSPEN2019|22337|qf_shls_sat|21/61|48.79|49.48|161432.00|0|0|0|40|[[file:job/2-qf_shidlia_entl-COMSPEN2019-22337-33500.csv.html][csv]]|21.00|1|{{{STAR3}}}|
+|SLEEK|20564|default|11/61|1.95|13998.29|113176.00|45|5|0|0|[[file:job/2-qf_shidlia_entl-SLEEK-20564-33503.csv.html][csv]]|-61.00|1|{{{COFFEE}}}|
+|Songbird v2|20617|songbird.sh|58/61|1253.53|1772.59|1073532.00|0|0|0|3|[[file:job/2-qf_shidlia_entl-Songbird-20617-33504.csv.html][csv]]|58.00|10|{{{STAR4}}}|
+|s2s.0.3.3|22440|default|61/61|8.92|8.92|113176.00|0|0|0|0|[[file:job/2-qf_shidlia_entl-s2s.0.3.3-22440-33502.csv.html][csv]]|61.00|49|{{{STAR5}}}|
+  

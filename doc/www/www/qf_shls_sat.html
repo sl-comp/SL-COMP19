@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-04-05 Fri 22:03 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Results of SL-COMP'19 division <code>qf_shls_sat</code></title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Mihaela Sighireanu" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="css/stylebig.css"/>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Results of SL-COMP'19 division <code>qf_shls_sat</code></h1>
+
+
+<div id="outline-container-orgdc2b7d8" class="outline-2">
+<h2 id="orgdc2b7d8">Overview</h2>
+<div class="outline-text-2" id="text-orgdc2b7d8">
+</div>
+<div id="outline-container-org6f5d9c8" class="outline-3">
+<h3 id="org6f5d9c8">Run 1</h3>
+<div class="outline-text-3" id="text-org6f5d9c8">
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">solver</th>
+<th scope="col" class="org-right">solver id</th>
+<th scope="col" class="org-left">configuration</th>
+<th scope="col" class="org-left">solved</th>
+<th scope="col" class="org-right">fulltime</th>
+<th scope="col" class="org-right">maxmem</th>
+<th scope="col" class="org-right">wrong</th>
+<th scope="col" class="org-right">to</th>
+<th scope="col" class="org-right">failed</th>
+<th scope="col" class="org-right">unknown</th>
+<th scope="col" class="org-left">job</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">ASTERIX</td>
+<td class="org-right">20618</td>
+<td class="org-left">default</td>
+<td class="org-left">110/110</td>
+<td class="org-right">1.44</td>
+<td class="org-right">113176.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/1-qf_shls_sat-ASTERIX-20618-33154.csv.html">csv</a></td>
+</tr>
+
+<tr>
+<td class="org-left">COMSPEN2019</td>
+<td class="org-right">22337</td>
+<td class="org-left">qf<sub>shls</sub><sub>sat</sub></td>
+<td class="org-left">110/110</td>
+<td class="org-right">6.70</td>
+<td class="org-right">113176.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/1-qf_shls_sat-COMSPEN2019-22337-33155.csv.html">csv</a></td>
+</tr>
+
+<tr>
+<td class="org-left">Harrsh 2019.3</td>
+<td class="org-right">22545</td>
+<td class="org-left">harrsh<sub>default</sub></td>
+<td class="org-left">110/110</td>
+<td class="org-right">264.75</td>
+<td class="org-right">3083696.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/1-qf_shls_sat-Harrsh-22545-33213.csv.html">csv</a></td>
+</tr>
+
+<tr>
+<td class="org-left">SLEEK</td>
+<td class="org-right">20564</td>
+<td class="org-left">default</td>
+<td class="org-left">110/110</td>
+<td class="org-right">9.73</td>
+<td class="org-right">113176.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/1-qf_shls_sat-SLEEK-20564-33214.csv.html">csv</a></td>
+</tr>
+
+<tr>
+<td class="org-left">SLSAT</td>
+<td class="org-right">1137</td>
+<td class="org-left">quiet</td>
+<td class="org-left">108/110</td>
+<td class="org-right">1592.40</td>
+<td class="org-right">324428.00</td>
+<td class="org-right">0</td>
+<td class="org-right">2</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/1-qf_shls_sat-SLSAT-1137-33157.csv.html">csv</a></td>
+</tr>
+
+<tr>
+<td class="org-left">SPEN</td>
+<td class="org-right">22607</td>
+<td class="org-left">qf<sub>shls</sub></td>
+<td class="org-left">110/110</td>
+<td class="org-right">7.05</td>
+<td class="org-right">113176.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/1-qf_shls_sat-SPEN-22607-33243.csv.html">csv</a></td>
+</tr>
+
+<tr>
+<td class="org-left">Songbird v2</td>
+<td class="org-right">20617</td>
+<td class="org-left">songbird.sh</td>
+<td class="org-left">110/110</td>
+<td class="org-right">25.76</td>
+<td class="org-right">264520.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/1-qf_shls_sat-Songbird-20617-33215.csv.html">csv</a></td>
+</tr>
+
+<tr>
+<td class="org-left">s2s.0.3.3</td>
+<td class="org-right">22440</td>
+<td class="org-left">default</td>
+<td class="org-left">110/110</td>
+<td class="org-right">1.59</td>
+<td class="org-right">113176.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/1-qf_shls_sat-s2s.0.3.3-22440-33156.csv.html">csv</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org7234d63" class="outline-3">
+<h3 id="org7234d63">Run 2</h3>
+<div class="outline-text-3" id="text-org7234d63">
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">solver</th>
+<th scope="col" class="org-right">solver id</th>
+<th scope="col" class="org-left">config</th>
+<th scope="col" class="org-left">solved</th>
+<th scope="col" class="org-right">solved time</th>
+<th scope="col" class="org-right">full time</th>
+<th scope="col" class="org-right">maxmem</th>
+<th scope="col" class="org-right">wrong</th>
+<th scope="col" class="org-right"><a href="gloss.html#RO">RO</a></th>
+<th scope="col" class="org-right">failed</th>
+<th scope="col" class="org-right">unknown</th>
+<th scope="col" class="org-left">job</th>
+<th scope="col" class="org-right"><a href="gloss.html#SCORE">Score</a></th>
+<th scope="col" class="org-right"><a href="gloss.html#VBS">VBS</a>-<a href="job/2-qf_shls_sat-VBS.csv.html">job</a></th>
+<th scope="col" class="org-left"><a href="gloss.html#PODIUM">Podium</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">ASTERIX</td>
+<td class="org-right">20618</td>
+<td class="org-left">default</td>
+<td class="org-left">110/110</td>
+<td class="org-right">1.44</td>
+<td class="org-right">1.44</td>
+<td class="org-right">113176.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/2-qf_shls_sat-ASTERIX-20618-33551.csv.html">csv</a></td>
+<td class="org-right">110.00</td>
+<td class="org-right">79</td>
+<td class="org-left"><font color="gold"> ***** </font></td>
+</tr>
+
+<tr>
+<td class="org-left">COMSPEN2019</td>
+<td class="org-right">22337</td>
+<td class="org-left">qf<sub>shls</sub><sub>sat</sub></td>
+<td class="org-left">110/110</td>
+<td class="org-right">6.70</td>
+<td class="org-right">6.70</td>
+<td class="org-right">113176.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/2-qf_shls_sat-COMSPEN2019-22337-33552.csv.html">csv</a></td>
+<td class="org-right">110.00</td>
+<td class="org-right">0</td>
+<td class="org-left"><font color="gold"> *** </font></td>
+</tr>
+
+<tr>
+<td class="org-left">Harrsh 2019.9</td>
+<td class="org-right">22687</td>
+<td class="org-left">harrsh<sub>default</sub></td>
+<td class="org-left">110/110</td>
+<td class="org-right">254.88</td>
+<td class="org-right">254.88</td>
+<td class="org-right">3084332.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/2-qf_shls_sat-Harrsh-22687-33553.csv.html">csv</a></td>
+<td class="org-right">110.00</td>
+<td class="org-right">0</td>
+<td class="org-left"> &#9749; </td>
+</tr>
+
+<tr>
+<td class="org-left">SLEEK</td>
+<td class="org-right">20564</td>
+<td class="org-left">default</td>
+<td class="org-left">110/110</td>
+<td class="org-right">9.61</td>
+<td class="org-right">9.61</td>
+<td class="org-right">113176.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/2-qf_shls_sat-SLEEK-20564-33554.csv.html">csv</a></td>
+<td class="org-right">110.00</td>
+<td class="org-right">0</td>
+<td class="org-left"><font color="gold"> * </font></td>
+</tr>
+
+<tr>
+<td class="org-left">SLSAT</td>
+<td class="org-right">22694</td>
+<td class="org-left">default</td>
+<td class="org-left">109/110</td>
+<td class="org-right">1646.35</td>
+<td class="org-right">2246.36</td>
+<td class="org-right">50148.00</td>
+<td class="org-right">0</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/2-qf_shls_sat-SLSAT-22694-33555.csv.html">csv</a></td>
+<td class="org-right">109.00</td>
+<td class="org-right">0</td>
+<td class="org-left"> &#9749; </td>
+</tr>
+
+<tr>
+<td class="org-left">SPEN19.2</td>
+<td class="org-right">22729</td>
+<td class="org-left">qf<sub>shls</sub></td>
+<td class="org-left">110/110</td>
+<td class="org-right">7.50</td>
+<td class="org-right">7.50</td>
+<td class="org-right">127516.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/2-qf_shls_sat-SPEN19.2-22729-33581.csv.html">csv</a></td>
+<td class="org-right">110.00</td>
+<td class="org-right">0</td>
+<td class="org-left"><font color="gold"> ** </font></td>
+</tr>
+
+<tr>
+<td class="org-left">Songbird v2</td>
+<td class="org-right">20617</td>
+<td class="org-left">songbird.sh</td>
+<td class="org-left">110/110</td>
+<td class="org-right">25.74</td>
+<td class="org-right">25.74</td>
+<td class="org-right">264520.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/2-qf_shls_sat-Songbird-20617-33556.csv.html">csv</a></td>
+<td class="org-right">110.00</td>
+<td class="org-right">0</td>
+<td class="org-left"> &#9749; </td>
+</tr>
+
+<tr>
+<td class="org-left">s2s.0.3.3</td>
+<td class="org-right">22440</td>
+<td class="org-left">default</td>
+<td class="org-left">110/110</td>
+<td class="org-right">1.62</td>
+<td class="org-right">1.62</td>
+<td class="org-right">113176.00</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="job/2-qf_shls_sat-s2s.0.3.3-22440-33557.csv.html">csv</a></td>
+<td class="org-right">110.00</td>
+<td class="org-right">31</td>
+<td class="org-left"><font color="gold"> ****  </font></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Mihaela Sighireanu</p>
+<p class="date">Created: 2019-04-05 Fri 22:03</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

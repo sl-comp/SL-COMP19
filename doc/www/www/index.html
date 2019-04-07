@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-04-05 Fri 22:44 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SL-COMP 2019</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Mihaela Sighireanu" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="css/stylebig.css"/>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">SL-COMP 2019</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orga09b26e">Synopsis</a></li>
+<li><a href="#org77270ea">News and Key Dates</a></li>
+<li><a href="#orgc03e8f3">Specifications and rules</a></li>
+<li><a href="#org2019834">Benchmarks and divisions</a></li>
+<li><a href="#org9eec540">Participants</a></li>
+<li><a href="#org86ad46d">Results</a>
+<ul>
+<li><a href="#org5028cdc">Division <code>qf_bsl_sat</code>: 46 problems, 1 solver</a></li>
+<li><a href="#org83109e9">Division <code>qf_bsllia_sat</code>: 24 problems, 1 solver</a></li>
+<li><a href="#orgcfab201">Division <code>qf_shid_entl</code>: 312 problems, 6 solvers</a></li>
+<li><a href="#org9926a3e">Division <code>qf_shid_sat</code>: 99 problems, 5 solvers</a></li>
+<li><a href="#orgeb0de77">Division <code>qf_shidlia_entl</code>: 61 problems, 4 solvers</a></li>
+<li><a href="#org18f360f">Division <code>qf_shidlia_sat</code>: 33 problems, 4 solvers</a></li>
+<li><a href="#orgd4c9b2a">Division <code>qf_shlid_entl</code>: 60 problems, 8 solvers</a></li>
+<li><a href="#org8f6aaf9">Division <code>qf_shls_entl</code>: 296 problems, 9 solvers</a></li>
+<li><a href="#org4c363f9">Division <code>qf_shls_sat</code>: 110 problems, 8 solvers</a></li>
+<li><a href="#orgfcadab9">Division <code>shid_entl</code>: 73 problems, 5 solvers</a></li>
+<li><a href="#orgd31ec15">Division <code>shidlia_entl</code>: 181 problems, 3 solvers</a></li>
+</ul>
+</li>
+<li><a href="#orgdb4f635">Committee</a></li>
+<li><a href="#org54532c1">Mailing list</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga09b26e" class="outline-2">
+<h2 id="orga09b26e">Synopsis</h2>
+<div class="outline-text-2" id="text-orga09b26e">
+<p>
+This is the 3rd edition of 
+SL-COMP, an initiative for collecting decision problems in <a href="http://www0.cs.ucl.ac.uk/staff/p.ohearn/SeparationLogic/Separation_Logic/SL_Home.html">Separation Logic</a>
+and solvers dealing with such problems.
+</p>
+
+<p>
+This initiative started in 2014 and it was inspired by the very
+popular initiatives on other theories, like 
+first-order theories for <a href="http://smtcomp.sourceforge.net">SMT-COMP</a> and 
+Boolean constraints for <a href="http://www.satcompetition.org">SAT</a>.
+</p>
+
+<p>
+For more details, see competition's <a href="https://sl-comp.github.io">web site</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org77270ea" class="outline-2">
+<h2 id="org77270ea">News and Key Dates</h2>
+<div class="outline-text-2" id="text-org77270ea">
+<ul class="org-ul">
+<li><b>April 6th, 2019</b>: Presentation of SL-COMP'19 at <a href="https://tacas.info/toolympics.php">TOOLympics 2019</a></li>
+<li><b>March 31, 2019</b>: Last official run of SL-COMP'19 on <a href="https://starexec.org">StarExec</a></li>
+<li><b>March 22, 2019</b>: First official run of SL-COMP'19 on <a href="https://starexec.org">StarExec</a></li>
+<li>March 8, 2019: First training run of SL-COMP'19 on <a href="https://starexec.org">StarExec</a></li>
+<li>February 25, 2019: Preliminary description of SL-COMP'19 at <a href="https://tacas.info/toolympics.php">TOOLympics 2019</a> 
+available at <a href="https://github.com/sl-comp/SL-COMP19/tree/master/doc/report/toolympics19/main.pdf">competition's web site</a></li>
+<li>January 8, 2019: Deadline for registration of solvers for SL-COMP 2019 at 
+<a href="https://easychair.org/conferences/?conf=slcomp19">easychair submission site</a></li>
+<li>December 7, 2018: Call for participation to SL-COMP 2019 at <a href="https://tacas.info/toolympics.php">TOOLympics 2019</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc03e8f3" class="outline-2">
+<h2 id="orgc03e8f3">Specifications and rules</h2>
+<div class="outline-text-2" id="text-orgc03e8f3">
+<p>
+The same input format as for SL-COMP 2018 edition, detailed on <a href="https://sl-comp.github.io">competition web site</a>.
+</p>
+
+<p>
+The competition takes place on the <a href="https://www.starexec.org">StarExec</a> platform based on the following rules:
+</p>
+<ul class="org-ul">
+<li>timeout for solving one problem: 2400 seconds except for division <code>qf_shls_*</code> whre timeout is 600 seconds</li>
+<li>maximum memory: 10 GB</li>
+<li>no scrambling</li>
+<li>official pre-processors accepted</li>
+</ul>
+
+<p>
+The scoring scheme used is explained <a href="gloss.html#SCORE">here</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org2019834" class="outline-2">
+<h2 id="org2019834">Benchmarks and divisions</h2>
+<div class="outline-text-2" id="text-org2019834">
+<p>
+This edition uses the same set of problems than <a href="https://github.com/sl-comp/SL-COMP18/tree/master/bench">SL-COMP 2018 edition</a>,
+i.e., 1296 problems split into the same 11 divisions:
+</p>
+<ul class="org-ul">
+<li>Satisfiability checking:
+<ul class="org-ul">
+<li><a href="https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shls_sat"><code>qf_shls_sat</code></a>: for quantifier free (QF) formulas in the symbolic heaps (SH) fragment using only acyclic singly linked lists</li>
+<li><a href="https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shid_sat"><code>qf_shid_sat</code></a>: for QF formulas in the SH fragment using general inductive definitions (ID)</li>
+<li><a href="https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shidlia_sat"><code>qf_shidlia_sat</code></a>: for QF formulas in the SH fragment with ID and linear integer constraints (LIA)</li>
+<li><a href="https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_bsl_sat"><code>qf_bsl_sat</code></a>: for QF fragment with boolean combination of SL atoms; the quantified version of this division <a href="https://github.com/sl-comp/SL-COMP18/tree/master/bench/bsl_sat"><code>bsl_sat</code></a> has not enough problems to be considered by this edition</li>
+<li><a href="https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_bsllia_sat"><code>qf_bsllia_sat</code></a>: for QF fragment with boolean combination of SL atoms and LIA</li>
+</ul></li>
+
+<li>Entailment checking:
+<ul class="org-ul">
+<li><a href="https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shls_entl"><code>qf_shls_entl</code></a>: for QF formulas in the SH fragment using only acyclic singly linked lists</li>
+<li><a href="https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shid_entl"><code>qf_shid_entl</code></a>: for QF formulas in the SH fragment with ID</li>
+<li><a href="https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shlid_entl"><code>qf_shlid_entl</code></a>: for QF formulas in the SH fragment with linear ID</li>
+<li><a href="https://github.com/sl-comp/SL-COMP19/tree/master/bench/shid_entl"><code>shid_entl</code></a>: for formulas in the SH fragment with ID</li>
+<li><a href="https://github.com/sl-comp/SL-COMP19/tree/master/bench/qf_shidlia_entl"><code>qf_shidlia_entl</code></a>: for formulas in the SH fragment with ID and LIA</li>
+<li><a href="https://github.com/sl-comp/SL-COMP19/tree/master/bench/shidlia_entl"><code>shidlia_entl</code></a>: for QF formulas in the SH fragment with IS and LIA</li>
+</ul></li>
+</ul>
+
+<p>
+A set of new problems proposed for division `qf<sub>shid</sub><sub>entl</sub>` are on probation at this edition.
+</p>
+
+
+<ul class="org-ul">
+<li>The contributions to the benchmark of SL-COMP are summarized below:</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Division</th>
+<th scope="col" class="org-right">#problems</th>
+<th scope="col" class="org-right"><a href="https://sl-comp.github.io/docs/solvers.html#Asterix">Asterix</a></th>
+<th scope="col" class="org-right">ComSPEN</th>
+<th scope="col" class="org-right">CVC4</th>
+<th scope="col" class="org-right">Cyclist</th>
+<th scope="col" class="org-right">Harrsh</th>
+<th scope="col" class="org-right">S2S</th>
+<th scope="col" class="org-right">Sleek</th>
+<th scope="col" class="org-right">Slide</th>
+<th scope="col" class="org-right">Songbird</th>
+<th scope="col" class="org-right">SPEN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>qf_bsl_sat</code></td>
+<td class="org-right">46</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">46</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_bsllia_sat</code></td>
+<td class="org-right">24</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">24</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shid_entl</code></td>
+<td class="org-right">312</td>
+<td class="org-right">1</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">22</td>
+<td class="org-right">0</td>
+<td class="org-right">59</td>
+<td class="org-right">81</td>
+<td class="org-right">17</td>
+<td class="org-right">132</td>
+<td class="org-right">46</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shid_sat</code></td>
+<td class="org-right">99</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">61</td>
+<td class="org-right">29</td>
+<td class="org-right">9</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shidlia_entl</code></td>
+<td class="org-right">61</td>
+<td class="org-right">0</td>
+<td class="org-right">22</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">39</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shidlia_sat</code></td>
+<td class="org-right">33</td>
+<td class="org-right">0</td>
+<td class="org-right">20</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">13</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shlid_entl</code></td>
+<td class="org-right">60</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">14</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">46</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shls_entl</code></td>
+<td class="org-right">296</td>
+<td class="org-right">287</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">9</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">5</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shls_sat</code></td>
+<td class="org-right">110</td>
+<td class="org-right">110</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>shid_entl</code></td>
+<td class="org-right">73</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">9</td>
+<td class="org-right">64</td>
+<td class="org-right">0</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>shidlia_entl</code></td>
+<td class="org-right">181</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">0</td>
+<td class="org-right">181</td>
+<td class="org-right">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-org9eec540" class="outline-2">
+<h2 id="org9eec540">Participants</h2>
+<div class="outline-text-2" id="text-org9eec540">
+<p>
+These are the solvers participating in the SL-COMP 2019.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Solver</th>
+<th scope="col" class="org-right">Preliminary</th>
+<th scope="col" class="org-right">Final</th>
+<th scope="col" class="org-left">System description</th>
+<th scope="col" class="org-left">Contact</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">version id</th>
+<th scope="col" class="org-right">version id</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">for StarExec</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#Asterix">Asterix</a></td>
+<td class="org-right">20618</td>
+<td class="org-right">20618</td>
+<td class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#Asterix">Asterix</a></td>
+<td class="org-left"><a href="mailto:juannavarroperez@gmail.com">Juan Antonio Navarro Pérez</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">ComSPEN</td>
+<td class="org-right">22337</td>
+<td class="org-right">22337</td>
+<td class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#ComSPEN">ComSPEN</a></td>
+<td class="org-left"><a href="mailto:gaochong@ios.ac.cn">Chong Gao</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">CVC4</td>
+<td class="org-right">20439</td>
+<td class="org-right">20439</td>
+<td class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#CVC4">CVC4-SL</a></td>
+<td class="org-left"><a href="mailto:andrew.j.reynolds@gmail.com">Andrew Reynolds</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Cyclist-SL</td>
+<td class="org-right">1136</td>
+<td class="org-right">22685</td>
+<td class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#Cyclist-SL">Cyclist-SL</a></td>
+<td class="org-left"><a href="mailto:nikos.gorogiannis@gmail.com">Nikos Gorogiannis</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Harrsh</td>
+<td class="org-right">22424</td>
+<td class="org-right">22687</td>
+<td class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#Harrsh">Harrsh</a></td>
+<td class="org-left"><a href="mailto:jkatelaan@forsyte.at">Jens Katelaan</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">S2S</td>
+<td class="org-right">22394</td>
+<td class="org-right">22440</td>
+<td class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#S2S">S2S</a></td>
+<td class="org-left"><a href="mailto:lequangloc@gmail.com">Le Quang Loc</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Sleek</td>
+<td class="org-right">20564</td>
+<td class="org-right">20564</td>
+<td class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#Sleek">Sleek</a></td>
+<td class="org-left"><a href="mailto:benedictleejh@gmail.com">Benedict Lee</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Slide</td>
+<td class="org-right">20623</td>
+<td class="org-right">20623</td>
+<td class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#Slide">Slide</a></td>
+<td class="org-left"><a href="mailto:rogalew@fit.vutbr.cz">Adam Rogalewicz</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">SLSAT</td>
+<td class="org-right">1137</td>
+<td class="org-right">22694</td>
+<td class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#SLSAT">SLSAT</a></td>
+<td class="org-left"><a href="mailto:nikos.gorogiannis@gmail.com">Nikos Gorogiannis</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Songbird</td>
+<td class="org-right">20617</td>
+<td class="org-right">20617</td>
+<td class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#Songbird">Songbird</a></td>
+<td class="org-left"><a href="mailto:taquangtrungvn@gmail.com">Ta Quang Trung</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">SPEN</td>
+<td class="org-right">20561</td>
+<td class="org-right">22729</td>
+<td class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#SPEN">SPEN</a></td>
+<td class="org-left"><a href="mailto:mihaela.sighireanu@gmail.com">Mihaela Sighireanu</a></td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+These are the benchmark divisions in which each solver is competing:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Division</th>
+<th scope="col" class="org-right">#prob</th>
+<th scope="col" class="org-left"><a href="https://sl-comp.github.io/docs/solvers.html#Asterix">Asterix</a></th>
+<th scope="col" class="org-left">ComSPEN</th>
+<th scope="col" class="org-left">CVC4</th>
+<th scope="col" class="org-left">Cyclist</th>
+<th scope="col" class="org-left">Harrsh</th>
+<th scope="col" class="org-left">S2S</th>
+<th scope="col" class="org-left">Sleek</th>
+<th scope="col" class="org-left">Slide</th>
+<th scope="col" class="org-left">SLSAT</th>
+<th scope="col" class="org-left">Songbird</th>
+<th scope="col" class="org-left">SPEN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><code>qf_bsl_sat</code></td>
+<td class="org-right">46</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_bsllia_sat</code></td>
+<td class="org-right">24</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shid_entl</code></td>
+<td class="org-right">312</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shid_sat</code></td>
+<td class="org-right">99</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shidlia_entl</code></td>
+<td class="org-right">61</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shidlia_sat</code></td>
+<td class="org-right">33</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shlid_entl</code></td>
+<td class="org-right">60</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shls_entl</code></td>
+<td class="org-right">296</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>qf_shls_sat</code></td>
+<td class="org-right">110</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>shid_entl</code></td>
+<td class="org-right">73</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>shidlia_entl</code></td>
+<td class="org-right">181</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">X</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-org86ad46d" class="outline-2">
+<h2 id="org86ad46d">Results</h2>
+<div class="outline-text-2" id="text-org86ad46d">
+<ul class="org-ul">
+<li>Two runs took place between March 8th and April 3rd, 2019.</li>
+<li>The final results will be  announced at <a href="https://tacas.info/toolympics.php">TOOLympics</a> during TACAS 2019.</li>
+<li>The results are provided below using the following <a href="gloss.html">glossary</a>.</li>
+</ul>
+</div>
+
+<div id="outline-container-org5028cdc" class="outline-3">
+<h3 id="org5028cdc">Division <code>qf_bsl_sat</code>: 46 problems, 1 solver</h3>
+<div class="outline-text-3" id="text-org5028cdc">
+<ul class="org-ul">
+<li><a href="qf_bsl_sat.html">Overview</a></li>
+<li><a href="qf_bsl_sat.html#org2689b68">Run 1</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org83109e9" class="outline-3">
+<h3 id="org83109e9">Division <code>qf_bsllia_sat</code>: 24 problems, 1 solver</h3>
+<div class="outline-text-3" id="text-org83109e9">
+<ul class="org-ul">
+<li><a href="qf_bsllia_sat.html">Overview</a></li>
+<li><a href="qf_bsllia_sat.html#orgfe94d70">Run 1</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcfab201" class="outline-3">
+<h3 id="orgcfab201">Division <code>qf_shid_entl</code>: 312 problems, 6 solvers</h3>
+<div class="outline-text-3" id="text-orgcfab201">
+<ul class="org-ul">
+<li><a href="qf_shid_entl.html">Overview</a></li>
+<li><a href="qf_shid_entl.html#orgda47184">Run 1</a></li>
+<li><a href="qf_shid_entl.html#org1cba6c0">Run 2</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9926a3e" class="outline-3">
+<h3 id="org9926a3e">Division <code>qf_shid_sat</code>: 99 problems, 5 solvers</h3>
+<div class="outline-text-3" id="text-org9926a3e">
+<ul class="org-ul">
+<li><a href="qf_shid_sat.html">Overview</a></li>
+<li><a href="qf_shid_sat.html#orgfcf3bb5">Run 1</a></li>
+<li><a href="qf_shid_sat.html#org9ed018d">Run 2</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgeb0de77" class="outline-3">
+<h3 id="orgeb0de77">Division <code>qf_shidlia_entl</code>: 61 problems, 4 solvers</h3>
+<div class="outline-text-3" id="text-orgeb0de77">
+<ul class="org-ul">
+<li><a href="qf_shidlia_entl.html">Overview</a></li>
+<li><a href="qf_shidlia_entl.html#org25e7977">Run 1</a></li>
+<li><a href="qf_shidlia_entl.html#org4f2994d">Run 2</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org18f360f" class="outline-3">
+<h3 id="org18f360f">Division <code>qf_shidlia_sat</code>: 33 problems, 4 solvers</h3>
+<div class="outline-text-3" id="text-org18f360f">
+<ul class="org-ul">
+<li><a href="qf_shidlia_sat.html">Overview</a></li>
+<li><a href="qf_shidlia_sat.html#org1f18e2b">Run 1</a></li>
+<li><a href="qf_shidlia_sat.html#orga95db9f">Run 2</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd4c9b2a" class="outline-3">
+<h3 id="orgd4c9b2a">Division <code>qf_shlid_entl</code>: 60 problems, 8 solvers</h3>
+<div class="outline-text-3" id="text-orgd4c9b2a">
+<ul class="org-ul">
+<li><a href="qf_shlid_entl.html">Overview</a></li>
+<li><a href="qf_shlid_entl.html#orgc097ed8">Run 1</a></li>
+<li><a href="qf_shlid_entl.html#org6673161">Run 2</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8f6aaf9" class="outline-3">
+<h3 id="org8f6aaf9">Division <code>qf_shls_entl</code>: 296 problems, 9 solvers</h3>
+<div class="outline-text-3" id="text-org8f6aaf9">
+<ul class="org-ul">
+<li><a href="qf_shls_entl.html">Overview</a></li>
+<li><a href="qf_shls_entl.html#org50b6748">Run 1</a></li>
+<li><a href="qf_shls_entl.html#orgf64a2af">Run 2</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4c363f9" class="outline-3">
+<h3 id="org4c363f9">Division <code>qf_shls_sat</code>: 110 problems, 8 solvers</h3>
+<div class="outline-text-3" id="text-org4c363f9">
+<ul class="org-ul">
+<li><a href="qf_shls_sat.html">Overview</a></li>
+<li><a href="qf_shls_sat.html#org3d76f7d">Run 1</a></li>
+<li><a href="qf_shls_sat.html#orgfea4646">Run 2</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfcadab9" class="outline-3">
+<h3 id="orgfcadab9">Division <code>shid_entl</code>: 73 problems, 5 solvers</h3>
+<div class="outline-text-3" id="text-orgfcadab9">
+<ul class="org-ul">
+<li><a href="shid_entl.html">Overview</a></li>
+<li><a href="shid_entl.html#orgba844a6">Run 1</a></li>
+<li><a href="shid_entl.html#org2584695">Run 2</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd31ec15" class="outline-3">
+<h3 id="orgd31ec15">Division <code>shidlia_entl</code>: 181 problems, 3 solvers</h3>
+<div class="outline-text-3" id="text-orgd31ec15">
+<ul class="org-ul">
+<li><a href="shidlia_entl.html">Overview</a></li>
+<li><a href="shidlia_entl.html#org1b73ac6">Run 1</a></li>
+<li><a href="shidlia_entl.html#orgba1951b">Run 2</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgdb4f635" class="outline-2">
+<h2 id="orgdb4f635">Committee</h2>
+<div class="outline-text-2" id="text-orgdb4f635">
+<p>
+This edition is run by
+<a href="http://www.irif.fr/~sighirea/">Mihaela Sighireanu</a>.
+</p>
+
+<p>
+The competition committee includes a member for each participating solver.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org54532c1" class="outline-2">
+<h2 id="org54532c1">Mailing list</h2>
+<div class="outline-text-2" id="text-org54532c1">
+<p>
+Any question related to this competition shall be sent to
+the organisation committee and to the 
+<a href="https://groups.google.com/forum/?hl=fr#!forum/sl-comp">mailing list</a>.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Mihaela Sighireanu</p>
+<p class="date">Created: 2019-04-05 Fri 22:44</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
