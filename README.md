@@ -20,7 +20,7 @@ Mihaela Sighireanu <Mihaela.Sighireanu@irif.fr>.
 
 For more information, please visit the competition's web site:
 
-https://sl-comp.gitbuh.io
+https://sl-comp.github.io
 
 
 ## Discussion forum ##
